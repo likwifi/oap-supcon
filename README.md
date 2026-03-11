@@ -1,5 +1,7 @@
 # OAP-SupCon paper experiments
 
+**Paper:** *Occlusion-Aware Part-Level Supervised Contrastive Learning for Skeleton-Based Gait Recognition*
+
 This folder is the self-contained experiment workspace for the occlusion-aware pose/skeleton gait paper. It separates licensed data from code, freezes the same-backbone comparisons, and writes every result to machine-readable artifacts.
 
 ## What is included
