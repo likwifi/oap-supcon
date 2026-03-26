@@ -1,0 +1,9 @@
+name: oumvlp_pose
+folder: oumvlp_pose
+file: processed/dataset.npz
+joints: 18
+dimensions: 2
+exclude_identical_view: true
+epochs: 80
+role: large-population cross-view validation
+access: https://www.am.sanken.osaka-u.ac.jp/BiometricDB/GaitMVLP.html

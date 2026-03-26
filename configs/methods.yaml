@@ -1,0 +1,81 @@
+# Same encoder, optimizer, schedule, and input pipeline are used for all methods.
+ce:
+  augmentation: none
+  global_weight: 0.0
+  part_weight: 0.0
+  temporal_weight: 0.0
+  ce_weight: 1.0
+masked_ce:
+  augmentation: joint_dropout
+  global_weight: 0.0
+  part_weight: 0.0
+  temporal_weight: 0.0
+  ce_weight: 1.0
+generic_supcon:
+  augmentation: generic
+  global_weight: 1.0
+  part_weight: 0.0
+  temporal_weight: 0.0
+  ce_weight: 1.0
+global_occlusion_supcon:
+  augmentation: complete_to_partial
+  global_weight: 1.0
+  part_weight: 0.0
+  temporal_weight: 0.0
+  ce_weight: 1.0
+oap_supcon:
+  augmentation: complete_to_partial
+  global_weight: 1.0
+  part_weight: 0.5
+  temporal_weight: 0.2
+  ce_weight: 1.0
+no_part:
+  augmentation: complete_to_partial
+  global_weight: 1.0
+  part_weight: 0.0
+  temporal_weight: 0.2
+  ce_weight: 1.0
+no_temporal:
+  augmentation: complete_to_partial
+  global_weight: 1.0
+  part_weight: 0.5
+  temporal_weight: 0.0
+  ce_weight: 1.0
+no_ce:
+  augmentation: complete_to_partial
+  global_weight: 1.0
+  part_weight: 0.5
+  temporal_weight: 0.2
+  ce_weight: 0.0
+no_visibility:
+  augmentation: complete_to_partial
+  global_weight: 1.0
+  part_weight: 0.5
+  temporal_weight: 0.2
+  ce_weight: 1.0
+  visibility_gating: false
+no_complete_partial:
+  augmentation: two_partial
+  global_weight: 1.0
+  part_weight: 0.5
+  temporal_weight: 0.2
+  ce_weight: 1.0
+no_part_masking:
+  augmentation: complete_to_partial_no_part_mask
+  global_weight: 1.0
+  part_weight: 0.5
+  temporal_weight: 0.2
+  ce_weight: 1.0
+no_global:
+  augmentation: complete_to_partial
+  global_weight: 0.0
+  part_weight: 0.5
+  temporal_weight: 0.2
+  ce_weight: 1.0
+unweighted_parts:
+  augmentation: complete_to_partial
+  global_weight: 1.0
+  part_weight: 0.5
+  temporal_weight: 0.2
+  ce_weight: 1.0
+  visibility_gating: false

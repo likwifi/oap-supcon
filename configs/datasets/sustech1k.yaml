@@ -1,0 +1,9 @@
+name: sustech1k
+folder: sustech1k
+file: processed/dataset.npz
+joints: 17
+dimensions: 2
+epochs: 100
+role: primary real-occlusion endpoint
+access: https://lidargait.github.io/
+

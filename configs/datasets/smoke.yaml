@@ -1,0 +1,7 @@
+name: smoke
+folder: smoke
+file: processed/dataset.npz
+joints: 17
+dimensions: 2
+epochs: 2
+

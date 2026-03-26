@@ -1,0 +1,8 @@
+name: ccpg
+folder: ccpg
+file: processed/dataset.npz
+joints: 17
+dimensions: 2
+epochs: 100
+role: optional clothing/covariate robustness extension
+

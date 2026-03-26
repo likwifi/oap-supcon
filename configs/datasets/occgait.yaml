@@ -1,0 +1,6 @@
+name: occgait
+folder: occgait
+role: optional silhouette-only real-occlusion benchmark
+runner_status: deliberately disabled because the current public release does not provide skeleton pose
+access: https://github.com/BNU-IVC/OccGait
+

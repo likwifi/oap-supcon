@@ -1,0 +1,9 @@
+name: ntu_rgbd120
+folder: ntu_rgbd120
+file: processed/dataset.npz
+joints: 25
+dimensions: 3
+role: optional action-recognition transfer; not a substitute for gait evidence
+runner_status: not wired because this requires action classification rather than gallery/probe gait retrieval
+access: https://rose1.ntu.edu.sg/dataset/actionRecognition/
+

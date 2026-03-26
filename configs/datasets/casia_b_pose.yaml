@@ -1,0 +1,13 @@
+name: casia_b_pose
+folder: casia_b_pose
+file: processed/dataset.npz
+joints: 17
+dimensions: 2
+exclude_identical_view: true
+epochs: 120
+role: controlled development, covariates, synthetic occlusion, full ablations
+access: http://www.cbsr.ia.ac.cn/english/Gait%20Databases.asp
+pose_source: HRNet release from FastPoseGait/ScienceDB
+protocol: 001-074 train; 075-124 test; nm-01..04 gallery; nm-05..06/bg-01..02/cl-01..02 probe
+derived_pose_url: https://www.scidb.cn/en/detail?dataSetId=8ec62efd66a544939e821edeccc1f35c
+partition_reference: https://github.com/BNU-IVC/FastPoseGait/blob/main/datasets/CASIA-B/CASIA-B.json

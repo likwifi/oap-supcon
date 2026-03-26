@@ -1,0 +1,9 @@
+name: grew_pose
+folder: grew_pose
+file: processed/dataset.npz
+joints: 17
+dimensions: 2
+epochs: 80
+role: optional large in-the-wild replication
+access: https://github.com/XiandaGuo/GREW-Benchmark
+

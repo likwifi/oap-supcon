@@ -1,0 +1,24 @@
+model:
+  hidden_dim: 64
+  embedding_dim: 128
+  dropout: 0.1
+train:
+  epochs: 80
+  identities_per_batch: 8
+  samples_per_identity: 4
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  temperature: 0.1
+  part_temperature: 0.1
+  temporal_temperature: 0.1
+  train_severity: 0.5
+  train_severity_start: 0.1
+  severity_schedule: linear
+  temporal_crop_min: 0.5
+  temporal_crop_max: 0.8
+  num_workers: 0
+evaluation:
+  corruption_families: [random_joint, dynamic_joint, body_part, temporal]
+  severities: [0.0, 0.1, 0.3, 0.5, 0.7]
+  corruption_realizations: 5
+  gallery_protocols: [clean, occluded]

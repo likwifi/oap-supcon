@@ -1,0 +1,9 @@
+name: gait3d
+folder: gait3d
+file: processed/dataset.npz
+joints: 17
+dimensions: 2
+epochs: 80
+role: in-the-wild external validation; keep 2D and SMPL-derived 3D results separate
+access: https://gait3d.github.io/
+

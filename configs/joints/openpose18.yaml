@@ -1,0 +1,26 @@
+convention: OpenPose-BODY-18
+indices:
+  nose: 0
+  neck: 1
+  right_shoulder: 2
+  right_elbow: 3
+  right_wrist: 4
+  left_shoulder: 5
+  left_elbow: 6
+  left_wrist: 7
+  right_hip: 8
+  right_knee: 9
+  right_ankle: 10
+  left_hip: 11
+  left_knee: 12
+  left_ankle: 13
+  right_eye: 14
+  left_eye: 15
+  right_ear: 16
+  left_ear: 17
+parts:
+  torso: [1, 2, 5, 8, 11]
+  left_arm: [5, 6, 7]
+  right_arm: [2, 3, 4]
+  left_leg: [11, 12, 13]
+  right_leg: [8, 9, 10]
