@@ -1,0 +1,5 @@
+split,identities,sequences,mean_frames,joints,dimensions,missing_joint_frame_fraction
+gallery,4,4,24,17,2,0.0
+probe,4,12,24,17,2,0.0
+train,8,32,24,17,2,0.0
+val,8,8,24,17,2,0.0

@@ -1,0 +1,5 @@
+split,condition,sequences
+gallery,NM,4
+probe,NM,12
+train,NM,32
+val,NM,8
