@@ -1,0 +1,8 @@
+split,condition,sequences
+gallery,NM,2197
+probe,BG,1100
+probe,CL,1100
+probe,NM,1100
+train,BG,1628
+train,CL,1628
+train,NM,4884
