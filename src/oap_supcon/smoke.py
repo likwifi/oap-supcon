@@ -29,8 +29,10 @@ def make_smoke_dataset(path: Path, seed: int = 2026):
             visibility = np.ones((frames, joints), np.float32)
             if evaluation_identity:
                 split = "gallery" if sequence == 0 else "probe"
+            elif identity >= 6:
+                split = "val_gallery" if sequence == 0 else "val_probe"
             else:
-                split = "train" if sequence < 4 else "val"
+                split = "train"
             records.append((x, visibility, identity, split, f"id{identity:03d}_seq{sequence:02d}", "NM", "090"))
     arrays = list(zip(*records))
     path.parent.mkdir(parents=True, exist_ok=True)
@@ -41,4 +43,3 @@ def make_smoke_dataset(path: Path, seed: int = 2026):
         conditions=np.asarray(arrays[5]), views=np.asarray(arrays[6]),
     )
     return path
-

@@ -1,8 +1,8 @@
 # OAP-SupCon paper experiments
 
-**Paper:** *Occlusion-Aware Part-Level Supervised Contrastive Learning for Skeleton-Based Gait Recognition*
-
 This folder is the self-contained experiment workspace for the occlusion-aware pose/skeleton gait paper. It separates licensed data from code, freezes the same-backbone comparisons, and writes every result to machine-readable artifacts.
+
+**Current development workflow:** [Benchmark V2](BENCHMARK_V2.md) documents the corrected augmentation, multistream graph encoder, metric-learning controls, validation-only model selection, and new GPU arrays. New runs write to `results_v2/`; the existing `results/` and `results_prefix_*/` contain historical experiments. No benchmark-leading result is claimed for V2 yet.
 
 ## What is included
 
@@ -16,7 +16,7 @@ This folder is the self-contained experiment workspace for the occlusion-aware p
 - SLURM arrays for each long dataset workload, CASIA-B ablations, sensitivity analysis, efficiency timing, and final aggregation.
 - Placeholders and a fetch script for official external baseline frameworks.
 
-The actual benchmark data are **not** included. They require separate agreements and are far larger than this laptop can safely store. The current machine has 8 GB RAM and only about 7.8 GB free; use an external/cloud data root.
+Benchmark data require separate access agreements and are not part of the source distribution. A CASIA-B export is staged in the current workspace. Use `OAP_DATA_ROOT` for datasets on another volume and a CUDA machine for full training matrices.
 
 ## Folder map
 
@@ -30,7 +30,8 @@ oap_supcon_experiments/
 ├── src/oap_supcon/       model, losses, corruption, training, evaluation
 ├── tests/                leakage, masking, and loss unit tests
 ├── audits/               generated structural data audits
-├── results/              generated run artifacts and combined tables
+├── results/              historical run artifacts
+├── results_v2/           new corrected-pipeline experiments and tables
 └── logs/                 SLURM output
 ```
 
@@ -73,20 +74,12 @@ python -m oap_supcon.cli audit --dataset casia_b_pose
 
 The generic validator intentionally does not guess each provider's raw format. A dataset-specific exporter must be reviewed against the official protocol before results are valid. Keep 2D pose, lifted 3D, and SMPL-derived 3D in separate files and result tables.
 
-For the FastPoseGait/ScienceDB CASIA-B HRNet release, use the reviewed exporter:
-
-```bash
-python scripts/convert_casia_b_hrnet.py /private/CASIA-B_HRNet \
-  "$OAP_DATA_ROOT/casia_b_pose/processed/dataset.npz"
-python -m oap_supcon.cli audit --dataset casia_b_pose
-```
-
 ## Run one experiment
 
 ```bash
 python -m oap_supcon.cli run \
   --dataset casia_b_pose \
-  --method oap_supcon \
+  --preset benchmark_v2 --method oap_v2 \
   --seed 11 \
   --device cuda
 ```
@@ -131,7 +124,7 @@ Edit the partition, account/QoS, wall time, GPU directive, and environment initi
 Every successful run creates:
 
 ```text
-results/<run_id>/
+results_v2/<run_id>/
 ├── config.yaml
 ├── checkpoint.pt
 ├── history.json
@@ -145,14 +138,14 @@ Regenerate combined result files without copying terminal values:
 python -m oap_supcon.cli aggregate
 ```
 
-This writes `results/runs.csv`, `results/summary.csv`, and `results/clean_rank1.tex`.
+This writes `results_v2/runs.csv`, `results_v2/summary.csv`, and `results_v2/clean_rank1.tex`.
 
 Compute the preregistered identity-level paired 95% CI (replace the condition label with the exact standardized SUSTech1K label):
 
 ```bash
 python scripts/paired_bootstrap.py \
-  results/<generic_supcon_run> \
-  results/<oap_supcon_run> \
+  results_v2/<generic_supcon_run> \
+  results_v2/<oap_supcon_run> \
   --key official_condition_OCC \
   --samples 10000
 ```
@@ -160,7 +153,7 @@ python scripts/paired_bootstrap.py \
 Measure inference after training:
 
 ```bash
-python scripts/measure_efficiency.py results/<run_id>/checkpoint.pt \
+python scripts/measure_efficiency.py results_v2/<run_id>/checkpoint.pt \
   --device cuda --warmup 100 --iterations 1000
 ```
 

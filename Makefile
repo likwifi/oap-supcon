@@ -20,4 +20,4 @@ aggregate:
 
 clean-smoke:
 	find data/smoke/processed -type f -name '*.npz' -delete
-	find results -mindepth 1 -maxdepth 1 -type d -name 'smoke_*' -exec rm -r {} +
+	find results_v2 -mindepth 1 -maxdepth 1 -type d -name 'smoke_*' -exec rm -r {} +

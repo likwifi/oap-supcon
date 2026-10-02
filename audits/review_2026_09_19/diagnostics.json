@@ -1,0 +1,62 @@
+{
+  "generic_no_noise_scale_one": {
+    "mean_absolute_visible_coordinate": 0.8000000715255737,
+    "removed_joint_frames": 0
+  },
+  "crop_full": {
+    "mean_absolute_visible_coordinate": 0.8000000715255737,
+    "removed_joint_frames": 0
+  },
+  "speed_one": {
+    "mean_absolute_visible_coordinate": 0.8000000715255737,
+    "removed_joint_frames": 0
+  },
+  "corrupt_epsilon": {
+    "mean_absolute_visible_coordinate": 0.8000000715255737,
+    "removed_joint_frames": 0
+  },
+  "corrupt_zero": {
+    "mean_absolute_visible_coordinate": 1.0,
+    "removed_joint_frames": 0
+  },
+  "absent_left_arm": {
+    "reliability": 0.0,
+    "descriptor_norm": 1.0
+  },
+  "severity_calibration": [
+    {
+      "nominal": 0.1,
+      "body_part_actual_mean": 0.18823529411764706,
+      "body_part_actual_min": 0.17647058823529413,
+      "body_part_actual_max": 0.23529411764705882,
+      "dynamic_joint_interior_expected": 0.028000000000000004
+    },
+    {
+      "nominal": 0.3,
+      "body_part_actual_mean": 0.35294117647058826,
+      "body_part_actual_min": 0.35294117647058826,
+      "body_part_actual_max": 0.35294117647058826,
+      "dynamic_joint_interior_expected": 0.21600000000000003
+    },
+    {
+      "nominal": 0.5,
+      "body_part_actual_mean": 0.49411764705882355,
+      "body_part_actual_min": 0.47058823529411764,
+      "body_part_actual_max": 0.5294117647058824,
+      "dynamic_joint_interior_expected": 0.5
+    },
+    {
+      "nominal": 0.7,
+      "body_part_actual_mean": 0.7058823529411765,
+      "body_part_actual_min": 0.7058823529411765,
+      "body_part_actual_max": 0.7058823529411765,
+      "dynamic_joint_interior_expected": 0.7839999999999999
+    }
+  ],
+  "source_mean_confidence": 0.852111349003515,
+  "data_splits": {
+    "gallery": 2197,
+    "probe": 3300,
+    "train": 8140
+  }
+}

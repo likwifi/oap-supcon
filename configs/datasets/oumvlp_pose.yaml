@@ -7,3 +7,6 @@ exclude_identical_view: true
 epochs: 80
 role: large-population cross-view validation
 access: https://www.am.sanken.osaka-u.ac.jp/BiometricDB/GaitMVLP.html
+# Also score the official single-view-gallery protocol, for comparability
+# with published numbers on this benchmark.
+single_view_gallery: true

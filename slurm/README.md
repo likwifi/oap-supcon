@@ -30,36 +30,16 @@ sbatch --export=ALL,CHECKPOINT=/path/to/checkpoint.pt slurm/70_efficiency_gpu.sl
 sbatch slurm/90_aggregate_cpu.slurm
 ```
 
+After freezing one epoch budget from validation, the minimal untouched
+CASIA-B confirmation is:
+
+```bash
+export OAP_FINAL_EPOCHS=<fixed-validation-derived-epoch>
+sbatch slurm/13_benchmark_v2_final.slurm
+```
+
+This final array trains only the selected metric baseline for five seeds. Each
+checkpoint is scored with the global, reliability-weighted raw-part, and
+uniform raw-part descriptors at the fixed 0.5 local-score weight.
+
 The arrays intentionally do not chain dependencies: baseline reproduction and dataset audits should be reviewed before expensive proposed-method jobs are accepted as paper results.
-
-## Portable submission launchers
-
-Some Slurm installations execute a private spooled copy of a submitted script.
-On those systems, deriving the project directory from `BASH_SOURCE[0]` inside the
-batch copy can point at Slurm's protected spool directory. The launchers below
-avoid editing the workload files: they submit an official `--wrap` job that
-executes the original workload file by its absolute project path.
-
-Run CPU and GPU smoke validation first:
-
-```bash
-bash slurm/submit_smoke.sh cpu
-bash slurm/submit_smoke.sh gpu
-```
-
-For real data, set the standardized dataset root, audit each dataset, and submit
-one workflow at a time:
-
-```bash
-export OAP_DATA_ROOT="$HOME/oap-data"
-bash slurm/submit_main.sh prepare-casia "$HOME/private-data/CASIA-B_HRNet"
-# After the preparation job completes successfully:
-bash slurm/submit_main.sh audit casia_b_pose
-bash slurm/submit_main.sh casia-core
-```
-
-List all supported workflows and optional cluster settings with:
-
-```bash
-bash slurm/submit_main.sh --help
-```

@@ -1,0 +1,111 @@
+\relax 
+\citation{liao2020posegait}
+\citation{yan2018stgcn}
+\citation{teepe2021gaitgraph}
+\citation{teepe2022gaitgraph2}
+\citation{li2024survey,huang2024occluded}
+\@writefile{toc}{\contentsline {title}{Training Parts vs. Matching Parts: A Controlled Study of Part-Level Objectives for Occlusion-Robust Pose Gait Recognition}{1}{}\protected@file@percent }
+\@writefile{toc}{\authcount {2}}
+\@writefile{toc}{\contentsline {author}{Minas Aslanyan \and Levon Aslanyan}{1}{}\protected@file@percent }
+\citation{khosla2020supervised}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{}\protected@file@percent }
+\citation{chen2020simclr,he2020moco}
+\citation{khosla2020supervised}
+\citation{thoker2021skeleton}
+\citation{rao2024skeleton}
+\citation{cosma2026gaitpt}
+\citation{liao2020posegait}
+\citation{teepe2021gaitgraph,teepe2022gaitgraph2}
+\citation{fu2023gpgait}
+\citation{fan2024skeletongait}
+\citation{fan2022opengait}
+\citation{li2024survey}
+\citation{huang2024occluded}
+\citation{chen2023iopstl}
+\citation{zhu2021grew,zheng2022gait3d}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Contrastive learning for structured motion}{3}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Pose-based gait and occlusion}{3}{}\protected@file@percent }
+\citation{fan2020gaitpart}
+\citation{lin2021gaitgl}
+\citation{huang2021local}
+\citation{fu2023gpgait}
+\citation{sun2019hrnet}
+\citation{yu2006casia}
+\citation{lin2014coco}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Part-aware gait representation}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Position of this study}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Controlled Study}{4}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data and identity-disjoint evaluation}{4}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Separation of part-aware training from part-aware matching. Solid arrows denote the shared forward path. The upper branch contains the six training objectives; the lower branch contains frozen-checkpoint descriptor controls and performs no parameter updates.}}{5}{}\protected@file@percent }
+\newlabel{fig:framework}{{1}{5}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Multistream graph backbone}{5}{}\protected@file@percent }
+\citation{hermans2017triplet}
+\newlabel{eq:reliability}{{1}{6}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Shared training recipe}{6}{}\protected@file@percent }
+\newlabel{eq:base}{{2}{6}}
+\newlabel{eq:factorial}{{3}{6}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Controlled training objectives. All unlisted terms and all backbone, augmentation, and optimization settings are identical.}}{7}{}\protected@file@percent }
+\newlabel{tab:objectives}{{1}{7}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Retrieval descriptors}{7}{}\protected@file@percent }
+\newlabel{eq:matching}{{5}{7}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Conceptual corruption families. Red marks unavailable joints or body regions; orange marks a contiguous interval in which the complete pose is unavailable. Random joint-frame masks vary independently, whereas dynamic-joint masks are temporally smoothed.}}{8}{}\protected@file@percent }
+\newlabel{fig:corruptions}{{2}{8}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Occlusion protocols and outcomes}{8}{}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Evaluation matrix. Dynamic-joint corruption is deliberately held out from training. Positive-severity results average five deterministic corruption realizations, and gallery and probe corruptions are independently seeded in the occluded-gallery protocol.}}{9}{}\protected@file@percent }
+\newlabel{fig:evaluation-matrix}{{3}{9}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{9}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Global contrast is neutral; part contrast is harmful}{9}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces CASIA-B validation Rank-1 (\%). Clean is mean $\pm $ seed standard deviation. ``All $>0$'' averages four corruption families at severities 0.1, 0.3, 0.5, and 0.7. Occluded gallery averages the same positive-severity grid. Single-view averages NM, BG, and CL. Every cell uses three training seeds.}}{10}{}\protected@file@percent }
+\newlabel{tab:factorial-results}{{2}{10}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Paired Rank-1 difference from the metric baseline in percentage points (hierarchical 95\% bootstrap interval over seed and validation identity). Negative values favor the baseline.}}{11}{}\protected@file@percent }
+\newlabel{tab:paired-results}{{3}{11}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Reliability gating is not the primary cause}{11}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Training a part head does not make the local matcher stronger}{11}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Training diagnostics averaged over three seeds. Part variance is the mean coordinate-wise variance over the final 20 epochs. Cosines are measured every five epochs; parentheses give nonzero finite cosine measurements out of 96 scheduled.}}{12}{}\protected@file@percent }
+\newlabel{tab:mechanisms}{{4}{12}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Checkpoint-only descriptor controls on CASIA-B validation Rank-1 (\%). All conditions use the same three selected metric-baseline backbones and the fixed 0.5 fusion weight. ``Fresh random heads'' is the mean across ten projection seeds; brackets give the range after averaging the three backbone seeds. No control retrains the backbone or local head.}}{12}{}\protected@file@percent }
+\newlabel{tab:descriptor-controls}{{5}{12}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Raw part matching resolves the random-head confound}{12}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Official CASIA-B test confirmation}{13}{}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Five-seed CASIA-B official-test Rank-1 (\%), reported as mean $\pm $ sample standard deviation. The upper panel follows the standard single-view-gallery protocol and excludes identical views. The lower panel uses the separately labeled pooled multi-view gallery; ``synthetic'' averages four corruption families at severities 0.1, 0.3, 0.5, and 0.7.}}{13}{}\protected@file@percent }
+\newlabel{tab:official-test}{{6}{13}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Efficiency}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}What the factorial establishes}{14}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Official confirmation and remaining evaluation}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Limitations and Validity Threats}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Single-dataset official confirmation.}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Synthetic rather than real occlusion.}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{One pose source and one backbone.}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Three development seeds and five confirmation seeds.}{15}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Descriptor development on the same validation identities.}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Reproducibility provenance.}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Ethical Considerations}{16}{}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{16}{}\protected@file@percent }
+\bibcite{chen2020simclr}{1}
+\bibcite{he2020moco}{2}
+\bibcite{khosla2020supervised}{3}
+\bibcite{yan2018stgcn}{4}
+\bibcite{thoker2021skeleton}{5}
+\bibcite{teepe2021gaitgraph}{6}
+\bibcite{fan2022opengait}{7}
+\bibcite{li2024survey}{8}
+\bibcite{huang2024occluded}{9}
+\bibcite{chen2023iopstl}{10}
+\bibcite{rao2024skeleton}{11}
+\bibcite{liao2020posegait}{12}
+\bibcite{teepe2022gaitgraph2}{13}
+\bibcite{fu2023gpgait}{14}
+\bibcite{fan2024skeletongait}{15}
+\bibcite{fan2020gaitpart}{16}
+\bibcite{lin2021gaitgl}{17}
+\bibcite{huang2021local}{18}
+\bibcite{yu2006casia}{19}
+\bibcite{sun2019hrnet}{20}
+\bibcite{lin2014coco}{21}
+\bibcite{hermans2017triplet}{22}
+\bibcite{zhu2021grew}{23}
+\bibcite{zheng2022gait3d}{24}
+\bibcite{cosma2026gaitpt}{25}
+\gdef \@abspage@last{18}

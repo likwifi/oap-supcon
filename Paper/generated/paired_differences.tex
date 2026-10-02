@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\caption{Paired Rank-1 difference from the metric baseline in percentage points (hierarchical 95\% bootstrap interval over seed and validation identity). Negative values favor the baseline. Corrupted endpoints average the stated corruption cells within each probe before resampling.}
+\label{tab:paired-results}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{llrrrr}
+\toprule
+Training objective & Descriptor & Clean & Clean gallery, all $>0$ & Clean gallery, $\rho=0.5$ & Occluded gallery, all $>0$ \\
+\midrule
+Global SupCon & Global & -1.89 [-4.59, +0.46] & -0.67 [-4.21, +3.35] & -0.10 [-5.43, +6.03] & -0.51 [-2.58, +1.64] \\
+ & Reliable-parts & -0.25 [-3.11, +2.36] & -0.10 [-2.60, +2.61] & -0.12 [-3.46, +3.50] & -0.20 [-1.89, +1.59] \\
+\addlinespace
+Part SupCon & Global & -2.74 [-6.02, +0.51] & -6.12 [-9.54, -2.68] & -8.68 [-14.50, -3.49] & -3.67 [-5.70, -1.65] \\
+ & Reliable-parts & -7.62 [-10.86, -4.00] & -11.65 [-15.58, -8.03] & -15.32 [-21.20, -10.15] & -8.96 [-11.32, -6.53] \\
+\addlinespace
+Part triplet & Global & -0.25 [-4.42, +3.54] & -3.26 [-6.57, +0.21] & -5.15 [-9.71, -0.32] & -1.22 [-3.69, +0.99] \\
+ & Reliable-parts & -1.73 [-5.94, +1.89] & -5.65 [-8.92, -2.17] & -8.86 [-14.48, -3.24] & -3.85 [-5.97, -1.92] \\
+\addlinespace
+Global + part SupCon & Global & -1.47 [-4.76, +1.98] & -3.21 [-8.08, +2.40] & -5.19 [-12.57, +3.73] & -2.37 [-5.48, +1.02] \\
+ & Reliable-parts & -5.18 [-9.34, -0.63] & -8.83 [-13.78, -2.67] & -13.13 [-19.81, -4.69] & -7.39 [-10.83, -3.42] \\
+\addlinespace
+Global + part SupCon (ungated) & Global & -0.63 [-4.63, +4.42] & -2.19 [-4.68, +0.41] & -3.65 [-8.04, -0.10] & -0.94 [-2.57, +0.80] \\
+ & Reliable-parts & -4.84 [-7.95, -1.81] & -6.96 [-10.56, -3.72] & -9.85 [-15.36, -5.26] & -5.73 [-7.61, -3.91] \\
+\bottomrule
+\end{tabular}%
+}
+\end{table*}

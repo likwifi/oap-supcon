@@ -1,0 +1,55 @@
+#!/usr/bin/env python3
+"""Select one baseline checkpoint for a SLURM P0 array task."""
+from __future__ import annotations
+
+import argparse
+import os
+import subprocess
+import sys
+from pathlib import Path
+
+import yaml
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--results-root", type=Path, default=Path("results_v2_factorial"))
+    parser.add_argument("--output-root", type=Path, default=Path("results_descriptor_controls"))
+    parser.add_argument("--seeds", default="11,22,33")
+    parser.add_argument("--task-id", type=int, default=int(os.environ.get("SLURM_ARRAY_TASK_ID", "0")))
+    parser.add_argument("--device", default="cuda")
+    parser.add_argument("--corruption-realizations", type=int)
+    args = parser.parse_args()
+
+    requested = [int(value) for value in args.seeds.split(",")]
+    checkpoints = {}
+    for checkpoint in sorted(args.results_root.glob("*/checkpoint.pt")):
+        config_path = checkpoint.parent / "config.yaml"
+        if not config_path.exists():
+            continue
+        config = yaml.safe_load(config_path.read_text())
+        if config.get("method_name") == "metric_baseline" and int(config["seed"]) in requested:
+            seed = int(config["seed"])
+            if seed in checkpoints:
+                raise SystemExit(f"duplicate metric_baseline checkpoint for seed {seed}")
+            checkpoints[seed] = checkpoint
+    missing = sorted(set(requested).difference(checkpoints))
+    if missing:
+        raise SystemExit(f"missing metric_baseline checkpoints for seeds {missing}")
+    ordered = [checkpoints[seed] for seed in requested]
+    if not 0 <= args.task_id < len(ordered):
+        raise SystemExit(f"task {args.task_id} is outside 0..{len(ordered) - 1}")
+
+    command = [
+        sys.executable, "-m", "oap_supcon.cli", "descriptor-controls",
+        "--checkpoint", str(ordered[args.task_id]),
+        "--output-root", str(args.output_root), "--device", args.device,
+    ]
+    if args.corruption_realizations is not None:
+        command.extend(["--corruption-realizations", str(args.corruption_realizations)])
+    print("running:", " ".join(command), flush=True)
+    subprocess.run(command, check=True)
+
+
+if __name__ == "__main__":
+    main()

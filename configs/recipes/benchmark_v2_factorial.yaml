@@ -1,0 +1,7 @@
+extends: benchmark_v2
+experiment_id: benchmark_v2_factorial
+results_root: results_v2_factorial
+train:
+  # One shared-encoder gradient comparison every validation interval. This is
+  # diagnostic only and does not alter optimizer gradients.
+  gradient_diagnostics_every_epochs: 5

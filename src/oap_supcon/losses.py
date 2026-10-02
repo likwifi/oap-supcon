@@ -4,49 +4,113 @@ import torch
 import torch.nn.functional as F
 
 
-def supervised_contrastive(features: torch.Tensor, labels: torch.Tensor, temperature: float = 0.1, weights: torch.Tensor | None = None):
-    features = F.normalize(features, dim=-1)
+def _log_prob(features, temperature, candidates):
+    if temperature <= 0:
+        raise ValueError('contrastive temperature must be positive')
+    features = F.normalize(features.float(), dim=-1)
     logits = features @ features.T / temperature
-    logits = logits - logits.max(dim=1, keepdim=True).values.detach()
-    self_mask = torch.eye(len(labels), dtype=torch.bool, device=features.device)
-    positives = labels[:, None].eq(labels[None, :]) & ~self_mask
-    valid = positives.any(dim=1)
-    exp_logits = torch.exp(logits) * ~self_mask
-    log_prob = logits - torch.log(exp_logits.sum(dim=1, keepdim=True).clamp_min(1e-12))
-    per_anchor = -(log_prob * positives).sum(dim=1) / positives.sum(dim=1).clamp_min(1)
-    if weights is None:
-        weights = torch.ones_like(per_anchor)
-    weights = weights * valid
-    return (per_anchor * weights).sum() / weights.sum().clamp_min(1.0)
+    safe_candidates = candidates.clone()
+    safe_candidates[~safe_candidates.any(1), 0] = True
+    denominator = logits.masked_fill(~safe_candidates, -torch.inf).logsumexp(1, keepdim=True)
+    return logits - denominator
 
 
-def part_contrastive(parts: torch.Tensor, reliability: torch.Tensor, labels: torch.Tensor, temperature: float, visibility_gating: bool = True):
-    """Equation 8: gate every positive pair by anchor and positive reliability."""
-    parts = F.normalize(parts, dim=-1)
+def supervised_contrastive(features, labels, temperature=0.1, weights=None):
+    candidates = ~torch.eye(len(labels), dtype=torch.bool, device=features.device)
+    positives = labels[:, None].eq(labels[None]) & candidates
+    valid = positives.any(1)
+    log_prob = _log_prob(features, temperature, candidates)
+    per_anchor = -log_prob.masked_fill(~positives, 0).sum(1) / positives.sum(1).clamp_min(1)
+    weights = valid.float() if weights is None else weights.float() * valid
+    return (per_anchor * weights).sum() / weights.sum().clamp_min(1e-6)
+
+
+def part_contrastive(parts, reliability, labels, temperature, visibility_gating=True,
+                     min_reliability=0.0):
+    """Observed parts only, with normalized pair weights.
+
+    Invisible parts are excluded from positives AND negatives. Normalizing by
+    positive weight prevents the masking curriculum from shrinking the objective
+    independently of recognition. The ungated control still excludes absent parts.
+    """
+    same = labels[:, None].eq(labels[None])
+    not_self = ~torch.eye(len(labels), dtype=torch.bool, device=parts.device)
     losses = []
-    self_mask = torch.eye(len(labels), dtype=torch.bool, device=parts.device)
-    positives = labels[:, None].eq(labels[None, :]) & ~self_mask
-    positive_count = positives.sum(dim=1).clamp_min(1)
     for p in range(parts.shape[1]):
-        logits = parts[:, p] @ parts[:, p].T / temperature
-        logits = logits - logits.max(dim=1, keepdim=True).values.detach()
-        exp_logits = torch.exp(logits) * ~self_mask
-        log_prob = logits - torch.log(exp_logits.sum(dim=1, keepdim=True).clamp_min(1e-12))
-        if visibility_gating:
-            pair_reliability = reliability[:, p, None] * reliability[None, :, p]
-        else:
-            pair_reliability = torch.ones_like(log_prob)
-        weighted_positives = positives * pair_reliability
-        per_anchor = -(log_prob * weighted_positives).sum(dim=1) / positive_count
-        valid = weighted_positives.sum(dim=1) > 0
+        confidence = reliability[:, p].detach().float()
+        present = confidence > min_reliability
+        candidates = not_self & present[:, None] & present[None]
+        positives = same & candidates
+        pair_weight = confidence[:, None] * confidence[None] if visibility_gating else torch.ones_like(candidates, dtype=torch.float32)
+        weighted = positives * pair_weight
+        total = weighted.sum(1)
+        valid = total > 0
         if valid.any():
-            losses.append(per_anchor[valid].mean())
+            log_prob = _log_prob(parts[:, p], temperature, candidates)
+            per_anchor = -(log_prob * weighted).sum(1) / total.clamp_min(1e-6)
+            anchor_weight = confidence[valid] if visibility_gating else torch.ones_like(confidence[valid])
+            losses.append((per_anchor[valid] * anchor_weight).sum() / anchor_weight.sum().clamp_min(1e-6))
     return torch.stack(losses).mean() if losses else parts.sum() * 0
 
 
-def temporal_contrastive(first: torch.Tensor, second: torch.Tensor, temperature: float = 0.1):
-    """Symmetric crop-to-crop InfoNCE corresponding to Equation 9."""
-    first, second = F.normalize(first, dim=-1), F.normalize(second, dim=-1)
+def batch_hard_triplet(features, labels, margin=0.2, sample_ids=None):
+    """Train retrieval embeddings using cross-sequence hard positives.
+
+    When sample_ids are supplied, another augmentation of the same sequence is
+    not a positive. Anchors without positives or negatives contribute zero.
+    """
+    features = F.normalize(features.float(), dim=-1)
+    distances = (2 - 2 * features @ features.T).clamp_min(0)
+    positive = labels[:, None].eq(labels[None])
+    positive &= ~torch.eye(len(labels), dtype=torch.bool, device=features.device)
+    if sample_ids is not None:
+        positive &= sample_ids[:, None].ne(sample_ids[None])
+    negative = labels[:, None].ne(labels[None])
+    valid = positive.any(1) & negative.any(1)
+    if not valid.any():
+        return features.sum() * 0
+    hardest_positive = distances.masked_fill(~positive, -torch.inf).max(1).values[valid]
+    hardest_negative = distances.masked_fill(~negative, torch.inf).min(1).values[valid]
+    return F.relu(hardest_positive - hardest_negative + margin).mean()
+
+
+def part_batch_hard_triplet(parts, reliability, labels, margin=0.2, sample_ids=None,
+                            min_reliability=0.0):
+    """Train part heads with the same metric objective as the global embedding.
+
+    This is a control for whether a part-aware retrieval gain comes merely from
+    training the part heads. Only observed parts participate, and another view
+    of the same source sequence is excluded as a positive when ``sample_ids``
+    are available.
+    """
+    losses = []
+    not_self = ~torch.eye(len(labels), dtype=torch.bool, device=parts.device)
+    for part in range(parts.shape[1]):
+        present = reliability[:, part].detach() > min_reliability
+        if present.sum() < 2:
+            continue
+        selected_labels = labels[present]
+        selected_ids = sample_ids[present] if sample_ids is not None else None
+        positive = selected_labels[:, None].eq(selected_labels[None])
+        positive &= not_self[present][:, present]
+        if selected_ids is not None:
+            positive &= selected_ids[:, None].ne(selected_ids[None])
+        negative = selected_labels[:, None].ne(selected_labels[None])
+        if not (positive.any(1) & negative.any(1)).any():
+            continue
+        losses.append(batch_hard_triplet(
+            parts[present, part], selected_labels, margin, selected_ids
+        ))
+    return torch.stack(losses).mean() if losses else parts.sum() * 0
+
+
+def temporal_contrastive(first, second, temperature=0.1, labels=None):
+    if temperature <= 0:
+        raise ValueError('contrastive temperature must be positive')
+    first, second = F.normalize(first.float(), dim=-1), F.normalize(second.float(), dim=-1)
     logits = first @ second.T / temperature
-    targets = torch.arange(first.shape[0], device=first.device)
+    targets = torch.arange(len(first), device=first.device)
+    if labels is not None:
+        diagonal = torch.eye(len(first), dtype=torch.bool, device=first.device)
+        logits = logits.masked_fill(labels[:, None].eq(labels[None]) & ~diagonal, -torch.inf)
     return (F.cross_entropy(logits, targets) + F.cross_entropy(logits.T, targets)) / 2

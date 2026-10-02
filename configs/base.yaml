@@ -1,8 +1,23 @@
+experiment_id: corrected_v2
+results_root: results_v2
 model:
+  # tcn = the original permutation-equivariant per-joint encoder (control).
+  # stgcn / transformer represent skeleton anatomy; use these for part-level claims.
+  backbone: tcn
   hidden_dim: 64
   embedding_dim: 128
   dropout: 0.1
+pose:
+  # false = confidence reaches the encoder only as an input channel and as the
+  # masked-mean pooling weight. true reproduces the original behaviour, where it
+  # also multiplies the coordinates; on CASIA-B HRNet that shrinks every joint
+  # towards the pelvis by 14.8% +- 11.6% of its radius.
+  weight_coordinates: false
 train:
+  # Sample a contiguous 60-frame window instead of training on the zero-padded
+  # buffer, which for CASIA-B is 68% padding. Matches GaitGraph2/GaitTR's
+  # frames_num_fixed. Set to null to train on whole padded sequences.
+  clip_length: 60
   epochs: 80
   identities_per_batch: 8
   samples_per_identity: 4
@@ -17,8 +32,22 @@ train:
   temporal_crop_min: 0.5
   temporal_crop_max: 0.8
   num_workers: 0
+  gradient_clip: 5.0
+  scheduler: constant
+validation:
+  enabled: false
 evaluation:
+  split: test
+  batch_size: 32
+  corruption_seed: 1729
+  part_weight: 0.5
   corruption_families: [random_joint, dynamic_joint, body_part, temporal]
   severities: [0.0, 0.1, 0.3, 0.5, 0.7]
   corruption_realizations: 5
   gallery_protocols: [clean, occluded]
+  # null = score whole sequences, so no probe evidence is discarded. Padding
+  # only reaches the trunk here, where BatchNorm uses running statistics.
+  clip_length: null
+  # global = the sequence embedding alone. global_parts also matches on the five
+  # part projections. Reported for every method so the comparison stays fair.
+  descriptors: [global, global_parts]

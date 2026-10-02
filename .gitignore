@@ -1,14 +1,57 @@
-.venv/
+# macOS and editor files
 .DS_Store
-**/.DS_Store
+._*
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python environments, caches, and build artifacts
+.venv/
+venv/
+env/
 __pycache__/
-.pytest_cache/
 *.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.coverage
+.coverage.*
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Local credentials and settings
+.env
+.env.*
+!.env.example
+
+# Dataset contents; retain directory placeholders
 data/*/raw/*
 data/*/processed/*
 !data/*/raw/.gitkeep
 !data/*/processed/.gitkeep
-results/*
-!results/.gitkeep
-logs/*
-!logs/.gitkeep
+
+# Experiment outputs and logs
+/results/*
+!/results/.gitkeep
+/results_*/
+/logs/*
+!/logs/.gitkeep
+/tmp/
+/runs/
+/wandb/
+/checkpoints/
+*.pt
+*.pth
+*.ckpt
+*.log
+slurm-*.out
+/history.json
+/probe_outcomes.npz
+/summary.csv
+
+# Downloaded external baseline repositories
+/external/*/

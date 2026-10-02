@@ -1,0 +1,39 @@
+\begin{tikzpicture}[
+    font=\scriptsize,
+    family/.style={draw, minimum width=27mm, minimum height=8.5mm, align=center},
+    train/.style={draw, minimum width=19mm, minimum height=8.5mm, align=center},
+    clean/.style={draw, minimum width=25mm, minimum height=8.5mm, align=center},
+    occ/.style={draw, minimum width=34mm, minimum height=8.5mm, align=center},
+    reps/.style={draw, minimum width=18mm, minimum height=8.5mm, align=center},
+    head/.style={fill=gray!18, font=\scriptsize\bfseries},
+    yes/.style={fill=green!11},
+    held/.style={fill=orange!13},
+    protocol/.style={fill=blue!7}
+]
+
+\matrix (m) [matrix of nodes, row sep=-\pgflinewidth, column sep=-\pgflinewidth] {
+    |[family,head]| Corruption family & |[train,head]| Training &
+    |[clean,head]| Clean gallery & |[occ,head]| Occluded gallery &
+    |[reps,head]| Positive $\rho$ \\
+    |[family]| Random joint-frame & |[train,yes]| sampled &
+    |[clean,protocol]| probe only & |[occ,protocol]| gallery + probe, independent &
+    |[reps]| 5 seeds \\
+    |[family]| Dynamic joint & |[train,held]| held out &
+    |[clean,protocol]| probe only & |[occ,protocol]| gallery + probe, independent &
+    |[reps]| 5 seeds \\
+    |[family]| Whole part & |[train,yes]| sampled &
+    |[clean,protocol]| probe only & |[occ,protocol]| gallery + probe, independent &
+    |[reps]| 5 seeds \\
+    |[family]| Temporal interruption & |[train,yes]| sampled &
+    |[clean,protocol]| probe only & |[occ,protocol]| gallery + probe, independent &
+    |[reps]| 5 seeds \\
+};
+
+\node[draw, rounded corners=2pt, fill=gray!8, align=center, below=5mm of m,
+    minimum width=58mm, minimum height=8mm] (sev)
+    {Severities: $\rho\in\{0,0.1,0.3,0.5,0.7\}$};
+\node[draw, rounded corners=2pt, fill=gray!8, align=center, right=5mm of sev,
+    minimum width=58mm, minimum height=8mm] (out)
+    {Descriptors: global and part-aware; primary outcome: Rank-1};
+
+\end{tikzpicture}

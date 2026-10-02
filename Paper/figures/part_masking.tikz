@@ -1,0 +1,82 @@
+\begin{tikzpicture}[
+    font=\scriptsize,
+    joint/.style={circle, fill=black, inner sep=1.25pt},
+    miss/.style={circle, draw=red!80!black, fill=white, thick, inner sep=1.7pt},
+    limb/.style={line width=0.7pt, draw=black!75},
+    hidden/.style={line width=0.9pt, draw=red!75!black, dashed},
+    label/.style={align=center, font=\scriptsize}
+]
+
+\newcommand{\drawskeleton}{
+    \coordinate (head) at (0,2.55);
+    \coordinate (neck) at (0,2.05);
+    \coordinate (spine) at (0,1.35);
+    \coordinate (pelvis) at (0,0.75);
+    \coordinate (lsho) at (-0.45,1.9);
+    \coordinate (lelb) at (-0.82,1.35);
+    \coordinate (lhand) at (-1.02,0.82);
+    \coordinate (rsho) at (0.45,1.9);
+    \coordinate (relb) at (0.82,1.35);
+    \coordinate (rhand) at (1.02,0.82);
+    \coordinate (lhip) at (-0.32,0.62);
+    \coordinate (lknee) at (-0.62,-0.1);
+    \coordinate (lfoot) at (-0.82,-0.82);
+    \coordinate (rhip) at (0.32,0.62);
+    \coordinate (rknee) at (0.62,-0.1);
+    \coordinate (rfoot) at (0.82,-0.82);
+    \draw[limb] (head)--(neck)--(spine)--(pelvis);
+    \draw[limb] (neck)--(lsho)--(lelb)--(lhand);
+    \draw[limb] (neck)--(rsho)--(relb)--(rhand);
+    \draw[limb] (pelvis)--(lhip)--(lknee)--(lfoot);
+    \draw[limb] (pelvis)--(rhip)--(rknee)--(rfoot);
+    \foreach \p in {head,neck,spine,pelvis,lsho,lelb,lhand,rsho,relb,rhand,lhip,lknee,lfoot,rhip,rknee,rfoot}
+        \node[joint] at (\p) {};
+}
+
+\begin{scope}[shift={(0,0)}, scale=0.68]
+    \drawskeleton
+\end{scope}
+\node[label] at (0,-0.9) {Clean};
+
+\begin{scope}[shift={(2.75,0)}, scale=0.68]
+    \drawskeleton
+    \foreach \p in {lelb,rhand,lknee,rfoot} {
+        \node[miss] at (\p) {};
+        \draw[red!80!black, thick] ($(\p)+(-0.09,-0.09)$) -- ($(\p)+(0.09,0.09)$);
+        \draw[red!80!black, thick] ($(\p)+(-0.09,0.09)$) -- ($(\p)+(0.09,-0.09)$);
+    }
+\end{scope}
+\node[label] at (2.75,-0.9) {Random\\joint-frame};
+
+\begin{scope}[shift={(5.5,0)}, scale=0.68]
+    \drawskeleton
+    \draw[hidden] (lsho)--(lelb)--(lhand);
+    \foreach \p in {lelb,lhand} {
+        \node[miss] at (\p) {};
+    }
+    \draw[-Latex, red!75!black, thick] (-1.35,2.45) -- (1.15,2.45)
+        node[midway, above, font=\scriptsize] {$t$};
+\end{scope}
+\node[label] at (5.5,-0.9) {Dynamic joint\\(smoothed)};
+
+\begin{scope}[shift={(8.25,0)}, scale=0.68]
+    \drawskeleton
+    \fill[red!20, opacity=0.8, rounded corners=2pt] (-1.05,-0.98) rectangle (1.05,0.82);
+    \draw[hidden] (pelvis)--(lhip)--(lknee)--(lfoot);
+    \draw[hidden] (pelvis)--(rhip)--(rknee)--(rfoot);
+    \foreach \p in {lhip,lknee,lfoot,rhip,rknee,rfoot} {
+        \node[miss] at (\p) {};
+    }
+\end{scope}
+\node[label] at (8.25,-0.9) {Whole part};
+
+\begin{scope}[shift={(11,0)}, scale=0.68]
+    \drawskeleton
+    \fill[orange!28, opacity=0.88, rounded corners=2pt] (-1.18,-0.98) rectangle (1.18,2.72);
+    \node[align=center, font=\scriptsize] at (0,1.1) {all joints\\missing};
+    \draw[-Latex, orange!85!black, thick] (-1.25,2.95) -- (1.25,2.95)
+        node[midway, above, font=\scriptsize] {$t_0{:}t_1$};
+\end{scope}
+\node[label] at (11,-0.9) {Temporal\\interruption};
+
+\end{tikzpicture}

@@ -10,7 +10,10 @@ Usage:
   bash slurm/submit_main.sh efficiency <absolute-checkpoint-path>
 
 Workflows:
-  casia-core          CASIA-B five-method core matrix
+  casia-core          CASIA-B five-method core matrix (tcn backbone)
+  casia-core-stgcn    CASIA-B core matrix on the ST-GCN backbone
+  casia-core-transf   CASIA-B core matrix on the skeleton-transformer backbone
+  casia-dropout       oap_supcon_dropout on the tcn backbone (completes that table)
   casia-ablations     CASIA-B ablation matrix
   prepare-casia       convert and audit the ScienceDB HRNet release (CPU job)
   oumvlp-core         OUMVLP-Pose core matrix
@@ -32,6 +35,12 @@ Optional environment variables:
   OAP_SLURM_GRES        GPU GRES (default: gpu:1)
   OAP_SLURM_ACCOUNT     Slurm account, if required
   OAP_SLURM_QOS         Slurm QoS, if required
+  OAP_SLURM_EXCLUDE     Comma-separated nodes to keep jobs off, e.g. volta1,volta2.
+                        Needed when part of the cluster has GPUs this torch build
+                        has no kernels for; check torch.cuda.get_arch_list()
+                        against the node's compute capability.
+  OAP_SLURM_NODELIST    Restrict jobs to these nodes instead (mutually exclusive
+                        with OAP_SLURM_EXCLUDE)
 EOF
 }
 
@@ -63,7 +72,7 @@ fi
 [[ -x "$python_bin" ]] || die "Python is not executable: $python_bin"
 
 workflow="$1"
-data_root="${OAP_DATA_ROOT:-$HOME/oap-data}"
+data_root="${OAP_DATA_ROOT:-$HOME/oap_supcon}"
 partition="${OAP_SLURM_PARTITION:-compute}"
 gres="${OAP_SLURM_GRES:-gpu:1}"
 mkdir -p "$project_root/logs"
@@ -79,6 +88,15 @@ if [[ -n "${OAP_SLURM_ACCOUNT:-}" ]]; then
 fi
 if [[ -n "${OAP_SLURM_QOS:-}" ]]; then
     common_args+=(--qos="$OAP_SLURM_QOS")
+fi
+if [[ -n "${OAP_SLURM_EXCLUDE:-}" && -n "${OAP_SLURM_NODELIST:-}" ]]; then
+    die "set only one of OAP_SLURM_EXCLUDE and OAP_SLURM_NODELIST"
+fi
+if [[ -n "${OAP_SLURM_EXCLUDE:-}" ]]; then
+    common_args+=(--exclude="$OAP_SLURM_EXCLUDE")
+fi
+if [[ -n "${OAP_SLURM_NODELIST:-}" ]]; then
+    common_args+=(--nodelist="$OAP_SLURM_NODELIST")
 fi
 
 dataset_folder() {
@@ -158,9 +176,21 @@ case "$workflow" in
         require_dataset casia_b_pose
         submit_gpu_array 10_casia_core_gpu.slurm casia_core '0-24%4' 32G 24:00:00
         ;;
+    casia-core-stgcn)
+        require_dataset casia_b_pose
+        submit_gpu_array 12_casia_core_stgcn_gpu.slurm casia_stgcn '0-29%4' 32G 24:00:00
+        ;;
+    casia-core-transf)
+        require_dataset casia_b_pose
+        submit_gpu_array 13_casia_core_transformer_gpu.slurm casia_transf '0-29%4' 32G 24:00:00
+        ;;
+    casia-dropout)
+        require_dataset casia_b_pose
+        submit_gpu_array 14_casia_dropout_gpu.slurm casia_dropout '0-4%4' 32G 24:00:00
+        ;;
     casia-ablations)
         require_dataset casia_b_pose
-        submit_gpu_array 11_casia_ablations_gpu.slurm casia_ablate '0-44%4' 32G 24:00:00
+        submit_gpu_array 11_casia_ablations_gpu.slurm casia_ablate '0-39%4' 32G 24:00:00
         ;;
     oumvlp-core)
         require_dataset oumvlp_pose

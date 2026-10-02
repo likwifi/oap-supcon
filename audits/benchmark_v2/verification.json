@@ -1,0 +1,16 @@
+{
+  "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+  "test_command": "OMP_NUM_THREADS=2 python3 -m pytest -q",
+  "tests_passed": 84,
+  "test_duration_seconds": 3.91,
+  "compileall_passed": true,
+  "new_slurm_scripts_syntax_passed": true,
+  "method_configurations_exercised": 20,
+  "real_data_integration_record": "integration.json",
+  "real_training_sequences_used": 8,
+  "test_sequences_used": 0,
+  "cuda_available": false,
+  "mps_available": false,
+  "gpu_benchmark_matrix_run": false,
+  "historical_result_files_modified": false
+}

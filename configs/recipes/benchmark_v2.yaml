@@ -1,0 +1,58 @@
+# Candidate recipe. Tune on held-out TRAIN identities; no test access by default.
+experiment_id: benchmark_v2
+results_root: results_v2
+epochs: 160
+model:
+  backbone: multistream
+  hidden_dim: 64
+  embedding_dim: 256
+  dropout: 0.1
+  options:
+    blocks: 6
+    cosine_scale: 16.0
+pose:
+  weight_coordinates: false
+train:
+  clip_length: 60
+  identities_per_batch: 16
+  samples_per_identity: 4
+  diverse_views: true
+  learning_rate: 0.001
+  weight_decay: 0.0001
+  scheduler: cosine
+  warmup_epochs: 5
+  min_lr_ratio: 0.01
+  label_smoothing: 0.1
+  temperature: 0.07
+  part_temperature: 0.1
+  temporal_temperature: 0.1
+  min_part_reliability: 0.05
+  triplet_margin: 0.2
+  train_severity_start: 0.05
+  train_severity: 0.5
+  severity_ramp_fraction: 0.5
+  gradient_clip: 5.0
+  amp: true
+  deterministic: true
+  checkpoint_every: 5
+  num_workers: 4
+validation:
+  enabled: true
+  holdout_identities: 12
+  split_seed: 2026
+  every_epochs: 5
+  descriptor: global
+  corruption_families: [body_part, random_joint]
+  severity: 0.3
+  corruption_seed: 2718
+  robust_weight: 0.25
+evaluation:
+  split: validation
+  batch_size: 16
+  clip_length: null
+  # Frozen after descriptor development: the official run compares the global
+  # embedding with deterministic pre-projection part pools. raw_uniform is the
+  # prespecified weighting ablation; neither descriptor adds learned parameters.
+  descriptors: [global, raw_reliable, raw_uniform]
+  part_weight: 0.5
+  corruption_seed: 1729

@@ -24,10 +24,16 @@ def main():
     parser.add_argument("--seed", type=int, default=11)
     parser.add_argument("--task-id", type=int, default=int(os.environ.get("SLURM_ARRAY_TASK_ID", "0")))
     parser.add_argument("--device", default="cuda")
+    parser.add_argument("--preset", default="benchmark_v2")
     args = parser.parse_args()
+    if not 0 <= args.task_id < len(SEARCH):
+        raise SystemExit("task-id is outside the search grid")
     parameter, value = SEARCH[args.task_id]
     root = Path(__file__).resolve().parents[1]
-    cfg = load_configuration(root, args.dataset, "oap_supcon")
+    cfg = load_configuration(root, args.dataset, "oap_v2", args.preset)
+    if not cfg.get("validation", {}).get("enabled"):
+        raise SystemExit("sensitivity search requires validation identities")
+    cfg["evaluation"]["split"] = "validation"
     if parameter in cfg["method"]:
         cfg["method"][parameter] = value
     elif parameter in cfg["train"]:
@@ -41,4 +47,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -1,0 +1,54 @@
+\begin{tikzpicture}[
+    font=\scriptsize,
+    box/.style={draw, rounded corners=2pt, align=center, minimum width=25mm,
+        minimum height=11mm, fill=gray!8},
+    view/.style={box, fill=blue!8, minimum width=31mm},
+    encoder/.style={box, fill=green!9, minimum width=38mm, minimum height=25mm},
+    feature/.style={box, fill=violet!8, minimum width=29mm},
+    train/.style={box, fill=orange!13, minimum width=42mm},
+    match/.style={box, fill=cyan!10, minimum width=42mm},
+    arrow/.style={-Latex, thick},
+    frozen/.style={-Latex, thick, dashed},
+    group/.style={draw, dashed, rounded corners=2pt, inner sep=4pt}
+]
+
+\node[box, fill=gray!12] (input) {2D pose sequence\\$[X,C]\in\mathbb{R}^{T\times17\times3}$};
+
+\node[view, right=9mm of input, yshift=8mm] (viewa) {Augmented view A\\scale, flip, noise, mask};
+\node[view, right=9mm of input, yshift=-8mm] (viewb) {Augmented view B\\independent corruption};
+
+\node[encoder, right=18mm of $(viewa)!0.5!(viewb)$] (backbone)
+    {Shared multistream graph encoder\\joint $\mid$ bone $\mid$ motion\\six residual graph blocks};
+
+\node[feature, right=10mm of backbone, yshift=10mm] (global)
+    {Global feature\\$h_i\in\mathbb{R}^{256}$};
+\node[feature, right=10mm of backbone, yshift=-10mm] (parts)
+    {Five part pools\\$u_{i,p}\in\mathbb{R}^{256}$};
+
+\node[train, right=11mm of global, yshift=12mm] (base)
+    {Always trained\\CE + global triplet};
+\node[train, below=4mm of base, minimum height=17mm] (aux)
+    {Factorial auxiliaries\\global SupCon\\gated/ungated part SupCon\\part triplet};
+
+\node[match, right=11mm of parts, yshift=-8mm, minimum height=14mm] (scores)
+    {Retrieval\\global cosine or\\0.5 global + 0.5 part score};
+\node[match, below=4mm of scores, minimum height=17mm] (controls)
+    {Frozen-checkpoint controls\\raw $q_{i,p}$; uniform weights\\saved or fresh random heads};
+
+\draw[arrow] (input.east) -- ++(4mm,0) |- (viewa.west);
+\draw[arrow] (input.east) -- ++(4mm,0) |- (viewb.west);
+\draw[arrow] (viewa.east) -- ++(5mm,0) |- ($(backbone.west)+(0,4mm)$);
+\draw[arrow] (viewb.east) -- ++(5mm,0) |- ($(backbone.west)+(0,-4mm)$);
+\draw[arrow] (backbone.east) -- ++(4mm,0) |- (global.west);
+\draw[arrow] (backbone.east) -- ++(4mm,0) |- (parts.west);
+\draw[arrow] (global.east) -- ++(4mm,0) |- (base.west);
+\draw[arrow] (global.east) -- ++(5mm,0) |- ($(aux.west)+(0,2mm)$);
+\draw[arrow] (parts.east) -- ++(7mm,0) |- ($(aux.west)+(0,-2mm)$);
+\draw[frozen] (global.east) -- ++(4mm,0) |- (scores.west);
+\draw[frozen] (parts.east) -- ++(4mm,0) |- (controls.west);
+\draw[frozen] (controls.north) -- (scores.south);
+
+\node[group, fit=(base)(aux), label={[font=\scriptsize\bfseries]above:Training comparisons}] {};
+\node[group, fit=(scores)(controls), label={[font=\scriptsize\bfseries]below:Matching comparisons (no updates)}] {};
+
+\end{tikzpicture}

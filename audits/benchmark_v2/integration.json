@@ -1,0 +1,42 @@
+{
+  "purpose": "software integration only; not a benchmark result",
+  "device": "cpu",
+  "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+  "backbone": "multistream",
+  "parameters": 1687570,
+  "training_identities": 62,
+  "validation_identities": [
+    2,
+    6,
+    12,
+    25,
+    26,
+    32,
+    43,
+    46,
+    54,
+    59,
+    61,
+    72
+  ],
+  "sampled_training_ids": [
+    10,
+    37,
+    71,
+    58
+  ],
+  "sampled_sequences": 8,
+  "frames": 60,
+  "losses": [
+    7.280064582824707,
+    4.630086421966553,
+    5.414589881896973
+  ],
+  "step_seconds": [
+    4.247510125002009,
+    3.607271540997317,
+    3.4195967499981634
+  ],
+  "finite_gradients": true,
+  "test_sequences_used": 0
+}

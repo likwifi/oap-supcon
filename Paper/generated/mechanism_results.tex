@@ -1,0 +1,19 @@
+\begin{table}[t]
+\centering
+\caption{Training diagnostics averaged over three seeds. Part variance is the mean coordinate-wise variance of normalized part embeddings over the final 20 epochs. Cosines are measured every five epochs at the shared paired-view feature tensor; $n$ is the number of finite diagnostics out of 96 scheduled measurements.}
+\label{tab:mechanisms}
+\resizebox{\columnwidth}{!}{%
+\begin{tabular}{lrrrr}
+\toprule
+Objective & Part variance ($\times 10^{-3}$) & Part--global cosine & Part--triplet cosine & Selected epoch \\
+\midrule
+Metric baseline & 1.269 & -- & -- & 73.3 \\
+Global SupCon & 1.300 & -- & -- & 68.3 \\
+Part SupCon & 3.338 & -- & 0.212 (95) & 65.0 \\
+Part triplet & 0.002 & -- & 0.012 (9) & 53.3 \\
+Global + part SupCon & 3.349 & 0.265 (96) & 0.203 (96) & 46.7 \\
+Global + part SupCon (ungated) & 3.242 & 0.241 (96) & 0.195 (96) & 80.0 \\
+\bottomrule
+\end{tabular}%
+}
+\end{table}

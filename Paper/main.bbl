@@ -1,0 +1,100 @@
+\begin{thebibliography}{10}
+\providecommand{\url}[1]{\texttt{#1}}
+\providecommand{\urlprefix}{URL }
+\providecommand{\doi}[1]{https://doi.org/#1}
+
+\bibitem{chen2020simclr}
+Chen, T., Kornblith, S., Norouzi, M., Hinton, G.: A simple framework for
+  contrastive learning of visual representations. In: Proceedings of the 37th
+  International Conference on Machine Learning. Proceedings of Machine Learning
+  Research, vol.~119, pp. 1597--1607 (2020),
+  \url{https://arxiv.org/abs/2002.05709}
+
+\bibitem{chen2023iopstl}
+Chen, Y., Peng, K., Roitberg, A., Schneider, D., Zhang, J., Zheng, J., Chen,
+  Y., Liu, R., Yang, K., Stiefelhagen, R.: Exploring self-supervised
+  skeleton-based action recognition in occluded environments. arXiv preprint
+  arXiv:2309.12029  (2023), \url{https://arxiv.org/abs/2309.12029}
+
+\bibitem{fan2022opengait}
+Fan, C., Liang, J., Shen, C., Hou, S., Huang, Y., Yu, S.: {OpenGait}:
+  Revisiting gait recognition toward better practicality. arXiv preprint
+  arXiv:2211.06597  (2022), \url{https://arxiv.org/abs/2211.06597}
+
+\bibitem{gwon2024instance}
+Gwon, M.G., Um, G.M., Cheong, W.S., Kim, W.: Instance-aware contrastive
+  learning for occluded human mesh reconstruction. In: Proceedings of the
+  IEEE/CVF Conference on Computer Vision and Pattern Recognition. pp.
+  10553--10562 (2024). \doi{10.1109/CVPR52733.2024.01004}
+
+\bibitem{he2020moco}
+He, K., Fan, H., Wu, Y., Xie, S., Girshick, R.: Momentum contrast for
+  unsupervised visual representation learning. In: Proceedings of the IEEE/CVF
+  Conference on Computer Vision and Pattern Recognition. pp. 9729--9738 (2020),
+  \url{https://arxiv.org/abs/1911.05722}
+
+\bibitem{huang2024occluded}
+Huang, P., Peng, Y., Hou, S., Cao, C., Liu, X., He, Z., Huang, Y.: Occluded
+  gait recognition with mixture of experts: An action detection perspective.
+  In: Proceedings of the European Conference on Computer Vision (2024),
+  \url{https://www.ecva.net/papers/eccv_2024/papers_ECCV/html/1016_ECCV_2024_paper.php}
+
+\bibitem{khosla2020supervised}
+Khosla, P., Teterwak, P., Wang, C., Sarna, A., Tian, Y., Isola, P., Maschinot,
+  A., Liu, C., Krishnan, D.: Supervised contrastive learning. In: Advances in
+  Neural Information Processing Systems. vol.~33, pp. 18661--18673 (2020),
+  \url{https://arxiv.org/abs/2004.11362}
+
+\bibitem{li2024survey}
+Li, T., Ma, W., Zheng, Y., Fan, X., Yang, G., Wang, L., Li, Z.: A survey on
+  gait recognition against occlusion: Taxonomy, dataset and methodology. PeerJ
+  Computer Science  \textbf{10},  e2602 (2024). \doi{10.7717/peerj-cs.2602}
+
+\bibitem{lin2023pedestrian}
+Lin, Z., Pei, W., Chen, F., Zhang, D., Lu, G.: Pedestrian detection by
+  exemplar-guided contrastive learning. IEEE Transactions on Image Processing
+  \textbf{32},  2003--2016 (2023). \doi{10.1109/TIP.2022.3189803}
+
+\bibitem{liu2020ntu120}
+Liu, J., Shahroudy, A., Perez, M., Wang, G., Duan, L.Y., Kot, A.C.: {NTU RGB+D
+  120}: A large-scale benchmark for 3d human activity understanding. IEEE
+  Transactions on Pattern Analysis and Machine Intelligence  \textbf{42}(10),
+  2684--2701 (2020). \doi{10.1109/TPAMI.2019.2916873}
+
+\bibitem{rao2024skeleton}
+Rao, H., Miao, C.: Skeleton prototype contrastive learning with multi-level
+  graph relation modeling for unsupervised person re-identification. In:
+  Quality, Reliability, Security and Robustness in Heterogeneous Systems. pp.
+  306--321. Springer (2024). \doi{10.1007/978-3-031-65126-7_19},
+  \url{https://arxiv.org/abs/2208.11814}
+
+\bibitem{shahroudy2016ntu}
+Shahroudy, A., Liu, J., Ng, T.T., Wang, G.: {NTU RGB+D}: A large scale dataset
+  for 3d human activity analysis. In: Proceedings of the IEEE Conference on
+  Computer Vision and Pattern Recognition. pp. 1010--1019 (2016).
+  \doi{10.1109/CVPR.2016.115}
+
+\bibitem{teepe2021gaitgraph}
+Teepe, T., Khan, A., Gilg, J., Herzog, F., H{\"o}rmann, S., Rigoll, G.:
+  {GaitGraph}: Graph convolutional network for skeleton-based gait recognition.
+  In: 2021 IEEE International Conference on Image Processing. pp. 2314--2318
+  (2021). \doi{10.1109/ICIP42928.2021.9506717}
+
+\bibitem{thoker2021skeleton}
+Thoker, F.M., Doughty, H., Snoek, C.G.M.: Skeleton-contrastive 3d action
+  representation learning. In: Proceedings of the 29th ACM International
+  Conference on Multimedia. pp. 1655--1663 (2021).
+  \doi{10.1145/3474085.3475307}, \url{https://arxiv.org/abs/2108.03656}
+
+\bibitem{skeletonmae2024}
+Wu, W., Hua, Y., Zheng, C., Wu, S., Chen, C., Lu, A.: {SkeletonMAE}:
+  Spatial-temporal masked autoencoders for self-supervised skeleton action
+  recognition. arXiv preprint arXiv:2209.02399  (2023),
+  \url{https://arxiv.org/abs/2209.02399}
+
+\bibitem{yan2018stgcn}
+Yan, S., Xiong, Y., Lin, D.: Spatial temporal graph convolutional networks for
+  skeleton-based action recognition. In: Proceedings of the AAAI Conference on
+  Artificial Intelligence. vol.~32 (2018). \doi{10.1609/aaai.v32i1.12328}
+
+\end{thebibliography}

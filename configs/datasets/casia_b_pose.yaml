@@ -11,3 +11,6 @@ pose_source: HRNet release from FastPoseGait/ScienceDB
 protocol: 001-074 train; 075-124 test; nm-01..04 gallery; nm-05..06/bg-01..02/cl-01..02 probe
 derived_pose_url: https://www.scidb.cn/en/detail?dataSetId=8ec62efd66a544939e821edeccc1f35c
 partition_reference: https://github.com/BNU-IVC/FastPoseGait/blob/main/datasets/CASIA-B/CASIA-B.json
+# Also score the official single-view-gallery protocol, for comparability
+# with published numbers on this benchmark.
+single_view_gallery: true

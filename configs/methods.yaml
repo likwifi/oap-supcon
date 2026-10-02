@@ -47,6 +47,9 @@ no_ce:
   part_weight: 0.5
   temporal_weight: 0.2
   ce_weight: 0.0
+# Ablates the reliability gating of Equation 8: every positive pair contributes
+# to the part loss with equal weight. `unweighted_parts` was a byte-identical
+# duplicate of this entry, so it is now an alias rather than a second grid row.
 no_visibility:
   augmentation: complete_to_partial
   global_weight: 1.0
@@ -72,10 +75,73 @@ no_global:
   part_weight: 0.5
   temporal_weight: 0.2
   ce_weight: 1.0
-unweighted_parts:
-  augmentation: complete_to_partial
+oap_supcon_dropout:
+  augmentation: dropout_to_partial
   global_weight: 1.0
   part_weight: 0.5
   temporal_weight: 0.2
   ce_weight: 1.0
+
+# New candidate and controls share the same backbone, views and clean CE anchor.
+matched_ce:
+  augmentation: mixed_partial
+  ce_weight: 1.0
+  clean_ce_weight: 0.5
+  global_weight: 0.0
+  part_weight: 0.0
+  temporal_weight: 0.0
+  triplet_weight: 0.0
+metric_baseline:
+  augmentation: mixed_partial
+  ce_weight: 1.0
+  clean_ce_weight: 0.5
+  global_weight: 0.0
+  part_weight: 0.0
+  temporal_weight: 0.0
+  triplet_weight: 1.0
+# Factorial controls for Benchmark V2. Together with metric_baseline and
+# oap_v2, these isolate the global and part supervised-contrastive terms.
+metric_global_supcon:
+  augmentation: mixed_partial
+  ce_weight: 1.0
+  clean_ce_weight: 0.5
+  global_weight: 0.2
+  part_weight: 0.0
+  temporal_weight: 0.0
+  triplet_weight: 1.0
+metric_part_supcon:
+  augmentation: mixed_partial
+  ce_weight: 1.0
+  clean_ce_weight: 0.5
+  global_weight: 0.0
+  part_weight: 0.2
+  temporal_weight: 0.0
+  triplet_weight: 1.0
+# Trains the part heads with batch-hard triplet rather than SupCon. This is the
+# required trained-head control for reliable_parts retrieval.
+metric_part_triplet:
+  augmentation: mixed_partial
+  ce_weight: 1.0
+  clean_ce_weight: 0.5
+  global_weight: 0.0
+  part_weight: 0.0
+  part_triplet_weight: 0.2
+  temporal_weight: 0.0
+  triplet_weight: 1.0
+oap_v2:
+  augmentation: mixed_partial
+  ce_weight: 1.0
+  clean_ce_weight: 0.5
+  global_weight: 0.2
+  part_weight: 0.2
+  temporal_weight: 0.0
+  triplet_weight: 1.0
+oap_v2_ungated:
+  augmentation: mixed_partial
+  ce_weight: 1.0
+  clean_ce_weight: 0.5
+  global_weight: 0.2
+  part_weight: 0.2
+  temporal_weight: 0.0
+  triplet_weight: 1.0
   visibility_gating: false

@@ -1,0 +1,1040 @@
+{
+  "design": {
+    "methods": [
+      "metric_baseline",
+      "metric_global_supcon",
+      "metric_part_supcon",
+      "metric_part_triplet",
+      "oap_v2",
+      "oap_v2_ungated"
+    ],
+    "seeds": [
+      11,
+      22,
+      33
+    ],
+    "runs": 18
+  },
+  "bootstrap": {
+    "samples": 20000,
+    "seed": 20261001
+  },
+  "aggregate": {
+    "metric_baseline/global": {
+      "clean": 0.8152356743812561,
+      "clean_sd": 0.02426519677061334,
+      "robust": 0.6390361949801444,
+      "severity_05": 0.6424663295348486,
+      "occluded": 0.6792929286758105,
+      "official": 0.6736111111111112,
+      "train_hours": 1.6333876400070342
+    },
+    "metric_baseline/reliable_parts": {
+      "clean": 0.8303871949513754,
+      "clean_sd": 0.013141835769740484,
+      "robust": 0.6631102691094081,
+      "severity_05": 0.6796506722768147,
+      "occluded": 0.7057449483002225,
+      "official": 0.693392255892256,
+      "train_hours": 1.6333876400070342
+    },
+    "metric_global_supcon/global": {
+      "clean": 0.7962963183720907,
+      "clean_sd": 0.03229790256713492,
+      "robust": 0.6323390151063601,
+      "severity_05": 0.6414562275012334,
+      "occluded": 0.6742108594626188,
+      "official": 0.6618265993265994,
+      "train_hours": 1.8901053866839868
+    },
+    "metric_global_supcon/reliable_parts": {
+      "clean": 0.8278619647026062,
+      "clean_sd": 0.033556741261208486,
+      "robust": 0.6620949064691861,
+      "severity_05": 0.6784932623306911,
+      "occluded": 0.7037878780315319,
+      "official": 0.6866161616161617,
+      "train_hours": 1.8901053866839868
+    },
+    "metric_part_supcon/global": {
+      "clean": 0.7878787914911906,
+      "clean_sd": 0.011363655328763636,
+      "robust": 0.5778093426177899,
+      "severity_05": 0.5557028606534004,
+      "occluded": 0.6425978527093927,
+      "official": 0.6533249158249158,
+      "train_hours": 1.706397885164522
+    },
+    "metric_part_supcon/reliable_parts": {
+      "clean": 0.7542087435722351,
+      "clean_sd": 0.022456785956716137,
+      "robust": 0.5466172133882841,
+      "severity_05": 0.5264520198106766,
+      "occluded": 0.6161510958025853,
+      "official": 0.6180976430976431,
+      "train_hours": 1.706397885164522
+    },
+    "metric_part_triplet/global": {
+      "clean": 0.8127104441324869,
+      "clean_sd": 0.03412206779460913,
+      "robust": 0.6064762208610773,
+      "severity_05": 0.5909511809547743,
+      "occluded": 0.6671191051602364,
+      "official": 0.6781986531986534,
+      "train_hours": 1.9895210451407341
+    },
+    "metric_part_triplet/reliable_parts": {
+      "clean": 0.813131312529246,
+      "clean_sd": 0.03416097903714808,
+      "robust": 0.6065972220773498,
+      "severity_05": 0.5910774444540342,
+      "occluded": 0.6672611519694329,
+      "official": 0.6782407407407408,
+      "train_hours": 1.9895210451407341
+    },
+    "oap_v2/global": {
+      "clean": 0.8005050420761108,
+      "clean_sd": 0.013362371370307054,
+      "robust": 0.606960224856933,
+      "severity_05": 0.5906144748131434,
+      "occluded": 0.6556134258707365,
+      "official": 0.6575336700336699,
+      "train_hours": 1.9719644614765677
+    },
+    "oap_v2/reliable_parts": {
+      "clean": 0.7786195079485575,
+      "clean_sd": 0.0444676374693438,
+      "robust": 0.5748263896753391,
+      "severity_05": 0.5483796308437984,
+      "occluded": 0.6318129212905963,
+      "official": 0.6339646464646465,
+      "train_hours": 1.9719644614765677
+    },
+    "oap_v2_ungated/global": {
+      "clean": 0.808922549088796,
+      "clean_sd": 0.015887701997002755,
+      "robust": 0.617166456207633,
+      "severity_05": 0.6059343417485554,
+      "occluded": 0.6699337104956309,
+      "official": 0.6629208754208754,
+      "train_hours": 1.9743974822874208
+    },
+    "oap_v2_ungated/reliable_parts": {
+      "clean": 0.7819865345954895,
+      "clean_sd": 0.0007289654464867021,
+      "robust": 0.5935132563735048,
+      "severity_05": 0.5811447774370511,
+      "occluded": 0.6484848480050762,
+      "official": 0.655976430976431,
+      "train_hours": 1.9743974822874208
+    }
+  },
+  "paired": {
+    "against_baseline": {
+      "metric_global_supcon": {
+        "global": {
+          "clean": {
+            "difference": -0.018939394503831863,
+            "ci95": [
+              -0.045875422242614955,
+              0.004629629767603344
+            ],
+            "probability_positive": 0.0592,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "robust": {
+            "difference": -0.006697180609787918,
+            "ci95": [
+              -0.0420726802762753,
+              0.03353509103310175
+            ],
+            "probability_positive": 0.35475,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "severity_05": {
+            "difference": -0.0010101007274998766,
+            "ci95": [
+              -0.054271883475545714,
+              0.06033249230175796
+            ],
+            "probability_positive": 0.47375,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "occluded": {
+            "difference": -0.005082069068319268,
+            "ci95": [
+              -0.025841745810854872,
+              0.016419402327543745
+            ],
+            "probability_positive": 0.3182,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          }
+        },
+        "reliable_parts": {
+          "clean": {
+            "difference": -0.0025252526005109153,
+            "ci95": [
+              -0.031144782072967954,
+              0.02356902427143521
+            ],
+            "probability_positive": 0.43905,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "robust": {
+            "difference": -0.0010153627178321283,
+            "ci95": [
+              -0.026026021896137133,
+              0.02608388826354509
+            ],
+            "probability_positive": 0.45505,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "severity_05": {
+            "difference": -0.0011574066399286191,
+            "ci95": [
+              -0.03457491282153771,
+              0.03499579134125572
+            ],
+            "probability_positive": 0.46265,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "occluded": {
+            "difference": -0.001957070824475752,
+            "ci95": [
+              -0.01888165434890349,
+              0.015935394920944562
+            ],
+            "probability_positive": 0.4058,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          }
+        }
+      },
+      "metric_part_supcon": {
+        "global": {
+          "clean": {
+            "difference": -0.02735690317220158,
+            "ci95": [
+              -0.06018518697884348,
+              0.0050505052010218305
+            ],
+            "probability_positive": 0.0488,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "robust": {
+            "difference": -0.061226851798387036,
+            "ci95": [
+              -0.09543889884112611,
+              -0.02678871863689791
+            ],
+            "probability_positive": 0.00015,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "severity_05": {
+            "difference": -0.08676346567355925,
+            "ci95": [
+              -0.1449915767058782,
+              -0.03490951283019986
+            ],
+            "probability_positive": 0.00035,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "occluded": {
+            "difference": -0.03669507691584942,
+            "ci95": [
+              -0.05702862310055126,
+              -0.016540272368648513
+            ],
+            "probability_positive": 0.0001,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          }
+        },
+        "reliable_parts": {
+          "clean": {
+            "difference": -0.07617845262090366,
+            "ci95": [
+              -0.10858586059055395,
+              -0.03998316534691387
+            ],
+            "probability_positive": 5e-05,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "robust": {
+            "difference": -0.11649305709741181,
+            "ci95": [
+              -0.15583965094087437,
+              -0.08032880918795454
+            ],
+            "probability_positive": 0.0,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "severity_05": {
+            "difference": -0.15319865048190373,
+            "ci95": [
+              -0.21195338219113183,
+              -0.1014709596780855
+            ],
+            "probability_positive": 0.0,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "occluded": {
+            "difference": -0.08959385671187192,
+            "ci95": [
+              -0.1132156241526698,
+              -0.06528238037200133
+            ],
+            "probability_positive": 0.0,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          }
+        }
+      },
+      "metric_part_triplet": {
+        "global": {
+          "clean": {
+            "difference": -0.0025252526005109153,
+            "ci95": [
+              -0.04419192050894102,
+              0.03535353640715281
+            ],
+            "probability_positive": 0.4691,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "robust": {
+            "difference": -0.032559975886316456,
+            "ci95": [
+              -0.06574626693424458,
+              0.0021367321262610777
+            ],
+            "probability_positive": 0.03315,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "severity_05": {
+            "difference": -0.05151514965109527,
+            "ci95": [
+              -0.09713856573281292,
+              -0.0032407381604166907
+            ],
+            "probability_positive": 0.01895,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "occluded": {
+            "difference": -0.012173821427697677,
+            "ci95": [
+              -0.036890124920884976,
+              0.009864398678756605
+            ],
+            "probability_positive": 0.1555,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          }
+        },
+        "reliable_parts": {
+          "clean": {
+            "difference": -0.01725589277015792,
+            "ci95": [
+              -0.05935395799784196,
+              0.018939394503831863
+            ],
+            "probability_positive": 0.21365,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "robust": {
+            "difference": -0.05651304841093305,
+            "ci95": [
+              -0.08922032982453756,
+              -0.021711779901266316
+            ],
+            "probability_positive": 0.0009,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "severity_05": {
+            "difference": -0.0885732328105304,
+            "ci95": [
+              -0.14476010063921826,
+              -0.03244896991074917
+            ],
+            "probability_positive": 0.001,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "occluded": {
+            "difference": -0.03848379826619445,
+            "ci95": [
+              -0.05965383250764312,
+              -0.019170744415815646
+            ],
+            "probability_positive": 5e-05,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          }
+        }
+      },
+      "oap_v2": {
+        "global": {
+          "clean": {
+            "difference": -0.014730640169647004,
+            "ci95": [
+              -0.0475589239762889,
+              0.019781145370668836
+            ],
+            "probability_positive": 0.18755,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "robust": {
+            "difference": -0.03207596853220215,
+            "ci95": [
+              -0.08076073318564644,
+              0.02396951577199307
+            ],
+            "probability_positive": 0.13115,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "severity_05": {
+            "difference": -0.0518518513870529,
+            "ci95": [
+              -0.12565287990599042,
+              0.03729113950976157
+            ],
+            "probability_positive": 0.12645,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "occluded": {
+            "difference": -0.02367950466254519,
+            "ci95": [
+              -0.05476641719190714,
+              0.010201102781704512
+            ],
+            "probability_positive": 0.08555,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          }
+        },
+        "reliable_parts": {
+          "clean": {
+            "difference": -0.05176767831047376,
+            "ci95": [
+              -0.09343434621890385,
+              -0.0063131315012772875
+            ],
+            "probability_positive": 0.0124,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "robust": {
+            "difference": -0.08828388362437384,
+            "ci95": [
+              -0.13784736010517615,
+              -0.026683369585710666
+            ],
+            "probability_positive": 0.00125,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "severity_05": {
+            "difference": -0.13127103848900232,
+            "ci95": [
+              -0.19810605467193657,
+              -0.04690550972138437
+            ],
+            "probability_positive": 0.00045,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "occluded": {
+            "difference": -0.07393203100137827,
+            "ci95": [
+              -0.10829664070883559,
+              -0.03422151468694218
+            ],
+            "probability_positive": 5e-05,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          }
+        }
+      },
+      "oap_v2_ungated": {
+        "global": {
+          "clean": {
+            "difference": -0.0063131315012772875,
+            "ci95": [
+              -0.046296297676033445,
+              0.04420244239477556
+            ],
+            "probability_positive": 0.36275,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "robust": {
+            "difference": -0.021869737861884966,
+            "ci95": [
+              -0.046759394570512494,
+              0.004072105284366331
+            ],
+            "probability_positive": 0.04775,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "severity_05": {
+            "difference": -0.03653198433393198,
+            "ci95": [
+              -0.08040824395914872,
+              -0.0009680124014266767
+            ],
+            "probability_positive": 0.0213,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "occluded": {
+            "difference": -0.009359217080701556,
+            "ci95": [
+              -0.02572101229226165,
+              0.008033723316879713
+            ],
+            "probability_positive": 0.1412,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          }
+        },
+        "reliable_parts": {
+          "clean": {
+            "difference": -0.04840067484312587,
+            "ci95": [
+              -0.07954545691609383,
+              -0.01809764363699489
+            ],
+            "probability_positive": 0.00075,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "robust": {
+            "difference": -0.06959701349316877,
+            "ci95": [
+              -0.10558778302856808,
+              -0.037157773502015844
+            ],
+            "probability_positive": 0.0,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "severity_05": {
+            "difference": -0.0985058902766064,
+            "ci95": [
+              -0.15357743874774316,
+              -0.05258838339149305
+            ],
+            "probability_positive": 0.0,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          },
+          "occluded": {
+            "difference": -0.05726010383336365,
+            "ci95": [
+              -0.0761312372633256,
+              -0.03908867388538259
+            ],
+            "probability_positive": 0.0,
+            "seed_blocks": 3,
+            "identity_blocks_per_seed": 12
+          }
+        }
+      }
+    },
+    "descriptor_effect": {
+      "metric_baseline": {
+        "clean": {
+          "difference": 0.01515151560306549,
+          "ci95": [
+            -0.00042087543341848586,
+            0.031986532939804926
+          ],
+          "probability_positive": 0.97065,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "robust": {
+          "difference": 0.02407407446783812,
+          "ci95": [
+            0.011237373725452927,
+            0.03824705173206489
+          ],
+          "probability_positive": 1.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "severity_05": {
+          "difference": 0.03718434240565532,
+          "ci95": [
+            0.015593433718378139,
+            0.06571969418130012
+          ],
+          "probability_positive": 1.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "occluded": {
+          "difference": 0.026452020974829793,
+          "ci95": [
+            0.019565182922007,
+            0.03327059776832657
+          ],
+          "probability_positive": 1.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        }
+      },
+      "metric_global_supcon": {
+        "clean": {
+          "difference": 0.03156565750638644,
+          "ci95": [
+            0.02062289623750581,
+            0.04250841877526707
+          ],
+          "probability_positive": 1.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "robust": {
+          "difference": 0.029755892290268093,
+          "ci95": [
+            0.01826046958045077,
+            0.0407617845266941
+          ],
+          "probability_positive": 1.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "severity_05": {
+          "difference": 0.03703703581624404,
+          "ci95": [
+            0.022643095849990563,
+            0.05220959459143665
+          ],
+          "probability_positive": 1.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "occluded": {
+          "difference": 0.029577020775630243,
+          "ci95": [
+            0.023368974638611286,
+            0.03626907363456362
+          ],
+          "probability_positive": 1.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        }
+      },
+      "metric_part_supcon": {
+        "clean": {
+          "difference": -0.03367003467347887,
+          "ci95": [
+            -0.05387205547756619,
+            -0.018518519070413377
+          ],
+          "probability_positive": 0.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "robust": {
+          "difference": -0.031192129840039544,
+          "ci95": [
+            -0.04829558732324383,
+            -0.01632457524287425
+          ],
+          "probability_positive": 0.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "severity_05": {
+          "difference": -0.029250842054619103,
+          "ci95": [
+            -0.049579126023095936,
+            -0.013636363029651663
+          ],
+          "probability_positive": 0.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "occluded": {
+          "difference": -0.026446758355531428,
+          "ci95": [
+            -0.03338081189293816,
+            -0.01954966266138298
+          ],
+          "probability_positive": 0.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        }
+      },
+      "metric_part_triplet": {
+        "clean": {
+          "difference": 0.00042087543341848586,
+          "ci95": [
+            0.0,
+            0.0016835017336739434
+          ],
+          "probability_positive": 0.51985,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "robust": {
+          "difference": 0.00012100166190899387,
+          "ci95": [
+            3.156572031358169e-05,
+            0.00021043764328699193
+          ],
+          "probability_positive": 0.99705,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "severity_05": {
+          "difference": 0.0001262626549940841,
+          "ci95": [
+            -2.104377645296819e-05,
+            0.0003156567023563743
+          ],
+          "probability_positive": 0.94515,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "occluded": {
+          "difference": 0.00014204553003412576,
+          "ci95": [
+            -0.0002156980272589833,
+            0.0004787458578648972
+          ],
+          "probability_positive": 0.7932,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        }
+      },
+      "oap_v2": {
+        "clean": {
+          "difference": -0.021885522537761264,
+          "ci95": [
+            -0.0505050520102183,
+            0.011784512135717604
+          ],
+          "probability_positive": 0.096,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "robust": {
+          "difference": -0.03213383950100655,
+          "ci95": [
+            -0.053551663658193624,
+            -0.01035866497993792
+          ],
+          "probability_positive": 5e-05,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "severity_05": {
+          "difference": -0.042234846879081384,
+          "ci95": [
+            -0.06818234139128536,
+            -0.018454860028578015
+          ],
+          "probability_positive": 0.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "occluded": {
+          "difference": -0.02380050530417874,
+          "ci95": [
+            -0.03470643900008226,
+            -0.013552190660306628
+          ],
+          "probability_positive": 0.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        }
+      },
+      "oap_v2_ungated": {
+        "clean": {
+          "difference": -0.026936027738783095,
+          "ci95": [
+            -0.05092592744363679,
+            -0.008417508668369718
+          ],
+          "probability_positive": 0.0009,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "robust": {
+          "difference": -0.02365319963670724,
+          "ci95": [
+            -0.03892585045832675,
+            -0.011153199837260925
+          ],
+          "probability_positive": 0.0001,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "severity_05": {
+          "difference": -0.02478956265581979,
+          "ci95": [
+            -0.03838383849797537,
+            -0.007764098225258538
+          ],
+          "probability_positive": 0.0031,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        },
+        "occluded": {
+          "difference": -0.021448865422927257,
+          "ci95": [
+            -0.029692763352391516,
+            -0.014441023907501325
+          ],
+          "probability_positive": 0.0,
+          "seed_blocks": 3,
+          "identity_blocks_per_seed": 12
+        }
+      }
+    }
+  },
+  "history": {
+    "metric_baseline": {
+      "part_variance": 0.0012688927530318734,
+      "part_reliability": 0.5019448297222455,
+      "part_presence": 0.860079601208369,
+      "selected_epoch": 73.33333333333333,
+      "cosines": {
+        "ce__clean_ce": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "ce__triplet": {
+          "mean": 0.39554035992998826,
+          "count": 95
+        },
+        "clean_ce__triplet": {
+          "mean": 0.0,
+          "count": 95
+        }
+      },
+      "diagnostic_epochs": 96
+    },
+    "metric_global_supcon": {
+      "part_variance": 0.0013002914539181388,
+      "part_reliability": 0.5019448297222455,
+      "part_presence": 0.860079601208369,
+      "selected_epoch": 68.33333333333333,
+      "cosines": {
+        "ce__clean_ce": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "ce__global": {
+          "mean": 0.596155161348482,
+          "count": 96
+        },
+        "ce__triplet": {
+          "mean": 0.41091224225237966,
+          "count": 96
+        },
+        "clean_ce__global": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "clean_ce__triplet": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "global__triplet": {
+          "mean": 0.44084088162829477,
+          "count": 96
+        }
+      },
+      "diagnostic_epochs": 96
+    },
+    "metric_part_supcon": {
+      "part_variance": 0.0033375119843883382,
+      "part_reliability": 0.5019448297222455,
+      "part_presence": 0.860079601208369,
+      "selected_epoch": 65.0,
+      "cosines": {
+        "ce__clean_ce": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "ce__part": {
+          "mean": 0.2058997501929601,
+          "count": 96
+        },
+        "ce__triplet": {
+          "mean": 0.407891603520042,
+          "count": 95
+        },
+        "clean_ce__part": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "clean_ce__triplet": {
+          "mean": 0.0,
+          "count": 95
+        },
+        "part__triplet": {
+          "mean": 0.21150463729312546,
+          "count": 95
+        }
+      },
+      "diagnostic_epochs": 96
+    },
+    "metric_part_triplet": {
+      "part_variance": 1.698686585475013e-06,
+      "part_reliability": 0.5019448297222455,
+      "part_presence": 0.860079601208369,
+      "selected_epoch": 53.333333333333336,
+      "cosines": {
+        "ce__clean_ce": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "ce__part_triplet": {
+          "mean": 0.006579099455848336,
+          "count": 9
+        },
+        "ce__triplet": {
+          "mean": 0.40234008609938127,
+          "count": 96
+        },
+        "clean_ce__part_triplet": {
+          "mean": 0.0,
+          "count": 9
+        },
+        "clean_ce__triplet": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "part_triplet__triplet": {
+          "mean": 0.012227363185957074,
+          "count": 9
+        }
+      },
+      "diagnostic_epochs": 96
+    },
+    "oap_v2": {
+      "part_variance": 0.0033486751565979154,
+      "part_reliability": 0.5019448297222455,
+      "part_presence": 0.860079601208369,
+      "selected_epoch": 46.666666666666664,
+      "cosines": {
+        "ce__clean_ce": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "ce__global": {
+          "mean": 0.598154878243804,
+          "count": 96
+        },
+        "ce__part": {
+          "mean": 0.2016598586148272,
+          "count": 96
+        },
+        "ce__triplet": {
+          "mean": 0.3953574652162691,
+          "count": 96
+        },
+        "clean_ce__global": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "clean_ce__part": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "clean_ce__triplet": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "global__part": {
+          "mean": 0.2649442496864746,
+          "count": 96
+        },
+        "global__triplet": {
+          "mean": 0.44600035071683425,
+          "count": 96
+        },
+        "part__triplet": {
+          "mean": 0.20348087656505717,
+          "count": 96
+        }
+      },
+      "diagnostic_epochs": 96
+    },
+    "oap_v2_ungated": {
+      "part_variance": 0.0032419560751555565,
+      "part_reliability": 0.5019448297222455,
+      "part_presence": 0.860079601208369,
+      "selected_epoch": 80.0,
+      "cosines": {
+        "ce__clean_ce": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "ce__global": {
+          "mean": 0.6000553344686826,
+          "count": 96
+        },
+        "ce__part": {
+          "mean": 0.18778814235702157,
+          "count": 96
+        },
+        "ce__triplet": {
+          "mean": 0.40259733772836626,
+          "count": 96
+        },
+        "clean_ce__global": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "clean_ce__part": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "clean_ce__triplet": {
+          "mean": 0.0,
+          "count": 96
+        },
+        "global__part": {
+          "mean": 0.2411861390961955,
+          "count": 96
+        },
+        "global__triplet": {
+          "mean": 0.4516449224902317,
+          "count": 96
+        },
+        "part__triplet": {
+          "mean": 0.19549213314894587,
+          "count": 96
+        }
+      },
+      "diagnostic_epochs": 96
+    }
+  }
+}
