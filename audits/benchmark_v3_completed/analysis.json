@@ -1,0 +1,7285 @@
+{
+  "completed_runs": 16,
+  "expected_runs": 21,
+  "missing_tasks": [
+    13,
+    14,
+    18,
+    19,
+    20
+  ],
+  "source_sha256": "f8a66f27214560f9e00a0938d9c7f17745ffe2d2ad47c0cba1dee0417de33dc2",
+  "source_matches_local": true,
+  "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+  "probe_count": 792,
+  "validation_identities": [
+    2,
+    6,
+    12,
+    25,
+    26,
+    32,
+    43,
+    46,
+    54,
+    59,
+    61,
+    72
+  ],
+  "training_identities": [
+    1,
+    3,
+    4,
+    5,
+    7,
+    8,
+    9,
+    10,
+    11,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    27,
+    28,
+    29,
+    30,
+    31,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    44,
+    45,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    55,
+    56,
+    57,
+    58,
+    60,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    73,
+    74
+  ],
+  "environment": [
+    [
+      "3.12.3",
+      "2.14.0+cu126"
+    ]
+  ],
+  "bootstrap_samples": 20000,
+  "bootstrap_seed": 20261007,
+  "bootstrap_method": "crossed paired seed/identity resampling",
+  "interval_limitations": "Pointwise exploratory 95% intervals; no multiplicity adjustment; three seeds and 12 identities.",
+  "summary": [
+    {
+      "arm": "control",
+      "descriptor": "global",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8299663265546163,
+      "clean_std": 0.01326257289988622,
+      "robust": 0.6603640715281168,
+      "robust_std": 0.009123062426259999,
+      "severity_05": 0.6663720409075419,
+      "severity_05_std": 0.0039467603870224485,
+      "occluded": 0.7020517985026041,
+      "occluded_std": 0.014185889895756853,
+      "random_joint": 0.6756313045819601,
+      "random_joint_std": 0.01852975859157934,
+      "dynamic_joint": 0.6429713567097982,
+      "dynamic_joint_std": 0.013666180659826055,
+      "body_part": 0.5802609721819559,
+      "body_part_std": 0.01114272008690203,
+      "temporal": 0.7425926327705383,
+      "temporal_std": 0.018230239111099143,
+      "official_NM": 0.8303030303030302,
+      "official_NM_std": 0.01849090189008929,
+      "official_BG": 0.6477272727272727,
+      "official_BG_std": 0.042050572989024,
+      "official_CL": 0.5994949494949495,
+      "official_CL_std": 0.009748423306544185,
+      "train_hours": 1.0699238648353775,
+      "train_hours_std": 0.0017719517627699675,
+      "parameters": 1687570
+    },
+    {
+      "arm": "control",
+      "descriptor": "raw_reliable",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8670033613840739,
+      "clean_std": 0.008117539283648157,
+      "robust": 0.7122264504432678,
+      "robust_std": 0.014420755091254222,
+      "severity_05": 0.7317970991134644,
+      "severity_05_std": 0.013560389345013373,
+      "occluded": 0.7402409315109253,
+      "occluded_std": 0.010768324823756597,
+      "random_joint": 0.729966382185618,
+      "random_joint_std": 0.037406658148232935,
+      "dynamic_joint": 0.6948863665262858,
+      "dynamic_joint_std": 0.027977673722310473,
+      "body_part": 0.6278408964474996,
+      "body_part_std": 0.005194828073165057,
+      "temporal": 0.7962120970090231,
+      "temporal_std": 0.013806417934478184,
+      "official_NM": 0.8646464646464646,
+      "official_NM_std": 0.012357621952643552,
+      "official_BG": 0.6757575757575758,
+      "official_BG_std": 0.04174922949531776,
+      "official_CL": 0.6321969696969697,
+      "official_CL_std": 0.007936487439301858,
+      "train_hours": 1.0699238648353775,
+      "train_hours_std": 0.0017719517627699675,
+      "parameters": 1687570
+    },
+    {
+      "arm": "control",
+      "descriptor": "raw_uniform",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.868686854839325,
+      "clean_std": 0.006313145160675049,
+      "robust": 0.7111321687698364,
+      "robust_std": 0.014784226628987016,
+      "severity_05": 0.7284090518951416,
+      "severity_05_std": 0.01408508629151035,
+      "occluded": 0.7387152910232544,
+      "occluded_std": 0.011360102126686573,
+      "random_joint": 0.7291456262270609,
+      "random_joint_std": 0.03706884521822827,
+      "dynamic_joint": 0.6955808401107788,
+      "dynamic_joint_std": 0.02710669355089294,
+      "body_part": 0.623106042544047,
+      "body_part_std": 0.003949126487287163,
+      "temporal": 0.796696126461029,
+      "temporal_std": 0.013627333037801986,
+      "official_NM": 0.8641414141414141,
+      "official_NM_std": 0.013606518968230357,
+      "official_BG": 0.6781565656565657,
+      "official_BG_std": 0.04149470944773338,
+      "official_CL": 0.633459595959596,
+      "official_CL_std": 0.00880495119778337,
+      "train_hours": 1.0699238648353775,
+      "train_hours_std": 0.0017719517627699675,
+      "parameters": 1687570
+    },
+    {
+      "arm": "angles",
+      "descriptor": "global",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8383838534355164,
+      "clean_std": 0.01767677068710327,
+      "robust": 0.6555660764376322,
+      "robust_std": 0.03441277248266952,
+      "severity_05": 0.6494738856951395,
+      "severity_05_std": 0.053084541875618764,
+      "occluded": 0.7042560577392578,
+      "occluded_std": 0.023033052876973572,
+      "random_joint": 0.6597011884053549,
+      "random_joint_std": 0.03645742892717271,
+      "dynamic_joint": 0.6464646657307943,
+      "dynamic_joint_std": 0.028264029540622314,
+      "body_part": 0.5697180032730103,
+      "body_part_std": 0.04701292291937084,
+      "temporal": 0.7463804682095846,
+      "temporal_std": 0.02753523755261632,
+      "official_NM": 0.8256313131313132,
+      "official_NM_std": 0.028351794072327942,
+      "official_BG": 0.6511363636363636,
+      "official_BG_std": 0.02541833192395097,
+      "official_CL": 0.5987373737373737,
+      "official_CL_std": 0.03087605310001916,
+      "train_hours": 0.8237840797553589,
+      "train_hours_std": 0.22160458192010307,
+      "parameters": 1691922
+    },
+    {
+      "arm": "angles",
+      "descriptor": "raw_reliable",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8585858543713888,
+      "clean_std": 0.020320046397527415,
+      "robust": 0.6907828450202942,
+      "robust_std": 0.02976065233694221,
+      "severity_05": 0.6999789675076803,
+      "severity_05_std": 0.037374381839586225,
+      "occluded": 0.7287983894348145,
+      "occluded_std": 0.026852360134346966,
+      "random_joint": 0.6954545378684998,
+      "random_joint_std": 0.024746321306127913,
+      "dynamic_joint": 0.6797769467035929,
+      "dynamic_joint_std": 0.02332804345893862,
+      "body_part": 0.6085858345031738,
+      "body_part_std": 0.040596367256704874,
+      "temporal": 0.7793139815330505,
+      "temporal_std": 0.03179812849591579,
+      "official_NM": 0.8595959595959596,
+      "official_NM_std": 0.017597676596927174,
+      "official_BG": 0.6655303030303031,
+      "official_BG_std": 0.014557483977708884,
+      "official_CL": 0.6143939393939394,
+      "official_CL_std": 0.026965866258420727,
+      "train_hours": 0.8237840797553589,
+      "train_hours_std": 0.22160458192010307,
+      "parameters": 1691922
+    },
+    {
+      "arm": "angles",
+      "descriptor": "raw_uniform",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8585858742396036,
+      "clean_std": 0.020785448631177837,
+      "robust": 0.6900673707326254,
+      "robust_std": 0.02944588061463422,
+      "severity_05": 0.6978956460952759,
+      "severity_05_std": 0.03622337701423442,
+      "occluded": 0.7279987335205078,
+      "occluded_std": 0.02662606549827359,
+      "random_joint": 0.6966119607289633,
+      "random_joint_std": 0.025044066574342442,
+      "dynamic_joint": 0.6806818246841431,
+      "dynamic_joint_std": 0.022202251597901405,
+      "body_part": 0.6035563945770264,
+      "body_part_std": 0.04075534288441972,
+      "temporal": 0.7794191837310791,
+      "temporal_std": 0.031220785655382267,
+      "official_NM": 0.8594696969696969,
+      "official_NM_std": 0.017020183286864412,
+      "official_BG": 0.664520202020202,
+      "official_BG_std": 0.014425470514734487,
+      "official_CL": 0.617929292929293,
+      "official_CL_std": 0.02505828070508247,
+      "train_hours": 0.8237840797553589,
+      "train_hours_std": 0.22160458192010307,
+      "parameters": 1691922
+    },
+    {
+      "arm": "late_fusion",
+      "descriptor": "global",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8383838335673014,
+      "clean_std": 0.011222461466765926,
+      "robust": 0.6740898887316386,
+      "robust_std": 0.007906821468421065,
+      "severity_05": 0.6771254142125448,
+      "severity_05_std": 0.00968717280247463,
+      "occluded": 0.7204019625981649,
+      "occluded_std": 0.008087786260558213,
+      "random_joint": 0.6907828251520792,
+      "random_joint_std": 0.011028459045366954,
+      "dynamic_joint": 0.6684343417485555,
+      "dynamic_joint_std": 0.004975393561154234,
+      "body_part": 0.5845328370730082,
+      "body_part_std": 0.013223861156168363,
+      "temporal": 0.7526094516118368,
+      "temporal_std": 0.003472944446574957,
+      "official_NM": 0.8330808080808082,
+      "official_NM_std": 0.0034370347446505967,
+      "official_BG": 0.6813131313131313,
+      "official_BG_std": 0.011572160845848155,
+      "official_CL": 0.6165404040404041,
+      "official_CL_std": 0.027120612543454367,
+      "train_hours": 1.0985232799252953,
+      "train_hours_std": 0.26248112902472387,
+      "parameters": 1753435
+    },
+    {
+      "arm": "late_fusion",
+      "descriptor": "raw_reliable",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8623737494150797,
+      "clean_std": 0.010335050940674386,
+      "robust": 0.7139730850855509,
+      "robust_std": 0.005491408450496195,
+      "severity_05": 0.7306607564290365,
+      "severity_05_std": 0.0043667417084508765,
+      "occluded": 0.7515099247296652,
+      "occluded_std": 0.0050293742971532236,
+      "random_joint": 0.7317129373550415,
+      "random_joint_std": 0.004414301870397338,
+      "dynamic_joint": 0.7018097837766012,
+      "dynamic_joint_std": 0.004993873445268291,
+      "body_part": 0.6272306442260742,
+      "body_part_std": 0.013319709975255736,
+      "temporal": 0.7951388756434122,
+      "temporal_std": 0.009795095407377401,
+      "official_NM": 0.8654040404040404,
+      "official_NM_std": 0.004550712447207066,
+      "official_BG": 0.6977272727272728,
+      "official_BG_std": 0.01781511517621954,
+      "official_CL": 0.6299242424242424,
+      "official_CL_std": 0.02047908180441399,
+      "train_hours": 1.0985232799252953,
+      "train_hours_std": 0.26248112902472387,
+      "parameters": 1753435
+    },
+    {
+      "arm": "late_fusion",
+      "descriptor": "raw_uniform",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8640572230021158,
+      "clean_std": 0.011031430833044776,
+      "robust": 0.713131308555603,
+      "robust_std": 0.00570628130378534,
+      "severity_05": 0.7286405762036642,
+      "severity_05_std": 0.005272267665529181,
+      "occluded": 0.7508154511451721,
+      "occluded_std": 0.005006316008212494,
+      "random_joint": 0.7327020168304443,
+      "random_joint_std": 0.003613402619960719,
+      "dynamic_joint": 0.7040825088818868,
+      "dynamic_joint_std": 0.004916704374599046,
+      "body_part": 0.6201810042063395,
+      "body_part_std": 0.014149865078575057,
+      "temporal": 0.7955597837766012,
+      "temporal_std": 0.009311842932530276,
+      "official_NM": 0.8655303030303031,
+      "official_NM_std": 0.004465843228239215,
+      "official_BG": 0.6962121212121212,
+      "official_BG_std": 0.016208403708586967,
+      "official_CL": 0.6315656565656566,
+      "official_CL_std": 0.020692822765112733,
+      "train_hours": 1.0985232799252953,
+      "train_hours_std": 0.26248112902472387,
+      "parameters": 1753435
+    },
+    {
+      "arm": "adaptive",
+      "descriptor": "global",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8059764305750529,
+      "clean_std": 0.019614759787358008,
+      "robust": 0.6614741285641988,
+      "robust_std": 0.0020100476835019166,
+      "severity_05": 0.679566502571106,
+      "severity_05_std": 0.0012343899643935143,
+      "occluded": 0.6973800857861837,
+      "occluded_std": 0.009761681235154153,
+      "random_joint": 0.6886995037396749,
+      "random_joint_std": 0.008772250299323664,
+      "dynamic_joint": 0.6578282912572225,
+      "dynamic_joint_std": 0.002320388214567504,
+      "body_part": 0.5630050698916117,
+      "body_part_std": 0.008013218814208687,
+      "temporal": 0.7363636493682861,
+      "temporal_std": 0.01719225014833271,
+      "official_NM": 0.8239898989898989,
+      "official_NM_std": 0.018841920890898804,
+      "official_BG": 0.6561868686868687,
+      "official_BG_std": 0.04477127448120682,
+      "official_CL": 0.5577020202020203,
+      "official_CL_std": 0.009510015180631633,
+      "train_hours": 1.4716025783716598,
+      "train_hours_std": 0.39982884795602547,
+      "parameters": 1851416
+    },
+    {
+      "arm": "adaptive",
+      "descriptor": "raw_reliable",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8409091035525004,
+      "clean_std": 0.024089368503155986,
+      "robust": 0.6916876832644144,
+      "robust_std": 0.0038888060918598213,
+      "severity_05": 0.7096590995788574,
+      "severity_05_std": 0.0029752581745021594,
+      "occluded": 0.7242108384768168,
+      "occluded_std": 0.006694123794214399,
+      "random_joint": 0.7139520049095154,
+      "random_joint_std": 0.00577192827022432,
+      "dynamic_joint": 0.684259275595347,
+      "dynamic_joint_std": 0.002405883169623154,
+      "body_part": 0.5901304682095846,
+      "body_part_std": 0.009689004041707918,
+      "temporal": 0.7784090836842855,
+      "temporal_std": 0.020516522632952307,
+      "official_NM": 0.8606060606060607,
+      "official_NM_std": 0.013514820284023793,
+      "official_BG": 0.6866161616161616,
+      "official_BG_std": 0.025161135132400165,
+      "official_CL": 0.6025252525252524,
+      "official_CL_std": 0.013172526621964643,
+      "train_hours": 1.4716025783716598,
+      "train_hours_std": 0.39982884795602547,
+      "parameters": 1851416
+    },
+    {
+      "arm": "adaptive",
+      "descriptor": "raw_uniform",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8417508403460184,
+      "clean_std": 0.02481736133310102,
+      "robust": 0.690593441327413,
+      "robust_std": 0.0033435033806367203,
+      "severity_05": 0.7066919008890787,
+      "severity_05_std": 0.0035336553715264165,
+      "occluded": 0.7230376799901327,
+      "occluded_std": 0.006614445407963917,
+      "random_joint": 0.7134679953257242,
+      "random_joint_std": 0.006321379196939039,
+      "dynamic_joint": 0.6833754380544027,
+      "dynamic_joint_std": 0.0026001472214955503,
+      "body_part": 0.5874158143997192,
+      "body_part_std": 0.011408162363049985,
+      "temporal": 0.7781144777933756,
+      "temporal_std": 0.02003257648525296,
+      "official_NM": 0.8603535353535353,
+      "official_NM_std": 0.012081690620106634,
+      "official_BG": 0.6862373737373737,
+      "official_BG_std": 0.02551223771121153,
+      "official_CL": 0.6026515151515152,
+      "official_CL_std": 0.01166273054419745,
+      "train_hours": 1.4716025783716598,
+      "train_hours_std": 0.39982884795602547,
+      "parameters": 1851416
+    },
+    {
+      "arm": "parts",
+      "descriptor": "global",
+      "seeds": 1,
+      "complete_arm": false,
+      "clean": 0.8800504803657532,
+      "clean_std": null,
+      "robust": 0.7107954621315002,
+      "robust_std": null,
+      "severity_05": 0.7104166746139526,
+      "severity_05_std": null,
+      "occluded": 0.7473484873771667,
+      "occluded_std": null,
+      "random_joint": 0.7220327854156494,
+      "random_joint_std": null,
+      "dynamic_joint": 0.6935606002807617,
+      "dynamic_joint_std": null,
+      "body_part": 0.6191919445991516,
+      "body_part_std": null,
+      "temporal": 0.8083964586257935,
+      "temporal_std": null,
+      "official_NM": 0.8488636363636364,
+      "official_NM_std": null,
+      "official_BG": 0.712121212121212,
+      "official_BG_std": null,
+      "official_CL": 0.6268939393939394,
+      "official_CL_std": null,
+      "train_hours": 1.2762351311291826,
+      "train_hours_std": null,
+      "parameters": 3488897
+    },
+    {
+      "arm": "parts",
+      "descriptor": "raw_reliable",
+      "seeds": 1,
+      "complete_arm": false,
+      "clean": 0.8648989796638489,
+      "clean_std": null,
+      "robust": 0.7159090638160706,
+      "robust_std": null,
+      "severity_05": 0.7190656661987305,
+      "severity_05_std": null,
+      "occluded": 0.7466698884963989,
+      "occluded_std": null,
+      "random_joint": 0.7256944179534912,
+      "random_joint_std": null,
+      "dynamic_joint": 0.6973484754562378,
+      "dynamic_joint_std": null,
+      "body_part": 0.6368055939674377,
+      "body_part_std": null,
+      "temporal": 0.8037878274917603,
+      "temporal_std": null,
+      "official_NM": 0.8696969696969699,
+      "official_NM_std": null,
+      "official_BG": 0.6996212121212122,
+      "official_BG_std": null,
+      "official_CL": 0.6439393939393938,
+      "official_CL_std": null,
+      "train_hours": 1.2762351311291826,
+      "train_hours_std": null,
+      "parameters": 3488897
+    },
+    {
+      "arm": "parts",
+      "descriptor": "raw_uniform",
+      "seeds": 1,
+      "complete_arm": false,
+      "clean": 0.868686854839325,
+      "clean_std": null,
+      "robust": 0.7152304649353027,
+      "robust_std": null,
+      "severity_05": 0.7184343338012695,
+      "severity_05_std": null,
+      "occluded": 0.7458175420761108,
+      "occluded_std": null,
+      "random_joint": 0.7263889312744141,
+      "random_joint_std": null,
+      "dynamic_joint": 0.6975378394126892,
+      "dynamic_joint_std": null,
+      "body_part": 0.630618691444397,
+      "body_part_std": null,
+      "temporal": 0.8063762784004211,
+      "temporal_std": null,
+      "official_NM": 0.865909090909091,
+      "official_NM_std": null,
+      "official_BG": 0.6981060606060606,
+      "official_BG_std": null,
+      "official_CL": 0.646969696969697,
+      "official_CL_std": null,
+      "train_hours": 1.2762351311291826,
+      "train_hours_std": null,
+      "parameters": 3488897
+    },
+    {
+      "arm": "pooling",
+      "descriptor": "global",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8636363546053568,
+      "clean_std": 0.011222471525827112,
+      "robust": 0.69862167040507,
+      "robust_std": 0.011382086662780597,
+      "severity_05": 0.7023989756902059,
+      "severity_05_std": 0.013181777154852825,
+      "occluded": 0.7167718807856241,
+      "occluded_std": 0.005536027811494609,
+      "random_joint": 0.7049663265546163,
+      "random_joint_std": 0.02309659358781062,
+      "dynamic_joint": 0.6897727251052856,
+      "dynamic_joint_std": 0.011431270912216233,
+      "body_part": 0.6138257384300232,
+      "body_part_std": 0.007516354312212103,
+      "temporal": 0.7859217127164205,
+      "temporal_std": 0.011236848025820643,
+      "official_NM": 0.8291666666666667,
+      "official_NM_std": 0.020086475126610392,
+      "official_BG": 0.6779040404040404,
+      "official_BG_std": 0.006821688211737435,
+      "official_CL": 0.6542929292929295,
+      "official_CL_std": 0.008974422042382269,
+      "train_hours": 0.9797455164433363,
+      "train_hours_std": 0.23121842307140758,
+      "parameters": 1687570
+    },
+    {
+      "arm": "pooling",
+      "descriptor": "raw_reliable",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.878787895043691,
+      "clean_std": 0.0057860749048877485,
+      "robust": 0.7262100378672282,
+      "robust_std": 0.015225717768795442,
+      "severity_05": 0.7402357061704,
+      "severity_05_std": 0.02244151089987897,
+      "occluded": 0.7451862295468649,
+      "occluded_std": 0.006052840069822762,
+      "random_joint": 0.7305344939231873,
+      "random_joint_std": 0.030425295610534545,
+      "dynamic_joint": 0.7138468027114868,
+      "dynamic_joint_std": 0.015592416772322287,
+      "body_part": 0.6452651619911194,
+      "body_part_std": 0.009741086078867358,
+      "temporal": 0.8151935736338297,
+      "temporal_std": 0.008765984065430544,
+      "official_NM": 0.8694444444444445,
+      "official_NM_std": 0.007160326706443298,
+      "official_BG": 0.7089646464646465,
+      "official_BG_std": 0.006618859809131882,
+      "official_CL": 0.6794191919191919,
+      "official_CL_std": 0.015946624795329746,
+      "train_hours": 0.9797455164433363,
+      "train_hours_std": 0.23121842307140758,
+      "parameters": 1687570
+    },
+    {
+      "arm": "pooling",
+      "descriptor": "raw_uniform",
+      "seeds": 3,
+      "complete_arm": true,
+      "clean": 0.8800505002339681,
+      "clean_std": 0.005050510168104871,
+      "robust": 0.7254155874252319,
+      "robust_std": 0.015423500368274496,
+      "severity_05": 0.7375420530637106,
+      "severity_05_std": 0.02281659674956481,
+      "occluded": 0.7451546986897787,
+      "occluded_std": 0.006651160458581452,
+      "random_joint": 0.7300715645154318,
+      "random_joint_std": 0.03103133571999247,
+      "dynamic_joint": 0.7139310042063395,
+      "dynamic_joint_std": 0.015572307401984967,
+      "body_part": 0.641708771387736,
+      "body_part_std": 0.011053838920989682,
+      "temporal": 0.8159511884053549,
+      "temporal_std": 0.008269307434908474,
+      "official_NM": 0.8691919191919192,
+      "official_NM_std": 0.00514278077131719,
+      "official_BG": 0.7080808080808082,
+      "official_BG_std": 0.008821231552883141,
+      "official_CL": 0.6805555555555555,
+      "official_CL_std": 0.016839382851364153,
+      "train_hours": 0.9797455164433363,
+      "train_hours_std": 0.23121842307140758,
+      "parameters": 1687570
+    }
+  ],
+  "comparisons": [
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.01262626238167286,
+        -0.008838383480906487,
+        0.021464645862579346
+      ],
+      "difference": 0.008417508668369718,
+      "ci95": [
+        -0.027777778605620067,
+        0.037457913574245244
+      ],
+      "positive_fraction": 0.73735
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.032054923474788666,
+        -0.03446969762444496,
+        -0.011979165486991405
+      ],
+      "difference": -0.004797980858711526,
+      "ci95": [
+        -0.04733809446010532,
+        0.04032525619711829
+      ],
+      "positive_fraction": 0.40425
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.043686866760253906,
+        -0.05858585610985756,
+        -0.03579545393586159
+      ],
+      "difference": -0.016898145821566384,
+      "ci95": [
+        -0.07679134794549705,
+        0.05046401576449465
+      ],
+      "positive_fraction": 0.2878
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.012847223319113255,
+        -0.01646149531006813,
+        0.010227272287011147
+      ],
+      "difference": 0.002204333223073834,
+      "ci95": [
+        -0.020250163953460288,
+        0.023011365502255406
+      ],
+      "positive_fraction": 0.59725
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.043813128024339676,
+        -0.05972221493721008,
+        -0.031881313771009445
+      ],
+      "difference": -0.015930132681710854,
+      "ci95": [
+        -0.07689445659052581,
+        0.0495375627923446
+      ],
+      "positive_fraction": 0.2816
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03705808147788048,
+        -0.02165403962135315,
+        -0.00492424052208662
+      ],
+      "difference": 0.0034932668721820745,
+      "ci95": [
+        -0.0422979796892226,
+        0.05210543067789524
+      ],
+      "positive_fraction": 0.55985
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.030871210619807243,
+        -0.03623737022280693,
+        -0.026262622326612473
+      ],
+      "difference": -0.010542928137713008,
+      "ci95": [
+        -0.06433080735829813,
+        0.04476010180078446
+      ],
+      "positive_fraction": 0.34935
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.016477271914482117,
+        -0.02026515267789364,
+        0.015151513740420341
+      ],
+      "difference": 0.003787878292819692,
+      "ci95": [
+        -0.034344489420699474,
+        0.03766887346670648
+      ],
+      "positive_fraction": 0.6046
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.011363636702299118,
+        -0.04040404036641121,
+        0.0037878789007663727
+      ],
+      "difference": -0.008417508668369718,
+      "ci95": [
+        -0.04419192050894102,
+        0.022727273404598236
+      ],
+      "positive_fraction": 0.30445
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.023358585312962532,
+        -0.06354167312383652,
+        -0.024147730320692062
+      ],
+      "difference": -0.0214436016827272,
+      "ci95": [
+        -0.07320194334153914,
+        0.02282236718659378
+      ],
+      "positive_fraction": 0.19245
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.024179289117455482,
+        -0.07481060922145844,
+        -0.04482322931289673
+      ],
+      "difference": -0.031818181146971054,
+      "ci95": [
+        -0.08851062991048417,
+        0.02180187440567852
+      ],
+      "positive_fraction": 0.13235
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.007039139978587627,
+        -0.04062499850988388,
+        -0.0007417930755764246
+      ],
+      "difference": -0.011442552466178313,
+      "ci95": [
+        -0.038953207800417056,
+        0.010090749418466433
+      ],
+      "positive_fraction": 0.22885
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03232323378324509,
+        -0.09015151113271713,
+        -0.04570706561207771
+      ],
+      "difference": -0.03451178488386278,
+      "ci95": [
+        -0.10782827708834601,
+        0.03194549660288926
+      ],
+      "positive_fraction": 0.1571
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03693181648850441,
+        -0.0623106025159359,
+        -0.019949492067098618
+      ],
+      "difference": -0.015109428502101865,
+      "ci95": [
+        -0.07582176189947253,
+        0.03838383768452332
+      ],
+      "positive_fraction": 0.30985
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.020454544574022293,
+        -0.04760100692510605,
+        -0.030618684366345406
+      ],
+      "difference": -0.019255050241352163,
+      "ci95": [
+        -0.07039141365377065,
+        0.023611638648112054
+      ],
+      "positive_fraction": 0.20615
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0037247485015541315,
+        -0.054103534668684006,
+        -0.00031565717654302716
+      ],
+      "difference": -0.016898147616302595,
+      "ci95": [
+        -0.05921717066181979,
+        0.017466855481688935
+      ],
+      "positive_fraction": 0.19475
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0025252525229007006,
+        -0.04040404036641121,
+        0.007575757801532745
+      ],
+      "difference": -0.010101010402043661,
+      "ci95": [
+        -0.04419192050894102,
+        0.019781145370668836
+      ],
+      "positive_fraction": 0.25615
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.024021463468670845,
+        -0.06265782564878464,
+        -0.024558082222938538
+      ],
+      "difference": -0.021064815499509375,
+      "ci95": [
+        -0.07171230951628078,
+        0.023742899814775814
+      ],
+      "positive_fraction": 0.1954
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.025126265361905098,
+        -0.07165404409170151,
+        -0.04501262679696083
+      ],
+      "difference": -0.030513467991517648,
+      "ci95": [
+        -0.08712121038956361,
+        0.022222749641837715
+      ],
+      "positive_fraction": 0.14295
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.006770831998437643,
+        -0.03964647278189659,
+        0.0007260074489749968
+      ],
+      "difference": -0.010716543869218893,
+      "ci95": [
+        -0.03805345502785511,
+        0.010527802580165516
+      ],
+      "positive_fraction": 0.2466
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03465908765792847,
+        -0.08768939226865768,
+        -0.04457070678472519
+      ],
+      "difference": -0.0325336683050005,
+      "ci95": [
+        -0.10511521404647889,
+        0.03510100894297163
+      ],
+      "positive_fraction": 0.1712
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.035353533923625946,
+        -0.059911616146564484,
+        -0.02013888768851757
+      ],
+      "difference": -0.014898990681912336,
+      "ci95": [
+        -0.07472695558099077,
+        0.038279667490860356
+      ],
+      "positive_fraction": 0.3086
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02209595963358879,
+        -0.04848485067486763,
+        -0.032260097563266754
+      ],
+      "difference": -0.01954966090205643,
+      "ci95": [
+        -0.07361320971976966,
+        0.025694443683864344
+      ],
+      "positive_fraction": 0.21545
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.003977274056524038,
+        -0.05454545095562935,
+        -0.0012626274256035686
+      ],
+      "difference": -0.017276935525135033,
+      "ci95": [
+        -0.059554921831295356,
+        0.016919718650428326
+      ],
+      "positive_fraction": 0.192
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.007575757801532745,
+        0.0,
+        0.017676766961812973
+      ],
+      "difference": 0.008417508668369718,
+      "ci95": [
+        -0.03156565750638644,
+        0.0505050520102183
+      ],
+      "positive_fraction": 0.6702
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.019996844232082367,
+        0.002809343859553337,
+        0.0183712150901556
+      ],
+      "difference": 0.013725801474518247,
+      "ci95": [
+        -0.014230976981828765,
+        0.044213224020010454
+      ],
+      "positive_fraction": 0.84455
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.018939396366477013,
+        0.009217171929776669,
+        0.0041035376489162445
+      ],
+      "difference": 0.010753367587717043,
+      "ci95": [
+        -0.02268623537125273,
+        0.04543402634509317
+      ],
+      "positive_fraction": 0.74175
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00844381283968687,
+        0.02395833097398281,
+        0.022648358717560768
+      ],
+      "difference": 0.01835016854521301,
+      "ci95": [
+        0.00024700107848426976,
+        0.039104719578366094
+      ],
+      "positive_fraction": 0.9764
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04482323303818703,
+        -0.0057449499145150185,
+        0.006376264151185751
+      ],
+      "difference": 0.015151515622468045,
+      "ci95": [
+        -0.02197022184635797,
+        0.0660353481027414
+      ],
+      "positive_fraction": 0.7484
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03270202502608299,
+        0.008207069709897041,
+        0.035479795187711716
+      ],
+      "difference": 0.02546296449792054,
+      "ci95": [
+        -0.009302397719067003,
+        0.06228956525252821
+      ],
+      "positive_fraction": 0.93105
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.006691916845738888,
+        0.0030934358946979046,
+        0.003030305029824376
+      ],
+      "difference": 0.004271886098043372,
+      "ci95": [
+        -0.026831859215518408,
+        0.0333759471838776
+      ],
+      "positive_fraction": 0.62795
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.004229798447340727,
+        0.005681818351149559,
+        0.0285984817892313
+      ],
+      "difference": 0.010016833276798328,
+      "ci95": [
+        -0.026157408351233848,
+        0.04922137573303189
+      ],
+      "positive_fraction": 0.716
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.010101010091602802,
+        -0.022727273404598236,
+        -0.0012626262614503503
+      ],
+      "difference": -0.004629629767603344,
+      "ci95": [
+        -0.037037038140826754,
+        0.028619529472457036
+      ],
+      "positive_fraction": 0.34185
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02013889141380787,
+        -0.01901830919086933,
+        0.004119316581636667
+      ],
+      "difference": 0.0017466320779122827,
+      "ci95": [
+        -0.02842566757875223,
+        0.03393860640345436
+      ],
+      "positive_fraction": 0.53005
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.01805555447936058,
+        -0.016982322558760643,
+        -0.004482323303818703
+      ],
+      "difference": -0.0011363645317032933,
+      "ci95": [
+        -0.028851539550426727,
+        0.028767360050308784
+      ],
+      "positive_fraction": 0.4542
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.007417929358780384,
+        0.008112373761832714,
+        0.01827651634812355
+      ],
+      "difference": 0.01126893905246915,
+      "ci95": [
+        -0.0018781559522823145,
+        0.027962041331617598
+      ],
+      "positive_fraction": 0.9557
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04053030163049698,
+        -0.03295454382896423,
+        -0.0023358589969575405
+      ],
+      "difference": 0.0017466316930949688,
+      "ci95": [
+        -0.04393992276099097,
+        0.05726009819837701
+      ],
+      "positive_fraction": 0.494
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03402777761220932,
+        -0.028598487377166748,
+        0.015340909361839294
+      ],
+      "difference": 0.0069234017347399555,
+      "ci95": [
+        -0.03604955499969138,
+        0.05448337719200118
+      ],
+      "positive_fraction": 0.6107
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.007702020462602377,
+        0.0010100994259119034,
+        -0.010542930103838444
+      ],
+      "difference": -0.0006102703777079136,
+      "ci95": [
+        -0.025189395574176675,
+        0.024515992500689917
+      ],
+      "positive_fraction": 0.47555
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.001704544760286808,
+        -0.015530302189290524,
+        0.014015148393809795
+      ],
+      "difference": -0.0010732328131174047,
+      "ci95": [
+        -0.026809760980540887,
+        0.031040085763541107
+      ],
+      "positive_fraction": 0.44315
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.007575757801532745,
+        -0.020202020183205605,
+        -0.0012626262614503503
+      ],
+      "difference": -0.004629629767603344,
+      "ci95": [
+        -0.03493266097373433,
+        0.026936027738783095
+      ],
+      "positive_fraction": 0.33875
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.020975381135940552,
+        -0.019286617636680603,
+        0.004308711271733046
+      ],
+      "difference": 0.0019991576813885737,
+      "ci95": [
+        -0.02788826018125595,
+        0.034975538619134196
+      ],
+      "positive_fraction": 0.5392
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.020770197734236717,
+        -0.01748737506568432,
+        -0.0025883817579597235
+      ],
+      "difference": 0.00023148025017386922,
+      "ci95": [
+        -0.02769413219519063,
+        0.03213541476773861
+      ],
+      "positive_fraction": 0.49345
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.007244317792356014,
+        0.00962752290070057,
+        0.019428661093115807
+      ],
+      "difference": 0.012100167420511652,
+      "ci95": [
+        -0.0012156740699235038,
+        0.02916666592678262
+      ],
+      "positive_fraction": 0.964
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04191918671131134,
+        -0.03030303120613098,
+        -0.0009469672804698348
+      ],
+      "difference": 0.0035563973166669407,
+      "ci95": [
+        -0.04215119974299645,
+        0.05852272598616158
+      ],
+      "positive_fraction": 0.53085
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03541666641831398,
+        -0.025946971029043198,
+        0.016035353764891624
+      ],
+      "difference": 0.008501683669819368,
+      "ci95": [
+        -0.03333333237678744,
+        0.05458806470422201
+      ],
+      "positive_fraction": 0.64195
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.008143940009176731,
+        -0.004608585964888334,
+        -0.012310603633522987
+      ],
+      "difference": -0.0029250835585925314,
+      "ci95": [
+        -0.028535875523165385,
+        0.022790404432453216
+      ],
+      "positive_fraction": 0.39555
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0015782816335558891,
+        -0.016287878155708313,
+        0.014457070268690586
+      ],
+      "difference": -0.001136363639185826,
+      "ci95": [
+        -0.027210124843339952,
+        0.030724432795411965
+      ],
+      "positive_fraction": 0.43385
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.021464645862579346,
+        -0.017676766961812973,
+        -0.032828282564878464
+      ],
+      "difference": -0.023989899704853695,
+      "ci95": [
+        -0.06902357108063167,
+        0.017676768203576405
+      ],
+      "positive_fraction": 0.13195
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0014046737924218178,
+        -0.0044349743984639645,
+        0.009169825352728367
+      ],
+      "difference": 0.0011100596667448473,
+      "ci95": [
+        -0.033540084372119354,
+        0.03650673665660069
+      ],
+      "positive_fraction": 0.52035
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.012752524577081203,
+        0.010669193230569363,
+        0.016161616891622543
+      ],
+      "difference": 0.013194444071915414,
+      "ci95": [
+        -0.02388520681933086,
+        0.04722222143059803
+      ],
+      "positive_fraction": 0.77065
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.016177399083971977,
+        0.0041508800350129604,
+        -0.001988638425245881
+      ],
+      "difference": -0.004671719132198228,
+      "ci95": [
+        -0.03139244150467372,
+        0.02428977085671957
+      ],
+      "positive_fraction": 0.35335
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.028535356745123863,
+        -0.013383837416768074,
+        0.024053027853369713
+      ],
+      "difference": 0.013068179522330562,
+      "ci95": [
+        -0.03459595987935447,
+        0.06148989358528828
+      ],
+      "positive_fraction": 0.7206
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.016035355627536774,
+        0.0029671674128621817,
+        0.02556818164885044
+      ],
+      "difference": 0.014856902217086378,
+      "ci95": [
+        -0.026767676365014988,
+        0.05820707267978125
+      ],
+      "positive_fraction": 0.75335
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.03914141282439232,
+        -0.006755052134394646,
+        -0.005871213041245937
+      ],
+      "difference": -0.017255892485587135,
+      "ci95": [
+        -0.06067024461355888,
+        0.02784090879657823
+      ],
+      "positive_fraction": 0.22505
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.01104798074811697,
+        -0.0005681840120814741,
+        -0.007070707157254219
+      ],
+      "difference": -0.00622895719586975,
+      "ci95": [
+        -0.04568655455206883,
+        0.03209280184916367
+      ],
+      "positive_fraction": 0.38245
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.007575757801532745,
+        -0.022727273404598236,
+        -0.047979798167943954
+      ],
+      "difference": -0.026094276871946123,
+      "ci95": [
+        -0.07281144998139805,
+        0.015993266469902463
+      ],
+      "positive_fraction": 0.11785
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0067077032290399075,
+        -0.03325442224740982,
+        -0.02165403962135315
+      ],
+      "difference": -0.020538722692031622,
+      "ci95": [
+        -0.05418271027002548,
+        0.012358215609047953
+      ],
+      "positive_fraction": 0.11
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.00770201999694109,
+        -0.032133836299180984,
+        -0.026578281074762344
+      ],
+      "difference": -0.02213804836760068,
+      "ci95": [
+        -0.05656618349280001,
+        0.01336279028457486
+      ],
+      "positive_fraction": 0.09875
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.025678660720586777,
+        -0.011994952335953712,
+        -0.010416666977107525
+      ],
+      "difference": -0.016030094567314437,
+      "ci95": [
+        -0.040746005004479634,
+        0.00928056528102588
+      ],
+      "positive_fraction": 0.09835
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02417929470539093,
+        -0.05321969836950302,
+        -0.019002526998519897
+      ],
+      "difference": -0.01601430900498397,
+      "ci95": [
+        -0.07074915426718588,
+        0.0369739056733023
+      ],
+      "positive_fraction": 0.25405
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.015088382177054882,
+        -0.038257576525211334,
+        -0.008712118491530418
+      ],
+      "difference": -0.010627105896775093,
+      "ci95": [
+        -0.05347275505450347,
+        0.03625841336454161
+      ],
+      "positive_fraction": 0.2936
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.054103534668684006,
+        -0.025315655395388603,
+        -0.03371212258934975
+      ],
+      "difference": -0.03771043956900636,
+      "ci95": [
+        -0.07685343183628801,
+        0.0024416025779726972
+      ],
+      "positive_fraction": 0.0324
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.011994949541985989,
+        -0.01622474566102028,
+        -0.025189394131302834
+      ],
+      "difference": -0.017803030062673822,
+      "ci95": [
+        -0.05023200818783759,
+        0.013615847128676204
+      ],
+      "positive_fraction": 0.13525
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.011363636702299118,
+        -0.020202020183205605,
+        -0.049242425709962845
+      ],
+      "difference": -0.026936027738783095,
+      "ci95": [
+        -0.07323232541481654,
+        0.012626263002554575
+      ],
+      "positive_fraction": 0.09665
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.006897096522152424,
+        -0.0338541679084301,
+        -0.020864898338913918
+      ],
+      "difference": -0.020538720294603588,
+      "ci95": [
+        -0.05424571459850793,
+        0.012711227188669336
+      ],
+      "positive_fraction": 0.11115
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.010164141654968262,
+        -0.031313128769397736,
+        -0.023674242198467255
+      ],
+      "difference": -0.021717172594637506,
+      "ci95": [
+        -0.05511416375003238,
+        0.013763149758516247
+      ],
+      "positive_fraction": 0.10195
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.02626262791454792,
+        -0.011505682952702045,
+        -0.00926452036947012
+      ],
+      "difference": -0.01567761141793906,
+      "ci95": [
+        -0.040472435069710225,
+        0.009754049678223133
+      ],
+      "positive_fraction": 0.1072
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02386363409459591,
+        -0.05334595963358879,
+        -0.017550505697727203
+      ],
+      "difference": -0.015677607875307142,
+      "ci95": [
+        -0.06889730502290006,
+        0.03705808106072558
+      ],
+      "positive_fraction": 0.2517
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.013446971774101257,
+        -0.03888889402151108,
+        -0.01117424014955759
+      ],
+      "difference": -0.01220538752053171,
+      "ci95": [
+        -0.05334596083507722,
+        0.0338604811043948
+      ],
+      "positive_fraction": 0.2622
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.05303030461072922,
+        -0.024621212854981422,
+        -0.0294191911816597
+      ],
+      "difference": -0.03569023512924711,
+      "ci95": [
+        -0.07630471327704275,
+        0.005345118971955445
+      ],
+      "positive_fraction": 0.0427
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.011868689209222794,
+        -0.018560605123639107,
+        -0.025315657258033752
+      ],
+      "difference": -0.018581650394480675,
+      "ci95": [
+        -0.05204229953524191,
+        0.012310606830093699
+      ],
+      "positive_fraction": 0.1212
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.036616161465644836
+      ],
+      "difference": 0.03661616270740827,
+      "ci95": [
+        -0.0012626263002554576,
+        0.08459596211711566
+      ],
+      "positive_fraction": 0.96855
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.0476483590900898
+      ],
+      "difference": 0.04764835614090165,
+      "ci95": [
+        -0.00029987487941980363,
+        0.09319799332103378
+      ],
+      "positive_fraction": 0.9745
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.04393939673900604
+      ],
+      "difference": 0.04393939425547918,
+      "ci95": [
+        -0.013259149602769563,
+        0.09734848281368613
+      ],
+      "positive_fraction": 0.9348
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.030618686228990555
+      ],
+      "difference": 0.030618686384210985,
+      "ci95": [
+        0.006202652270440013,
+        0.05445115056936626
+      ],
+      "positive_fraction": 0.99175
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.06426767259836197
+      ],
+      "difference": 0.0642676716670394,
+      "ci95": [
+        0.0021448816250388835,
+        0.1203282764259105
+      ],
+      "positive_fraction": 0.97775
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.0520833320915699
+      ],
+      "difference": 0.05208333239230948,
+      "ci95": [
+        -0.001137940781821573,
+        0.10309342858211797
+      ],
+      "positive_fraction": 0.97245
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.02619948983192444
+      ],
+      "difference": 0.02619949324677388,
+      "ci95": [
+        -0.03554293173365295,
+        0.09072127405088382
+      ],
+      "positive_fraction": 0.7895
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.04804292693734169
+      ],
+      "difference": 0.04804292685973147,
+      "ci95": [
+        0.007196969872651,
+        0.09204545089354117
+      ],
+      "positive_fraction": 0.98935
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "clean",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.0012626262614503503
+      ],
+      "difference": 0.0012626263002554576,
+      "ci95": [
+        -0.0416666679084301,
+        0.04419192050894102
+      ],
+      "positive_fraction": 0.5122
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "robust",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.01619318127632141
+      ],
+      "difference": 0.016193182518084843,
+      "ci95": [
+        -0.021259867524107294,
+        0.0519420807133428
+      ],
+      "positive_fraction": 0.80295
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "severity_05",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.0014520215336233377
+      ],
+      "difference": 0.001452020660508424,
+      "ci95": [
+        -0.044191916782680585,
+        0.04305555503475868
+      ],
+      "positive_fraction": 0.5421
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "occluded",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.0025410365778952837
+      ],
+      "difference": -0.002541037082361678,
+      "ci95": [
+        -0.025000398731208406,
+        0.017219460707080206
+      ],
+      "positive_fraction": 0.4286
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "random_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.036868683993816376
+      ],
+      "difference": 0.03686868663256367,
+      "ci95": [
+        -0.01906723615635807,
+        0.08945864913597068
+      ],
+      "positive_fraction": 0.9046
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.027967173606157303
+      ],
+      "difference": 0.027967171743512154,
+      "ci95": [
+        -0.017613632394932213,
+        0.07449652561141785
+      ],
+      "positive_fraction": 0.87965
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "body_part",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.003030305029824376
+      ],
+      "difference": 0.0030303015373647213,
+      "ci95": [
+        -0.04513888922519982,
+        0.052462117684384184
+      ],
+      "positive_fraction": 0.5489
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "temporal",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.0030934324022382498
+      ],
+      "difference": -0.0030934306172033152,
+      "ci95": [
+        -0.03617423604785775,
+        0.027020202949643135
+      ],
+      "positive_fraction": 0.43775
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.0
+      ],
+      "difference": 0.0,
+      "ci95": [
+        -0.0416666679084301,
+        0.0416666679084301
+      ],
+      "positive_fraction": 0.47865
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.016919191926717758
+      ],
+      "difference": 0.016919192314768832,
+      "ci95": [
+        -0.021227906157340236,
+        0.052667299394185345
+      ],
+      "positive_fraction": 0.8114
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.004671717062592506
+      ],
+      "difference": 0.0046717163641005754,
+      "ci95": [
+        -0.03970959622529335,
+        0.04507733620897232
+      ],
+      "positive_fraction": 0.5911
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.002556819235906005
+      ],
+      "difference": -0.002556817101625105,
+      "ci95": [
+        -0.026704940049482196,
+        0.017929686127657347
+      ],
+      "positive_fraction": 0.42925
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.03787878528237343
+      ],
+      "difference": 0.03787878636891643,
+      "ci95": [
+        -0.018813129522216816,
+        0.09109848132745052
+      ],
+      "positive_fraction": 0.9069
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.026893937960267067
+      ],
+      "difference": 0.0268939392020305,
+      "ci95": [
+        -0.022032826223100224,
+        0.07436868275981397
+      ],
+      "positive_fraction": 0.86125
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.0029671734664589167
+      ],
+      "difference": 0.0029671720306699476,
+      "ci95": [
+        -0.04299242199728421,
+        0.05018939194948568
+      ],
+      "positive_fraction": 0.54585
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -6.313155608950183e-05
+      ],
+      "difference": -6.313078726331393e-05,
+      "ci95": [
+        -0.03327020243353521,
+        0.02992424136803796
+      ],
+      "positive_fraction": 0.51325
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.007575757801532745,
+        0.04292929172515869,
+        0.05050504952669144
+      ],
+      "difference": 0.033670034259557724,
+      "ci95": [
+        -0.013888889302810034,
+        0.08080808321634929
+      ],
+      "positive_fraction": 0.9227
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02373737283051014,
+        0.03159722313284874,
+        0.05943813547492027
+      ],
+      "difference": 0.03825757999826843,
+      "ci95": [
+        -0.007524069151905778,
+        0.08325995147913795
+      ],
+      "positive_fraction": 0.9525
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.030113637447357178,
+        0.022853536531329155,
+        0.05511363968253136
+      ],
+      "difference": 0.036026936527276926,
+      "ci95": [
+        -0.018308077362235053,
+        0.08505944931534432
+      ],
+      "positive_fraction": 0.9133
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0026357299648225307,
+        0.012073861435055733,
+        0.0347222238779068
+      ],
+      "difference": 0.014720117552011894,
+      "ci95": [
+        -0.01527790846153544,
+        0.04664891095405133
+      ],
+      "positive_fraction": 0.8236
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03440656512975693,
+        -0.0036616132128983736,
+        0.05726009979844093
+      ],
+      "difference": 0.02933501687625216,
+      "ci95": [
+        -0.039268199578186294,
+        0.08989951658424813
+      ],
+      "positive_fraction": 0.8226
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.035227276384830475,
+        0.03737373650074005,
+        0.0678030252456665
+      ],
+      "difference": 0.04680134714322372,
+      "ci95": [
+        -0.008438550718387382,
+        0.0994107718566536
+      ],
+      "positive_fraction": 0.9548
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.012310603633522987,
+        0.041161615401506424,
+        0.04722222313284874
+      ],
+      "difference": 0.03356481289180616,
+      "ci95": [
+        -0.00789247023834226,
+        0.08110321522496325
+      ],
+      "positive_fraction": 0.94425
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "global",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.013005051761865616,
+        0.05151515081524849,
+        0.06546717137098312
+      ],
+      "difference": 0.04332912420957453,
+      "ci95": [
+        -0.005388258330478694,
+        0.09707544276607218
+      ],
+      "positive_fraction": 0.96
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.010101010091602802,
+        0.0012626262614503503,
+        0.023989899083971977
+      ],
+      "difference": 0.011784512135717604,
+      "ci95": [
+        -0.024831650571690664,
+        0.055555557211240135
+      ],
+      "positive_fraction": 0.71015
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.018213381990790367,
+        -0.011079548858106136,
+        0.0348169170320034
+      ],
+      "difference": 0.013983583931500712,
+      "ci95": [
+        -0.02561566330615379,
+        0.05539811739484621
+      ],
+      "positive_fraction": 0.75425
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02026515081524849,
+        -0.02556818164885044,
+        0.030618686228990555
+      ],
+      "difference": 0.008438551565632224,
+      "ci95": [
+        -0.03914141407003627,
+        0.0565667054855212
+      ],
+      "positive_fraction": 0.6434
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.005571339279413223,
+        -0.003156567458063364,
+        0.023563764989376068
+      ],
+      "difference": 0.004945286368537281,
+      "ci95": [
+        -0.020396675522594405,
+        0.034138258525086305
+      ],
+      "positive_fraction": 0.6288
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03497474640607834,
+        -0.05789141356945038,
+        0.024621212854981422
+      ],
+      "difference": 0.0005681826086300942,
+      "ci95": [
+        -0.06863057544526074,
+        0.06513099399744529
+      ],
+      "positive_fraction": 0.51335
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0345328263938427,
+        -0.019002525135874748,
+        0.04135100916028023
+      ],
+      "difference": 0.018960436657329813,
+      "ci95": [
+        -0.03253472367117259,
+        0.0725804899896805
+      ],
+      "positive_fraction": 0.77635
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.004419193137437105,
+        0.017108583822846413,
+        0.030744949355721474
+      ],
+      "difference": 0.0174242406954161,
+      "ci95": [
+        -0.018161302462815204,
+        0.05422979470135437
+      ],
+      "positive_fraction": 0.84375
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_reliable",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0010732319205999374,
+        0.015467174351215363,
+        0.042550504207611084
+      ],
+      "difference": 0.01898148120380938,
+      "ci95": [
+        -0.019508101580949087,
+        0.0635942772438284
+      ],
+      "positive_fraction": 0.8175
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00631313119083643,
+        0.005050505045801401,
+        0.022727273404598236
+      ],
+      "difference": 0.011363636288377974,
+      "ci95": [
+        -0.026094276871946123,
+        0.055555557211240135
+      ],
+      "positive_fraction": 0.68775
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.018765781074762344,
+        -0.011347855441272259,
+        0.03543245047330856
+      ],
+      "difference": 0.014283459814679291,
+      "ci95": [
+        -0.02543679150274127,
+        0.05639757002548623
+      ],
+      "positive_fraction": 0.75965
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.021906564012169838,
+        -0.026136362925171852,
+        0.03162878751754761
+      ],
+      "difference": 0.009132993200586902,
+      "ci95": [
+        -0.038847856376863395,
+        0.05940866969693951
+      ],
+      "positive_fraction": 0.6475
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.00552399130538106,
+        -0.0016098510241135955,
+        0.026452017948031425
+      ],
+      "difference": 0.006439393162723437,
+      "ci95": [
+        -0.020118109720177704,
+        0.0371318661907145
+      ],
+      "positive_fraction": 0.65505
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0347222164273262,
+        -0.058080803602933884,
+        0.026136364787817
+      ],
+      "difference": 0.0009259267244488001,
+      "ci95": [
+        -0.0675299910712056,
+        0.06744633657831896
+      ],
+      "positive_fraction": 0.51665
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03339647129178047,
+        -0.018560603260993958,
+        0.04021464288234711
+      ],
+      "difference": 0.01835016952180821,
+      "ci95": [
+        -0.03320707109055042,
+        0.07125473436899478
+      ],
+      "positive_fraction": 0.77065
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00669191824272275,
+        0.01521464716643095,
+        0.03390151634812355
+      ],
+      "difference": 0.018602693602184042,
+      "ci95": [
+        -0.016561447661014327,
+        0.057870896280574985
+      ],
+      "positive_fraction": 0.8579
+    },
+    {
+      "kind": "architecture",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00025252741761505604,
+        0.016035355627536774,
+        0.041477270424366
+      ],
+      "difference": 0.01925504973365201,
+      "ci95": [
+        -0.018308610393917964,
+        0.0643944665115365
+      ],
+      "positive_fraction": 0.82585
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.020202020183205605,
+        0.046717170625925064,
+        0.04419191926717758
+      ],
+      "difference": 0.037037038140826754,
+      "ci95": [
+        0.012194865683300637,
+        0.058501685245169535
+      ],
+      "positive_fraction": 0.99485
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.036568813025951385,
+        0.060227274894714355,
+        0.058791033923625946
+      ],
+      "difference": 0.0518623758172099,
+      "ci95": [
+        0.028377262945610306,
+        0.07485900913792032
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.051136359572410583,
+        0.0743686780333519,
+        0.07077020406723022
+      ],
+      "difference": 0.06542508296358089,
+      "ci95": [
+        0.03716224887175486,
+        0.09280302792321891
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.032481059432029724,
+        0.042203281074762344,
+        0.03988320752978325
+      ],
+      "difference": 0.038189184037037194,
+      "ci95": [
+        0.026394021468392266,
+        0.05050531245328277
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.031060606241226196,
+        0.06717171519994736,
+        0.06477273255586624
+      ],
+      "difference": 0.05433501727465126,
+      "ci95": [
+        0.024242425940206484,
+        0.08638520713817945
+      ],
+      "positive_fraction": 0.99995
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02790404111146927,
+        0.06748736649751663,
+        0.060353536158800125
+      ],
+      "difference": 0.051914981928550534,
+      "ci95": [
+        0.021506207522341152,
+        0.0835858508976849
+      ],
+      "positive_fraction": 0.9995
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.040782827883958817,
+        0.0486111044883728,
+        0.05334595963358879
+      ],
+      "difference": 0.04757996585653422,
+      "ci95": [
+        0.02514678081436917,
+        0.0702861959962724
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04652777686715126,
+        0.05763889104127884,
+        0.056691914796829224
+      ],
+      "difference": 0.05361952930171457,
+      "ci95": [
+        0.03421717276408647,
+        0.07186500635903531
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02525252476334572,
+        0.04545454680919647,
+        0.04545454680919647
+      ],
+      "difference": 0.0387205398745007,
+      "ci95": [
+        0.01515151560306549,
+        0.06018518697884348
+      ],
+      "positive_fraction": 0.99815
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03516414016485214,
+        0.059532828629016876,
+        0.05760732293128967
+      ],
+      "difference": 0.05076809924665011,
+      "ci95": [
+        0.027277725950504345,
+        0.07386389850483584
+      ],
+      "positive_fraction": 0.99995
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.047285355627536774,
+        0.07159090787172318,
+        0.06723485141992569
+      ],
+      "difference": 0.06203703608965346,
+      "ci95": [
+        0.034469168988774376,
+        0.08890993226668797
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03164457157254219,
+        0.040561869740486145,
+        0.037784092128276825
+      ],
+      "difference": 0.03666351135406229,
+      "ci95": [
+        0.025457705660179877,
+        0.048500633469666356
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.030744947493076324,
+        0.0663510113954544,
+        0.06344696134328842
+      ],
+      "difference": 0.05351430940855709,
+      "ci95": [
+        0.023232322521895794,
+        0.08524937142307551
+      ],
+      "positive_fraction": 0.9998
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02916666679084301,
+        0.06710858643054962,
+        0.06155303120613098
+      ],
+      "difference": 0.052609426137577325,
+      "ci95": [
+        0.022495265406905673,
+        0.08493265066192382
+      ],
+      "positive_fraction": 0.99955
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03465908765792847,
+        0.045643940567970276,
+        0.04823232442140579
+      ],
+      "difference": 0.04284511729686832,
+      "ci95": [
+        0.021336802023708717,
+        0.06521517155520587
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "control",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04608585685491562,
+        0.0590277761220932,
+        0.057196974754333496
+      ],
+      "difference": 0.05410353479803436,
+      "ci95": [
+        0.034743266715668145,
+        0.07266519400161786
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.005050505045801401,
+        0.0012626262614503503,
+        -0.0012626262614503503
+      ],
+      "difference": -0.0016835017336739434,
+      "ci95": [
+        -0.0063131315012772875,
+        0.002946128033929401
+      ],
+      "positive_fraction": 0.17615
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.001404670998454094,
+        0.0006944454507902265,
+        0.0011837119236588478
+      ],
+      "difference": 0.0010942761717907682,
+      "ci95": [
+        -0.0002630475187083352,
+        0.0023726858921966627
+      ],
+      "positive_fraction": 0.9456
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.003851009765639901,
+        0.00277777761220932,
+        0.0035353531129658222
+      ],
+      "difference": 0.00338804694796091,
+      "ci95": [
+        0.0006944445702878973,
+        0.00631313056849953
+      ],
+      "positive_fraction": 0.99315
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0008364895475097001,
+        0.0016414131969213486,
+        0.0020991151686757803
+      ],
+      "difference": 0.001525672750883839,
+      "ci95": [
+        0.00033143933968757564,
+        0.0026725581847535473
+      ],
+      "positive_fraction": 0.99375
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00031565697281621397,
+        0.0008207071223296225,
+        0.0013257578248158097
+      ],
+      "difference": 0.0008207073621177501,
+      "ci95": [
+        -0.0008838382295697,
+        0.0025673399372412938
+      ],
+      "positive_fraction": 0.82755
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0012626263778656721,
+        0.0003787881869357079,
+        -0.0011994948145002127
+      ],
+      "difference": -0.0006944442638047104,
+      "ci95": [
+        -0.002714646203211754,
+        0.0017676773643959347
+      ],
+      "positive_fraction": 0.24185
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.006123737897723913,
+        0.0029671713709831238,
+        0.005113636609166861
+      ],
+      "difference": 0.004734848630808604,
+      "ci95": [
+        0.0018939388771589923,
+        0.007807238908693156
+      ],
+      "positive_fraction": 0.9996
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "control",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "control",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00044191876077093184,
+        -0.0013888884568586946,
+        -0.0005050509353168309
+      ],
+      "difference": -0.0004840069193697159,
+      "ci95": [
+        -0.0020622903056817534,
+        0.0011153200386517974
+      ],
+      "positive_fraction": 0.2591
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.018939394503831863,
+        0.01515151560306549,
+        0.02651515230536461
+      ],
+      "difference": 0.020202020804087322,
+      "ci95": [
+        -0.004208754334184859,
+        0.04250841877526707
+      ],
+      "positive_fraction": 0.9526
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.027872474864125252,
+        0.031155304983258247,
+        0.04662247374653816
+      ],
+      "difference": 0.035216753120847794,
+      "ci95": [
+        0.011363638050776595,
+        0.06141138283740774
+      ],
+      "positive_fraction": 0.99875
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03162878751754761,
+        0.058143939822912216,
+        0.06174242123961449
+      ],
+      "difference": 0.05050504906749767,
+      "ci95": [
+        0.01799137216973274,
+        0.0833964603531058
+      ],
+      "positive_fraction": 0.99855
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.026672979816794395,
+        0.018039772287011147,
+        0.02891414426267147
+      ],
+      "difference": 0.024542297766957846,
+      "ci95": [
+        0.008159460519932004,
+        0.03972025044737771
+      ],
+      "positive_fraction": 0.9978
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.01957070641219616,
+        0.036742422729730606,
+        0.05094696953892708
+      ],
+      "difference": 0.03575336693191073,
+      "ci95": [
+        0.0012410568066924402,
+        0.07093907798536946
+      ],
+      "positive_fraction": 0.97915
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0277777761220932,
+        0.026830805465579033,
+        0.0453282855451107
+      ],
+      "difference": 0.033312287750757404,
+      "ci95": [
+        0.008038720952916063,
+        0.061300504378353556
+      ],
+      "positive_fraction": 0.996
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.030366159975528717,
+        0.03724747523665428,
+        0.04898989200592041
+      ],
+      "difference": 0.03886784457912048,
+      "ci95": [
+        0.013468014000682161,
+        0.0673195493688884
+      ],
+      "positive_fraction": 0.9993
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03377525135874748,
+        0.023800503462553024,
+        0.04122474789619446
+      ],
+      "difference": 0.032933502645593964,
+      "ci95": [
+        0.011994952187524176,
+        0.05303030356072769
+      ],
+      "positive_fraction": 0.9976
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.01515151560306549,
+        0.013888888992369175,
+        0.03156565502285957
+      ],
+      "difference": 0.020202020804087322,
+      "ci95": [
+        -0.0050505052010218305,
+        0.04377104507552253
+      ],
+      "positive_fraction": 0.947
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02713068388402462,
+        0.0313446968793869,
+        0.045028407126665115
+      ],
+      "difference": 0.03450126319916712,
+      "ci95": [
+        0.010590014840838397,
+        0.060759549999945824
+      ],
+      "positive_fraction": 0.9984
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02872474491596222,
+        0.058522723615169525,
+        0.05801767110824585
+      ],
+      "difference": 0.04842171685433843,
+      "ci95": [
+        0.015614478537786958,
+        0.0810400870140357
+      ],
+      "positive_fraction": 0.99795
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02556818164885044,
+        0.017376894131302834,
+        0.028282824903726578
+      ],
+      "difference": 0.02374263429859032,
+      "ci95": [
+        0.0074704080538746595,
+        0.0390098890011561
+      ],
+      "positive_fraction": 0.99715
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.021590912714600563,
+        0.038383837789297104,
+        0.050757572054862976
+      ],
+      "difference": 0.0369107748200703,
+      "ci95": [
+        0.0030508212968319037,
+        0.07083385794733957
+      ],
+      "positive_fraction": 0.9836
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.027462121099233627,
+        0.028851008042693138,
+        0.04633837938308716
+      ],
+      "difference": 0.03421717096999702,
+      "ci95": [
+        0.008186027234640075,
+        0.06239478173924403
+      ],
+      "positive_fraction": 0.99595
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.025883836671710014,
+        0.033396463841199875,
+        0.04223484545946121
+      ],
+      "difference": 0.03383838191318015,
+      "ci95": [
+        0.009217171249393788,
+        0.06262783897562042
+      ],
+      "positive_fraction": 0.9977
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03358585759997368,
+        0.02474747598171234,
+        0.040782827883958817
+      ],
+      "difference": 0.033038721258182906,
+      "ci95": [
+        0.012710438849009936,
+        0.053114478152969644
+      ],
+      "positive_fraction": 0.99785
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0037878789007663727,
+        0.0012626262614503503,
+        -0.005050505045801401
+      ],
+      "difference": 0.0,
+      "ci95": [
+        -0.0063131315012772875,
+        0.0050505052010218305
+      ],
+      "positive_fraction": 0.4888
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0007417930755764246,
+        -0.0001893929293146357,
+        0.0015940667362883687
+      ],
+      "difference": 0.0007154888970568103,
+      "ci95": [
+        -0.0010942753248441867,
+        0.002204468060705096
+      ],
+      "positive_fraction": 0.8116
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0029040409717708826,
+        -0.00037878871080465615,
+        0.0037247473374009132
+      ],
+      "difference": 0.0020833332000926665,
+      "ci95": [
+        -0.0012415830319191122,
+        0.005029461758853793
+      ],
+      "positive_fraction": 0.9016
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0011047973530367017,
+        0.0006628789124079049,
+        0.000631314585916698
+      ],
+      "difference": 0.000799663549615717,
+      "ci95": [
+        -0.000552399188321336,
+        0.002088594761456382
+      ],
+      "positive_fraction": 0.88605
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0020202016457915306,
+        -0.001641414244659245,
+        0.00018939384608529508
+      ],
+      "difference": -0.0011574074039776639,
+      "ci95": [
+        -0.003345959325209454,
+        0.0006313128302207725
+      ],
+      "positive_fraction": 0.10945
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00031565665267407894,
+        -0.0020202025771141052,
+        -0.0010101008228957653
+      ],
+      "difference": -0.0009048822011445073,
+      "ci95": [
+        -0.003303872027008582,
+        0.0011994952826492888
+      ],
+      "positive_fraction": 0.2051
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.004482323303818703,
+        0.00385100906714797,
+        0.006755051203072071
+      ],
+      "difference": 0.005029461132648624,
+      "ci95": [
+        0.0013257574088809162,
+        0.0084806393178749
+      ],
+      "positive_fraction": 0.9959
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "angles",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "angles",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00018939383153337985,
+        -0.0009469693759456277,
+        0.00044191908091306686
+      ],
+      "difference": -0.00010521885943254317,
+      "ci95": [
+        -0.0018728954592576225,
+        0.0011789775735285412
+      ],
+      "positive_fraction": 0.4981
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.022727273404598236,
+        0.023989899083971977,
+        0.02525252476334572
+      ],
+      "difference": 0.023989899704853695,
+      "ci95": [
+        -0.00042087543341848586,
+        0.04503367137577799
+      ],
+      "positive_fraction": 0.97065
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03671086207032204,
+        0.038399625569581985,
+        0.04453913867473602
+      ],
+      "difference": 0.039883208273547806,
+      "ci95": [
+        0.024136938036018463,
+        0.056933924387623035
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0502525232732296,
+        0.04816918820142746,
+        0.06218434497714043
+      ],
+      "difference": 0.05353535175931433,
+      "ci95": [
+        0.031165297616906982,
+        0.07746264607525918
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03145517781376839,
+        0.026357322931289673,
+        0.03551136329770088
+      ],
+      "difference": 0.0311079547003222,
+      "ci95": [
+        0.019712753198109566,
+        0.04280842304481968
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.026767674833536148,
+        0.03996211662888527,
+        0.05606060475111008
+      ],
+      "difference": 0.04093013412138033,
+      "ci95": [
+        0.01174242638614184,
+        0.06944444385978082
+      ],
+      "positive_fraction": 0.99615
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.029229799285531044,
+        0.03068181686103344,
+        0.040214646607637405
+      ],
+      "difference": 0.03337542063834715,
+      "ci95": [
+        0.01245738702960403,
+        0.054630156279219744
+      ],
+      "positive_fraction": 0.9992
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04179292917251587,
+        0.04652777686715126,
+        0.039772726595401764
+      ],
+      "difference": 0.04269781015360233,
+      "ci95": [
+        0.02396885400600943,
+        0.0639941074830356
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04905302822589874,
+        0.036426763981580734,
+        0.04210858419537544
+      ],
+      "difference": 0.042529461465569005,
+      "ci95": [
+        0.026599327003673855,
+        0.05856481282745436
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02525252476334572,
+        0.02525252476334572,
+        0.02651515230536461
+      ],
+      "difference": 0.025673401438527636,
+      "ci95": [
+        0.0012626263002554576,
+        0.04713804854287042
+      ],
+      "positive_fraction": 0.97935
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.036142680794000626,
+        0.037436868995428085,
+        0.043544817715883255
+      ],
+      "difference": 0.039041457574866295,
+      "ci95": [
+        0.02387902629125165,
+        0.0558869971796715
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04911615699529648,
+        0.04488636180758476,
+        0.06054292991757393
+      ],
+      "difference": 0.05151514917896646,
+      "ci95": [
+        0.030071546865090365,
+        0.07601115161329887
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.030445074662566185,
+        0.026231059804558754,
+        0.03456439450383186
+      ],
+      "difference": 0.030413509883348726,
+      "ci95": [
+        0.019654619187026077,
+        0.04165614388297804
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.027840908616781235,
+        0.04179292917251587,
+        0.05612373352050781
+      ],
+      "difference": 0.04191919064356221,
+      "ci95": [
+        0.014457071373666017,
+        0.0689393878148015
+      ],
+      "positive_fraction": 0.9976
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.031881313771009445,
+        0.03295454382896423,
+        0.04210858419537544
+      ],
+      "difference": 0.03564814821907526,
+      "ci95": [
+        0.015508733309980016,
+        0.057007572380179124
+      ],
+      "positive_fraction": 0.9999
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03611110895872116,
+        0.03794191777706146,
+        0.0328914113342762
+      ],
+      "difference": 0.03564814696761055,
+      "ci95": [
+        0.017466328945334276,
+        0.05513520621833671
+      ],
+      "positive_fraction": 0.99995
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04873737320303917,
+        0.03705807775259018,
+        0.04305555298924446
+      ],
+      "difference": 0.04295033713828565,
+      "ci95": [
+        0.027062291359309,
+        0.05862794568270652
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0025252525229007006,
+        -0.0012626262614503503,
+        -0.0012626262614503503
+      ],
+      "difference": -0.0016835017336739434,
+      "ci95": [
+        -0.0050505052010218305,
+        0.0008417508668369717
+      ],
+      "positive_fraction": 0.0529
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0005681814509443939,
+        0.0009627532563172281,
+        0.0009943180484697223
+      ],
+      "difference": 0.0008417509240402077,
+      "ci95": [
+        -0.0008785778230554165,
+        0.002299031845567657
+      ],
+      "positive_fraction": 0.85075
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0011363639496266842,
+        0.0032828275579959154,
+        0.0016414137789979577
+      ],
+      "difference": 0.0020202018867065716,
+      "ci95": [
+        -0.0011574073860376505,
+        0.0050084172222139185
+      ],
+      "positive_fraction": 0.9012
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0010101004736497998,
+        0.00012626331590581685,
+        0.0009469707729294896
+      ],
+      "difference": 0.0006944448307047003,
+      "ci95": [
+        -0.00031565586444625614,
+        0.0016414133381554641
+      ],
+      "positive_fraction": 0.9195
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0010732318041846156,
+        -0.0018308074213564396,
+        -6.313223275355995e-05
+      ],
+      "difference": -0.0009890573080832935,
+      "ci95": [
+        -0.003935184725726836,
+        0.0017887201742220102
+      ],
+      "positive_fraction": 0.24835
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0026515149511396885,
+        -0.0022727272007614374,
+        -0.0018939385190606117
+      ],
+      "difference": -0.002272727069549219,
+      "ci95": [
+        -0.004398148362727651,
+        -0.00027356854941789385
+      ],
+      "positive_fraction": 0.01305
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.005681818351149559,
+        0.008585859090089798,
+        0.006881312932819128
+      ],
+      "difference": 0.007049663200935659,
+      "ci95": [
+        0.003766834819624718,
+        0.010332491434706348
+      ],
+      "positive_fraction": 0.99995
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "late_fusion",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "late_fusion",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00031565665267407894,
+        -0.0006313136545941234,
+        -0.000946969841606915
+      ],
+      "difference": -0.0004208756263661067,
+      "ci95": [
+        -0.00162037054870483,
+        0.0007791457698226392
+      ],
+      "positive_fraction": 0.23275
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.034090910106897354,
+        0.0416666679084301,
+        0.02904040366411209
+      ],
+      "difference": 0.03493266097373433,
+      "ci95": [
+        0.013888889302810034,
+        0.055555557211240135
+      ],
+      "positive_fraction": 0.99825
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03126578405499458,
+        0.031407829374074936,
+        0.027967171743512154
+      ],
+      "difference": 0.03021359412135401,
+      "ci95": [
+        0.015482953894712005,
+        0.046106901809010496
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03068181872367859,
+        0.03156565502285957,
+        0.028030304238200188
+      ],
+      "difference": 0.030092591828886524,
+      "ci95": [
+        0.014014623392237505,
+        0.047496314651167826
+      ],
+      "positive_fraction": 0.9998
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.022979795932769775,
+        0.026057450100779533,
+        0.03145517781376839
+      ],
+      "difference": 0.02683080809139129,
+      "ci95": [
+        0.01822916587892299,
+        0.03788404668472747
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02670454792678356,
+        0.027335859835147858,
+        0.021717172116041183
+      ],
+      "difference": 0.02525252601804419,
+      "ci95": [
+        0.007785669146687724,
+        0.04358217795379456
+      ],
+      "positive_fraction": 0.99705
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0269570704549551,
+        0.02626262605190277,
+        0.026073232293128967
+      ],
+      "difference": 0.026430976578720018,
+      "ci95": [
+        0.01075336623568243,
+        0.0424242437713676
+      ],
+      "positive_fraction": 0.99935
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02582070603966713,
+        0.030050504952669144,
+        0.025505049154162407
+      ],
+      "difference": 0.027125419972839557,
+      "ci95": [
+        0.010122053463379011,
+        0.04694917791687957
+      ],
+      "positive_fraction": 0.9995
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04558080434799194,
+        0.04198232293128967,
+        0.03857323154807091
+      ],
+      "difference": 0.04204545539677588,
+      "ci95": [
+        0.024558081527513778,
+        0.05982849466252235
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.035353533923625946,
+        0.04292929172515869,
+        0.02904040366411209
+      ],
+      "difference": 0.0357744118405713,
+      "ci95": [
+        0.014730640169647004,
+        0.05639730807807711
+      ],
+      "positive_fraction": 0.99855
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.029671717435121536,
+        0.030113637447357178,
+        0.027572602033615112
+      ],
+      "difference": 0.029119317929144017,
+      "ci95": [
+        0.014293981694976941,
+        0.04502867363076396
+      ],
+      "positive_fraction": 0.99985
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.024368686601519585,
+        0.029608581215143204,
+        0.027398990467190742
+      ],
+      "difference": 0.02712542037059191,
+      "ci95": [
+        0.010858586634074326,
+        0.045959593571913294
+      ],
+      "positive_fraction": 0.9991
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.021559344604611397,
+        0.024905305355787277,
+        0.030508210882544518
+      ],
+      "difference": 0.025657618112745695,
+      "ci95": [
+        0.016803450836919687,
+        0.036579469356001926
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.026073234155774117,
+        0.02638888917863369,
+        0.021843435242772102
+      ],
+      "difference": 0.02476851937050621,
+      "ci95": [
+        0.0073016631222950915,
+        0.04267729583856024
+      ],
+      "positive_fraction": 0.9972
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.026578281074762344,
+        0.02525252476334572,
+        0.024810602888464928
+      ],
+      "difference": 0.025547137749122664,
+      "ci95": [
+        0.009995265526716443,
+        0.04162457678984437
+      ],
+      "positive_fraction": 0.99895
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.020770203322172165,
+        0.02777777798473835,
+        0.024684341624379158
+      ],
+      "difference": 0.024410773906210024,
+      "ci95": [
+        0.006797137765453145,
+        0.043623735684620135
+      ],
+      "positive_fraction": 0.99675
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.04526514932513237,
+        0.041035354137420654,
+        0.038952019065618515
+      ],
+      "difference": 0.04175084330684816,
+      "ci95": [
+        0.02386363655742672,
+        0.05997632942679842
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0012626262614503503,
+        -0.0012626262614503503,
+        0.0
+      ],
+      "difference": -0.0008417508668369717,
+      "ci95": [
+        -0.002946128033929401,
+        0.0012626263002554576
+      ],
+      "positive_fraction": 0.1308
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0015940655721351504,
+        0.00129419204313308,
+        0.0003945701173506677
+      ],
+      "difference": 0.0010942759297855567,
+      "ci95": [
+        -3.8909102005139376e-10,
+        0.0021148992362948872
+      ],
+      "positive_fraction": 0.9749
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00631313119083643,
+        0.001957070315256715,
+        0.000631313887424767
+      ],
+      "difference": 0.0029671719385078177,
+      "ci95": [
+        -0.00046296285513057635,
+        0.006418351024654436
+      ],
+      "positive_fraction": 0.95295
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0014204548206180334,
+        0.0011521460255607963,
+        0.0009469703072682023
+      ],
+      "difference": 0.0011731903699916761,
+      "ci95": [
+        0.0005313554851424093,
+        0.0019675927491022397
+      ],
+      "positive_fraction": 0.99915
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0006313123740255833,
+        0.0009469700744375587,
+        -0.00012626289390027523
+      ],
+      "difference": 0.0004840065141699225,
+      "ci95": [
+        -0.000694444601245005,
+        0.0017255889909738897
+      ],
+      "positive_fraction": 0.81185
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.00037878743023611605,
+        0.0010101009393110871,
+        0.0012626262614503503
+      ],
+      "difference": 0.000883838262905598,
+      "ci95": [
+        -0.0006944445398587054,
+        0.002188551996477933
+      ],
+      "positive_fraction": 0.9072
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.005050504580140114,
+        0.002272727433592081,
+        0.0008207067148759961
+      ],
+      "difference": 0.0027146463812350832,
+      "ci95": [
+        -0.0007786197954854856,
+        0.005871210974388911
+      ],
+      "positive_fraction": 0.94135
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "adaptive",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "adaptive",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0003156569437123835,
+        0.0009469700744375587,
+        -0.00037878789589740336
+      ],
+      "difference": 0.0002946130212992963,
+      "ci95": [
+        -0.0007154881110733235,
+        0.0015361957052708473
+      ],
+      "positive_fraction": 0.6894
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.01515151560306549
+      ],
+      "difference": -0.01515151560306549,
+      "ci95": [
+        -0.03914141530791918,
+        0.011363636702299118
+      ],
+      "positive_fraction": 0.1198
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.005113634746521711
+      ],
+      "difference": 0.005113635561428964,
+      "ci95": [
+        -0.016351007240397546,
+        0.027352035737324785
+      ],
+      "positive_fraction": 0.66715
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.008648988790810108
+      ],
+      "difference": 0.008648990105333118,
+      "ci95": [
+        -0.02064551857220067,
+        0.039774306294202554
+      ],
+      "positive_fraction": 0.7072
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.0006786620942875743
+      ],
+      "difference": -0.0006786621718977889,
+      "ci95": [
+        -0.014835855926503428,
+        0.01426767341423935
+      ],
+      "positive_fraction": 0.4534
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.003661616239696741
+      ],
+      "difference": 0.0036616174038499594,
+      "ci95": [
+        -0.017992424014179657,
+        0.023991479901208715
+      ],
+      "positive_fraction": 0.63215
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.0037878782022744417
+      ],
+      "difference": 0.003787877426172296,
+      "ci95": [
+        -0.018371212558122352,
+        0.025694444009180493
+      ],
+      "positive_fraction": 0.6416
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.017613636329770088
+      ],
+      "difference": 0.017613637105872233,
+      "ci95": [
+        -0.010669190622866153,
+        0.04924242542280505
+      ],
+      "positive_fraction": 0.8772
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.004608584567904472
+      ],
+      "difference": -0.004608584955955545,
+      "ci95": [
+        -0.02967329659926084,
+        0.022032829399298258
+      ],
+      "positive_fraction": 0.3567
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.011363636702299118
+      ],
+      "difference": -0.011363636702299118,
+      "ci95": [
+        -0.03535353640715281,
+        0.013888889302810034
+      ],
+      "positive_fraction": 0.1641
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.004434973932802677
+      ],
+      "difference": 0.004434973971607785,
+      "ci95": [
+        -0.016430317344687258,
+        0.026025880808204723
+      ],
+      "positive_fraction": 0.6505
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.008017675019800663
+      ],
+      "difference": 0.00801767649439474,
+      "ci95": [
+        -0.018686869579444952,
+        0.03724747438488218
+      ],
+      "positive_fraction": 0.70105
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.0015309335431084037
+      ],
+      "difference": -0.0015309338147441547,
+      "ci95": [
+        -0.015167297486914321,
+        0.01324179204336057
+      ],
+      "positive_fraction": 0.41145
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.004356061108410358
+      ],
+      "difference": 0.004356061341241002,
+      "ci95": [
+        -0.016098484866476307,
+        0.024053033309367793
+      ],
+      "positive_fraction": 0.6663
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.003977271728217602
+      ],
+      "difference": 0.003977270641674598,
+      "ci95": [
+        -0.01963384033103163,
+        0.026010098174447195
+      ],
+      "positive_fraction": 0.6389
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.011426766403019428
+      ],
+      "difference": 0.011426767256731788,
+      "ci95": [
+        -0.01641414128826,
+        0.04248737326706759
+      ],
+      "positive_fraction": 0.76665
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.0020202018786221743
+      ],
+      "difference": -0.0020202011025200286,
+      "ci95": [
+        -0.026453599128096052,
+        0.024558083621862657
+      ],
+      "positive_fraction": 0.4332
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.0037878789007663727
+      ],
+      "difference": -0.0037878789007663727,
+      "ci95": [
+        -0.008838384101788202,
+        0.0012626263002554576
+      ],
+      "positive_fraction": 0.04275
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.0006786612211726606
+      ],
+      "difference": 0.0006786611920688301,
+      "ci95": [
+        -0.0010101023867415885,
+        0.0021306817368895283
+      ],
+      "positive_fraction": 0.8003
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.0006313130725175142
+      ],
+      "difference": 0.0006313130701656918,
+      "ci95": [
+        -0.0024621218374125953,
+        0.0035984855377605685
+      ],
+      "positive_fraction": 0.66395
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.0008522716234438121
+      ],
+      "difference": 0.0008522715865495653,
+      "ci95": [
+        -0.00042613838319598786,
+        0.002004418109223632
+      ],
+      "positive_fraction": 0.9063
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.0006944446358829737
+      ],
+      "difference": -0.0006944445159399182,
+      "ci95": [
+        -0.002272727219561337,
+        0.0008838379558503815
+      ],
+      "positive_fraction": 0.1924
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.00018939316214527935
+      ],
+      "difference": -0.0001893931678778419,
+      "ci95": [
+        -0.0035984845996911946,
+        0.0031565667896894982
+      ],
+      "positive_fraction": 0.45985
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        0.006186869461089373
+      ],
+      "difference": 0.006186869150648515,
+      "ci95": [
+        0.002334279505400144,
+        0.009659091884289712
+      ],
+      "positive_fraction": 0.99875
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "parts",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "parts",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11
+      ],
+      "seed_count": 1,
+      "seed_differences": [
+        -0.00258838408626616
+      ],
+      "difference": -0.0025883840874420714,
+      "ci95": [
+        -0.0044823241600004775,
+        -0.0007575757011613569
+      ],
+      "positive_fraction": 0.00205
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.022727273404598236,
+        0.005050505045801401,
+        0.017676766961812973
+      ],
+      "difference": 0.01515151560306549,
+      "ci95": [
+        -0.0050505052010218305,
+        0.03240740837322341
+      ],
+      "positive_fraction": 0.93075
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.031044820323586464,
+        0.017550501972436905,
+        0.034169819205999374
+      ],
+      "difference": 0.027588381745573445,
+      "ci95": [
+        0.005313154866802108,
+        0.0448761030352519
+      ],
+      "positive_fraction": 0.989
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.041287876665592194,
+        0.02594696916639805,
+        0.04627525433897972
+      ],
+      "difference": 0.03783670018634035,
+      "ci95": [
+        0.009827440286365648,
+        0.057681505260471624
+      ],
+      "positive_fraction": 0.99345
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.029545452445745468,
+        0.026972852647304535,
+        0.02872474677860737
+      ],
+      "difference": 0.028414351154222257,
+      "ci95": [
+        0.018339646912580873,
+        0.038489056246018866
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03162878751754761,
+        0.012941919267177582,
+        0.03213384002447128
+      ],
+      "difference": 0.02556818132385767,
+      "ci95": [
+        -0.003556397135616862,
+        0.048484845919948484
+      ],
+      "positive_fraction": 0.9636
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02720959484577179,
+        0.01111111044883728,
+        0.03390151262283325
+      ],
+      "difference": 0.02407407279084013,
+      "ci95": [
+        0.00025252547347918156,
+        0.0427398932923685
+      ],
+      "positive_fraction": 0.97575
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0328914113342762,
+        0.024558082222938538,
+        0.036868683993816376
+      ],
+      "difference": 0.03143939361648841,
+      "ci95": [
+        0.011657721780486302,
+        0.047875104745940464
+      ],
+      "positive_fraction": 0.9972
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.032449495047330856,
+        0.021590908989310265,
+        0.03377525135874748
+      ],
+      "difference": 0.02927188616659906,
+      "ci95": [
+        0.008543770440802392,
+        0.04810659026261414
+      ],
+      "positive_fraction": 0.9965
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.023989899083971977,
+        0.007575757801532745,
+        0.017676766961812973
+      ],
+      "difference": 0.01641414190332095,
+      "ci95": [
+        -0.003367003467347887,
+        0.034090910106897354
+      ],
+      "positive_fraction": 0.9465
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.030192550271749496,
+        0.016587750986218452,
+        0.03360164165496826
+      ],
+      "difference": 0.02679398019649347,
+      "ci95": [
+        0.0035932243400667277,
+        0.044618186117925986
+      ],
+      "positive_fraction": 0.98565
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.039078280329704285,
+        0.02260100655257702,
+        0.04375000298023224
+      ],
+      "difference": 0.03514309700565516,
+      "ci95": [
+        0.007659403801274797,
+        0.05465067272566052
+      ],
+      "positive_fraction": 0.9908
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.028756313025951385,
+        0.026878153905272484,
+        0.0295138880610466
+      ],
+      "difference": 0.028382785864070885,
+      "ci95": [
+        0.018213383269742027,
+        0.03869976181853819
+      ],
+      "positive_fraction": 1.0
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.031060604378581047,
+        0.011931817047297955,
+        0.03232323005795479
+      ],
+      "difference": 0.025105218461249024,
+      "ci95": [
+        -0.003956755775410177,
+        0.04842224462012781
+      ],
+      "positive_fraction": 0.9615
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02733585797250271,
+        0.011174242943525314,
+        0.033964645117521286
+      ],
+      "difference": 0.024158248406214018,
+      "ci95": [
+        -0.0007791468608451795,
+        0.04353956090732632
+      ],
+      "positive_fraction": 0.97165
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.02904040366411209,
+        0.019696969538927078,
+        0.034911613911390305
+      ],
+      "difference": 0.02788299727641667,
+      "ci95": [
+        0.0073432237414332744,
+        0.0435816508006408
+      ],
+      "positive_fraction": 0.99255
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_uniform",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "global",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.03333333134651184,
+        0.023547979071736336,
+        0.03320707008242607
+      ],
+      "difference": 0.03002946201821841,
+      "ci95": [
+        0.00968013597117129,
+        0.04911616304044502
+      ],
+      "positive_fraction": 0.99755
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "clean",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0012626262614503503,
+        -0.0025252525229007006,
+        0.0
+      ],
+      "difference": -0.0012626263002554576,
+      "ci95": [
+        -0.004629629767603344,
+        0.0008522727526715152
+      ],
+      "positive_fraction": 0.0861
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "robust",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0008522722055204213,
+        0.0009627520339563489,
+        0.0005681805778294802
+      ],
+      "difference": 0.000794401630450661,
+      "ci95": [
+        -0.00025778673878399733,
+        0.001925505058365289
+      ],
+      "positive_fraction": 0.9308
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "severity_05",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0022095958702266216,
+        0.003345959819853306,
+        0.0025252527557313442
+      ],
+      "difference": 0.0026936029510882995,
+      "ci95": [
+        0.0006944444011120747,
+        0.004671717341665903
+      ],
+      "positive_fraction": 0.99455
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "occluded",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0007891403511166573,
+        9.469722135690972e-05,
+        -0.0007891409914009273
+      ],
+      "difference": 3.156551696771438e-05,
+      "ci95": [
+        -0.0009048831088067446,
+        0.0011363636604624927
+      ],
+      "positive_fraction": 0.5157
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "random_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0005681817419826984,
+        0.001010101055726409,
+        -0.00018939434085041285
+      ],
+      "difference": 0.00046296281860992255,
+      "ci95": [
+        -0.0007365321629874369,
+        0.0019149828797337817
+      ],
+      "positive_fraction": 0.75055
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "dynamic_joint",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0001262631849385798,
+        -6.313162884907797e-05,
+        -6.313072663033381e-05
+      ],
+      "difference": -8.417513158394858e-05,
+      "ci95": [
+        -0.0018939400228797846,
+        0.0018097646202455907
+      ],
+      "positive_fraction": 0.45675
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "body_part",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        0.0038510102313011885,
+        0.00486111082136631,
+        0.0019570705480873585
+      ],
+      "difference": 0.0035563972107368366,
+      "ci95": [
+        0.0006944442209108578,
+        0.006418350127124641
+      ],
+      "positive_fraction": 0.9909
+    },
+    {
+      "kind": "descriptor",
+      "candidate_arm": "pooling",
+      "candidate_descriptor": "raw_reliable",
+      "baseline_arm": "pooling",
+      "baseline_descriptor": "raw_uniform",
+      "endpoint": "temporal",
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "seed_count": 3,
+      "seed_differences": [
+        -0.0008838385110720992,
+        -0.001957070780918002,
+        0.0005681819748133421
+      ],
+      "difference": -0.0007575757921867771,
+      "ci95": [
+        -0.0024626475239832263,
+        0.0007996630505658686
+      ],
+      "positive_fraction": 0.17665
+    }
+  ],
+  "manifest": [
+    {
+      "task_id": 0,
+      "arm": "control",
+      "seed": 11,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed11_20261005T124901176168Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 3,
+      "arm": "angles",
+      "seed": 11,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed11_20261005T155619659738Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 6,
+      "arm": "late_fusion",
+      "seed": 11,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed11_20261005T172829834137Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 9,
+      "arm": "adaptive",
+      "seed": 11,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed11_20261005T182057801630Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 12,
+      "arm": "parts",
+      "seed": 11,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed11_20261005T192653227291Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 15,
+      "arm": "pooling",
+      "seed": 11,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed11_20261005T204605873273Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 18,
+      "arm": "full",
+      "seed": 11,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed11_20261005T213819912534Z",
+      "status": "failed",
+      "saved_epoch": 0,
+      "has_checkpoint": false,
+      "failure_message": "CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 21.62 GiB of which 153.06 MiB is free. Process 21923 has 530.00 MiB memory in use. Process 55547 has 7.12 GiB memory in use. Process 63541 has 7.12 GiB memory in use. Including non-PyTorch memory, this process has 21.44 GiB memory in use. Of the allocated memory 20.87 GiB is allocated by PyTorch, and 326.68 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+    },
+    {
+      "task_id": 1,
+      "arm": "control",
+      "seed": 22,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed22_20261005T135938260219Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 4,
+      "arm": "angles",
+      "seed": 22,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed22_20261005T162106295984Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 7,
+      "arm": "late_fusion",
+      "seed": 22,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed22_20261005T173229281768Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 10,
+      "arm": "adaptive",
+      "seed": 22,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed22_20261005T185501844251Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 13,
+      "arm": "parts",
+      "seed": 22,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed22_20261005T204548358986Z",
+      "status": "failed",
+      "saved_epoch": 0,
+      "has_checkpoint": false,
+      "failure_message": "CUDA out of memory. Tried to allocate 288.00 MiB. GPU 0 has a total capacity of 10.75 GiB of which 236.00 MiB is free. Process 21923 has 530.00 MiB memory in use. Process 34593 has 8.93 GiB memory in use. Process 34925 has 14.60 GiB memory in use. Including non-PyTorch memory, this process has 10.50 GiB memory in use. Of the allocated memory 10.06 GiB is allocated by PyTorch, and 304.12 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+    },
+    {
+      "task_id": 16,
+      "arm": "pooling",
+      "seed": 22,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed22_20261005T205107741445Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 19,
+      "arm": "full",
+      "seed": 22,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed22_20261005T213830031144Z",
+      "status": "failed",
+      "saved_epoch": 0,
+      "has_checkpoint": false,
+      "failure_message": "CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 21.62 GiB of which 153.06 MiB is free. Process 21923 has 530.00 MiB memory in use. Process 55547 has 7.12 GiB memory in use. Process 63541 has 7.12 GiB memory in use. Including non-PyTorch memory, this process has 21.44 GiB memory in use. Of the allocated memory 20.87 GiB is allocated by PyTorch, and 326.69 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+    },
+    {
+      "task_id": 2,
+      "arm": "control",
+      "seed": 33,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed33_20261005T151027276948Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 5,
+      "arm": "angles",
+      "seed": 33,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed33_20261005T164219830600Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 8,
+      "arm": "late_fusion",
+      "seed": 33,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed33_20261005T175930172265Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 11,
+      "arm": "adaptive",
+      "seed": 33,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed33_20261005T192149783659Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 14,
+      "arm": "parts",
+      "seed": 33,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed33_20261005T204556898746Z",
+      "status": "failed",
+      "saved_epoch": 0,
+      "has_checkpoint": false,
+      "failure_message": "CUDA out of memory. Tried to allocate 288.00 MiB. GPU 0 has a total capacity of 10.75 GiB of which 236.00 MiB is free. Process 21923 has 530.00 MiB memory in use. Process 34593 has 8.93 GiB memory in use. Process 34925 has 14.60 GiB memory in use. Including non-PyTorch memory, this process has 10.50 GiB memory in use. Of the allocated memory 10.06 GiB is allocated by PyTorch, and 304.12 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+    },
+    {
+      "task_id": 17,
+      "arm": "pooling",
+      "seed": 33,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed33_20261005T211233174605Z",
+      "status": "complete",
+      "saved_epoch": 80,
+      "has_checkpoint": true,
+      "failure_message": ""
+    },
+    {
+      "task_id": 20,
+      "arm": "full",
+      "seed": 33,
+      "run_id": "casia_b_pose_part_adaptive_metric_baseline_seed33_20261005T213839979977Z",
+      "status": "failed",
+      "saved_epoch": 0,
+      "has_checkpoint": false,
+      "failure_message": "CUDA out of memory. Tried to allocate 192.00 MiB. GPU 0 has a total capacity of 21.62 GiB of which 151.06 MiB is free. Process 21923 has 530.00 MiB memory in use. Process 55547 has 7.12 GiB memory in use. Process 63541 has 7.12 GiB memory in use. Including non-PyTorch memory, this process has 21.44 GiB memory in use. Of the allocated memory 20.87 GiB is allocated by PyTorch, and 328.69 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)"
+    }
+  ]
+}

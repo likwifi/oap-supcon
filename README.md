@@ -4,6 +4,8 @@ This folder is the self-contained experiment workspace for the occlusion-aware p
 
 **Current development workflow:** [Benchmark V2](BENCHMARK_V2.md) documents the corrected augmentation, multistream graph encoder, metric-learning controls, validation-only model selection, and new GPU arrays. New runs write to `results_v2/`; the existing `results/` and `results_prefix_*/` contain historical experiments. No benchmark-leading result is claimed for V2 yet.
 
+**Opt-in architecture development:** [Architecture V3](ARCHITECTURE_V3.md) adds angle inputs, later stream fusion, adaptive graphs, anatomical refinement and masked mean-plus-max pooling. Seven controlled recipes write to `results_v3_dev/`; an official GPGait preparation script supports a separate reference comparison. Recognition gains require the GPU development matrix.
+
 ## What is included
 
 - Dataset folders and canonical NPZ schema for CASIA-B Pose, OUMVLP-Pose, SUSTech1K, Gait3D, GREW-Pose, CCPG, NTU RGB+D 120, OccGait, and a generated smoke dataset.
@@ -73,6 +75,11 @@ python -m oap_supcon.cli audit --dataset casia_b_pose
 ```
 
 The generic validator intentionally does not guess each provider's raw format. A dataset-specific exporter must be reviewed against the official protocol before results are valid. Keep 2D pose, lifted 3D, and SMPL-derived 3D in separate files and result tables.
+
+Gait3D's released HRNet text poses have a dedicated converter, coverage audit,
+development/final recipes, and matched descriptor comparison. See
+[`data/gait3d/README.md`](data/gait3d/README.md), including the explicitly labeled
+available-pose recipe for archives that do not cover the full supplied partition.
 
 ## Run one experiment
 

@@ -1,0 +1,10 @@
+extends: benchmark_v2
+experiment_id: gait3d_v2
+results_root: results_gait3d_v2
+final_results_root: results_gait3d_v2_final
+validation:
+  holdout_identities: 300
+  split_seed: 2026
+evaluation:
+  descriptors: [global, raw_reliable, raw_uniform]
+  part_weight: 0.5

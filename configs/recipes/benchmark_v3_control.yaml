@@ -1,0 +1,9 @@
+extends: benchmark_v3
+experiment_id: benchmark_v3_control
+model:
+  options:
+    use_angles: false
+    stream_blocks: 0
+    adaptive_graph: false
+    part_blocks: 0
+    pooling: mean

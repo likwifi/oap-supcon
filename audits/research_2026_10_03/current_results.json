@@ -1,0 +1,134 @@
+{
+  "review_date": "2026-10-03",
+  "representation": "2D HRNet COCO-17",
+  "cohort": "fixed-recipe final CASIA-B test, 85 epochs, five seeds",
+  "protocol": "single_view_gallery, identical views excluded",
+  "run_artifacts": [
+    "results_v2/casia_b_pose_multistream_metric_baseline_seed11_20261001T172728548787Z/metrics.json",
+    "results_v2/casia_b_pose_multistream_metric_baseline_seed22_20261001T172728552995Z/metrics.json",
+    "results_v2/casia_b_pose_multistream_metric_baseline_seed33_20261001T172728553240Z/metrics.json",
+    "results_v2/casia_b_pose_multistream_metric_baseline_seed44_20261001T184019506767Z/metrics.json",
+    "results_v2/casia_b_pose_multistream_metric_baseline_seed55_20261001T191724733464Z/metrics.json"
+  ],
+  "source_sha256": "7a351cacbbb4bd2a3658cacb73262ce40ebbe690db355a05c356bce3a21f58b1",
+  "config_fingerprint": "f25bd1747a7a941aa7e7589d3e6fabf24ccf5824bdd0d83c7df5d2acea546086",
+  "descriptors": {
+    "global": {
+      "NM": {
+        "mean_percent": 67.63818181818182,
+        "sample_sd_percent": 2.8264716783934603,
+        "by_seed": {
+          "11": 70.0,
+          "22": 63.281818181818174,
+          "33": 69.78181818181818,
+          "44": 68.74545454545455,
+          "55": 66.38181818181819
+        }
+      },
+      "BG": {
+        "mean_percent": 49.5,
+        "sample_sd_percent": 1.9207329007524832,
+        "by_seed": {
+          "11": 50.581818181818186,
+          "22": 46.290909090909096,
+          "33": 50.5,
+          "44": 50.97272727272727,
+          "55": 49.154545454545456
+        }
+      },
+      "CL": {
+        "mean_percent": 27.90727272727273,
+        "sample_sd_percent": 0.9446106373518913,
+        "by_seed": {
+          "11": 28.581818181818182,
+          "22": 26.31818181818182,
+          "33": 28.554545454545455,
+          "44": 27.781818181818185,
+          "55": 28.300000000000004
+        }
+      },
+      "condition_mean": {
+        "mean_percent": 48.34848484848485,
+        "sample_sd_percent": 1.8455864012207557
+      }
+    },
+    "raw_reliable": {
+      "NM": {
+        "mean_percent": 74.13636363636364,
+        "sample_sd_percent": 3.0350092243246234,
+        "by_seed": {
+          "11": 76.70000000000002,
+          "22": 69.41818181818182,
+          "33": 76.55454545454546,
+          "44": 75.03636363636363,
+          "55": 72.97272727272728
+        }
+      },
+      "BG": {
+        "mean_percent": 55.474545454545456,
+        "sample_sd_percent": 2.009557740909569,
+        "by_seed": {
+          "11": 56.75454545454546,
+          "22": 52.10909090909092,
+          "33": 56.2090909090909,
+          "44": 57.08181818181818,
+          "55": 55.21818181818182
+        }
+      },
+      "CL": {
+        "mean_percent": 32.51818181818182,
+        "sample_sd_percent": 1.8055584516470382,
+        "by_seed": {
+          "11": 33.763636363636365,
+          "22": 29.5,
+          "33": 33.42727272727274,
+          "44": 32.18181818181819,
+          "55": 33.71818181818181
+        }
+      },
+      "condition_mean": {
+        "mean_percent": 54.04303030303031,
+        "sample_sd_percent": 2.1756788624235655
+      }
+    },
+    "raw_uniform": {
+      "NM": {
+        "mean_percent": 74.02181818181818,
+        "sample_sd_percent": 3.0357144107229677,
+        "by_seed": {
+          "11": 76.58181818181819,
+          "22": 69.32727272727273,
+          "33": 76.53636363636363,
+          "44": 74.80000000000001,
+          "55": 72.86363636363635
+        }
+      },
+      "BG": {
+        "mean_percent": 55.558181818181815,
+        "sample_sd_percent": 2.0353853169436418,
+        "by_seed": {
+          "11": 56.90909090909091,
+          "22": 52.15454545454544,
+          "33": 56.39999999999999,
+          "44": 57.09090909090909,
+          "55": 55.23636363636364
+        }
+      },
+      "CL": {
+        "mean_percent": 32.53636363636364,
+        "sample_sd_percent": 1.8788954025927829,
+        "by_seed": {
+          "11": 33.83636363636363,
+          "22": 29.39090909090909,
+          "33": 33.4,
+          "44": 32.218181818181826,
+          "55": 33.83636363636364
+        }
+      },
+      "condition_mean": {
+        "mean_percent": 54.03878787878788,
+        "sample_sd_percent": 2.207214774670633
+      }
+    }
+  }
+}

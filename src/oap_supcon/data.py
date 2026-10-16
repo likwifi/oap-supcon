@@ -100,7 +100,8 @@ class PoseData:
             self.views,
         ):
             digest.update(str((array.dtype.str, array.shape)).encode())
-            digest.update(np.ascontiguousarray(array).tobytes())
+            # Hash the same bytes without duplicating multi-gigabyte pose arrays.
+            digest.update(memoryview(np.ascontiguousarray(array)).cast("B"))
         return digest.hexdigest()
 
     def indices(self, split_names: Iterable[str]) -> np.ndarray:
@@ -264,10 +265,11 @@ def resolve_dataset_path(project_root: Path, dataset_cfg: dict) -> Path:
 
 
 def development_split(data: PoseData, cfg: dict) -> tuple[PoseData, list[int]]:
-    """Create CASIA-B validation roles without copying poses or touching test IDs.
+    """Create validation roles without copying poses or touching test IDs.
 
     The holdout seed is a protocol choice and is independent of training seeds.
-    Other datasets must supply explicit identity-disjoint val_gallery/val_probe.
+    Gait3D uses one fixed probe per held-out identity and all remaining tracks
+    as gallery. Other datasets need explicit val_gallery/val_probe roles.
     """
     val = cfg.get("validation", {})
     if not val.get("enabled", False):
@@ -275,6 +277,25 @@ def development_split(data: PoseData, cfg: dict) -> tuple[PoseData, list[int]]:
     if len(data.indices(["val_gallery"])) and len(data.indices(["val_probe"])):
         data.validate()
         return data, sorted(np.unique(data.labels[data.indices(["val_gallery", "val_probe"])]).tolist())
+    if cfg["dataset"]["name"] == "gait3d":
+        train_indices = data.indices(["train"])
+        identities, counts = np.unique(data.labels[train_indices], return_counts=True)
+        eligible = identities[counts >= 2]
+        count = int(val.get("holdout_identities", 300))
+        if not 2 <= count <= min(len(eligible), len(identities) - 2):
+            raise ValueError("Gait3D holdout needs at least two identities with multiple tracks, "
+                             "and must retain at least two training identities")
+        rng = np.random.default_rng(int(val.get("split_seed", 2026)))
+        held = np.sort(rng.choice(eligible, count, replace=False))
+        split = data.split.astype("U16", copy=True)
+        for identity in held:
+            pool = train_indices[data.labels[train_indices] == identity]
+            pool = pool[np.argsort(data.sequence_ids[pool])]
+            split[pool] = "val_gallery"
+            split[int(rng.choice(pool))] = "val_probe"
+        result = replace(data, split=split)
+        result.validate()
+        return result, held.tolist()
     if cfg["dataset"]["name"] != "casia_b_pose":
         raise ValueError("this dataset needs explicit val_gallery and val_probe splits")
     train_ids = np.unique(data.labels[data.split == "train"])

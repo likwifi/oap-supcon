@@ -1,0 +1,4 @@
+split,identities,sequences,mean_frames,min_frames,max_frames,joints,dimensions,mean_source_visibility,zero_source_visibility_fraction
+gallery,947,5122,130.64,25,500,17,2,0.8289566,0.0
+probe,947,947,123.34,25,482,17,2,0.82831562,0.0
+train,2892,18135,129.75,7,500,17,2,0.82936424,0.0

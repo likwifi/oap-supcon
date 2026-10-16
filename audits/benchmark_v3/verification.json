@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-05",
+  "source_sha256": "7ca66c594856dc1f340de23cb56f178ebd0cf89998a70dd4b4faabe65e7796ac",
+  "test_command": "OMP_NUM_THREADS=2 python3 -m pytest -q",
+  "tests_passed": 124,
+  "tests_failed": 0,
+  "integration": "integration.json",
+  "real_training_steps": 3,
+  "reference_preparation_preview": "reference_preparation_preview.json",
+  "reference_sequences": 8140,
+  "official_test_sequences_used": 0,
+  "cuda_available": false,
+  "gpu_training_submitted": false,
+  "recognition_improvement_measured": false,
+  "array_shell_syntax": "passed",
+  "array_dry_run": "passed",
+  "python_compile": "passed",
+  "coverage": [
+    "V2 initialization/output/checkpoint compatibility",
+    "2D and 3D input geometry",
+    "absent joints and padding invariance",
+    "empty graph neighbourhoods",
+    "CPU BF16 backward",
+    "global-loss gradients in local branches",
+    "validation-only end-to-end training",
+    "raw reference pose export and identity separation"
+  ]
+}

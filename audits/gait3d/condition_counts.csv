@@ -1,0 +1,4 @@
+split,condition,sequences
+gallery,in_the_wild,5122
+probe,in_the_wild,947
+train,in_the_wild,18135

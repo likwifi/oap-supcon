@@ -1,5 +1,6 @@
 import numpy as np
 import pytest
+import hashlib
 
 import torch
 
@@ -87,3 +88,14 @@ def test_absent_joints_stay_at_the_origin_without_coordinate_weighting():
     visibility[:, :, 3] = 0.0
     unweighted = normalize_pose(x, visibility, weight_coordinates=False)
     assert torch.allclose(unweighted[:, :, 3], torch.zeros(1, 2, 2), atol=1e-6)
+
+
+def test_buffer_checksum_preserves_the_original_byte_checksum():
+    data = _padded_dataset()
+    data.x = data.x[:, ::-1]
+    digest = hashlib.sha256()
+    for array in (data.x, data.visibility, data.labels, data.split, data.sequence_ids,
+                  data.frame_counts, data.conditions, data.views):
+        digest.update(str((array.dtype.str, array.shape)).encode())
+        digest.update(np.ascontiguousarray(array).tobytes())
+    assert data.checksum() == digest.hexdigest()

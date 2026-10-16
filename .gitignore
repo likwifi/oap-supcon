@@ -55,3 +55,8 @@ slurm-*.out
 
 # Downloaded external baseline repositories
 /external/*/
+
+# Local-only artifacts
+$HOME/
+/logs_*/
+/external_runs/

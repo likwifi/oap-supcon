@@ -1,0 +1,7 @@
+extends: gait3d_v2
+experiment_id: gait3d_v2_available_pose
+results_root: results_gait3d_v2_available
+final_results_root: results_gait3d_v2_available_final
+dataset:
+  file: processed/dataset.npz
+  protocol: gait3d_available_pose

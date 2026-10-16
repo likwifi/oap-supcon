@@ -1,0 +1,53 @@
+{
+  "purpose": "software integration only; not a benchmark result",
+  "device": "cpu",
+  "source_sha256": "7ca66c594856dc1f340de23cb56f178ebd0cf89998a70dd4b4faabe65e7796ac",
+  "backbone": "part_adaptive",
+  "preset": "benchmark_v3",
+  "method": "metric_baseline",
+  "model_options": {
+    "blocks": 6,
+    "cosine_scale": 16.0,
+    "use_angles": true,
+    "stream_blocks": 1,
+    "adaptive_graph": true,
+    "part_blocks": 1,
+    "pooling": "mean_max"
+  },
+  "parameters": 4175004,
+  "training_identities": 62,
+  "validation_identities": [
+    2,
+    6,
+    12,
+    25,
+    26,
+    32,
+    43,
+    46,
+    54,
+    59,
+    61,
+    72
+  ],
+  "sampled_training_ids": [
+    10,
+    37,
+    71,
+    58
+  ],
+  "sampled_sequences": 8,
+  "frames": 60,
+  "losses": [
+    6.4045491218566895,
+    3.4295060634613037,
+    4.989050388336182
+  ],
+  "step_seconds": [
+    45.130846250000104,
+    49.00972379200016,
+    30.40266395799995
+  ],
+  "finite_gradients": true,
+  "test_sequences_used": 0
+}

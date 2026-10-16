@@ -1,0 +1,5 @@
+extends: benchmark_v3_control
+experiment_id: benchmark_v3_adaptive
+model:
+  options:
+    adaptive_graph: true

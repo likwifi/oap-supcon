@@ -329,9 +329,13 @@ class MultiStreamEncoder(_GaitHeads):
             y = block(y, present)
         return y.permute(0, 2, 3, 1)
 
+    def pool_features(self, features, visibility):
+        """Overridable pooling; the historical multistream recipe uses a mean."""
+        return masked_mean(features, visibility, (1, 2))
+
     def forward(self, x, visibility, frame_mask=None):
         features = self.encode_joints(x, visibility)
-        embedding = self.embedding_norm(self.embedding(masked_mean(features, visibility, (1, 2))))
+        embedding = self.embedding_norm(self.embedding(self.pool_features(features, visibility)))
         embedding = F.normalize(embedding, dim=-1)
         real = (frame_mask.sum(1) if frame_mask is not None
                 else torch.full((len(x),), x.shape[1], device=x.device)).clamp_min(1)
@@ -339,7 +343,7 @@ class MultiStreamEncoder(_GaitHeads):
         for head, indices in zip(self.part_heads, self.parts):
             confidence = visibility[:, :, indices]
             reliability.append((confidence.sum((1, 2)) / (real * len(indices))).clamp(0, 1))
-            feature = masked_mean(features[:, :, indices], confidence, (1, 2))
+            feature = self.pool_features(features[:, :, indices], confidence)
             present = (confidence.sum((1, 2)) > 0).unsqueeze(-1)
             part_features.append(feature * present)
             raw_parts.append(F.normalize(feature, dim=-1) * present)
@@ -359,11 +363,19 @@ class MultiStreamEncoder(_GaitHeads):
         return self(x, visibility)["projection"]
 
 
+def _part_adaptive_encoder(*args, **kwargs):
+    # Lazy import lets the candidate reuse the existing head/checkpoint interface
+    # without changing construction or RNG order of historical backbones.
+    from .adaptive_model import PartAdaptiveEncoder
+    return PartAdaptiveEncoder(*args, **kwargs)
+
+
 BACKBONES = {
     "tcn": PoseEncoder,
     "stgcn": STGCNEncoder,
     "transformer": SkeletonTransformerEncoder,
     "multistream": MultiStreamEncoder,
+    "part_adaptive": _part_adaptive_encoder,
 }
 
 

@@ -65,6 +65,16 @@ def audit_dataset(data_path: Path, output_dir: Path):
         "", "## Split summary", "", _markdown_table(rows), "",
         "This structural audit does not replace manual skeleton rendering, joint-mapping review, or license review.",
     ]
+    with np.load(data_path, allow_pickle=False) as archive:
+        if "coverage_json" in archive:
+            coverage = json.loads(str(archive["coverage_json"].item()))
+            summary.extend(["", "## Source coverage", "",
+                            f"- Protocol: `{coverage['protocol']}`",
+                            f"- Partition SHA-256: `{coverage['partition_sha256']}`",
+                            f"- Missing training identities: {len(coverage['missing_train_identities'])}",
+                            f"- Missing test identities: {len(coverage['missing_test_identities'])}",
+                            f"- Missing designated probes: {len(coverage['missing_probes'])}",
+                            f"- Excluded probes without gallery: {len(coverage['probes_without_gallery'])}"])
     (output_dir / "data_audit.md").write_text("\n".join(summary) + "\n")
     return rows
 
@@ -132,7 +142,7 @@ def aggregate_results(results_root: Path, duplicates="first", output_root: Path 
         raise FileNotFoundError(f"no completed metrics.json files under {results_root}")
     _write_csv(output_root / "runs.csv", rows)
     numeric = [
-        "rank1", "rank5", "rank10", "map", "eer", "tar_far_1e-02", "tar_far_1e-03",
+        "rank1", "rank5", "rank10", "map", "minp", "eer", "tar_far_1e-02", "tar_far_1e-03",
         "delta_rank1", "train_hours",
     ]
     grouped: dict[tuple, list[dict]] = defaultdict(list)

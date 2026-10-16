@@ -1,0 +1,14 @@
+extends: benchmark_v2
+experiment_id: benchmark_v3_full
+results_root: results_v3_dev
+# Coordinate architecture candidate. Use metric_baseline for the first screen.
+model:
+  backbone: part_adaptive
+  options:
+    blocks: 6
+    cosine_scale: 16.0
+    use_angles: true
+    stream_blocks: 1
+    adaptive_graph: true
+    part_blocks: 1
+    pooling: mean_max

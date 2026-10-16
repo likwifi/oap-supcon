@@ -1,0 +1,289 @@
+{
+  "date": "2026-10-05",
+  "source_sha256": "7ca66c594856dc1f340de23cb56f178ebd0cf89998a70dd4b4faabe65e7796ac",
+  "purpose": "planned validation-only architecture screen; no recognition measurements",
+  "runs": 21,
+  "variants": [
+    {
+      "variant": "control",
+      "preset": "benchmark_v3_control",
+      "task_ids": [
+        0,
+        1,
+        2
+      ],
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "epochs": 80,
+      "parameters": 1687570,
+      "options": {
+        "blocks": 6,
+        "cosine_scale": 16.0,
+        "use_angles": false,
+        "stream_blocks": 0,
+        "adaptive_graph": false,
+        "part_blocks": 0,
+        "pooling": "mean"
+      },
+      "method": "metric_baseline",
+      "loss_weights": {
+        "ce_weight": 1.0,
+        "clean_ce_weight": 0.5,
+        "global_weight": 0.0,
+        "part_weight": 0.0,
+        "temporal_weight": 0.0,
+        "triplet_weight": 1.0
+      },
+      "evaluation_split": "validation",
+      "descriptors": [
+        "global",
+        "raw_reliable",
+        "raw_uniform"
+      ]
+    },
+    {
+      "variant": "angles",
+      "preset": "benchmark_v3_angles",
+      "task_ids": [
+        3,
+        4,
+        5
+      ],
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "epochs": 80,
+      "parameters": 1691922,
+      "options": {
+        "blocks": 6,
+        "cosine_scale": 16.0,
+        "use_angles": true,
+        "stream_blocks": 0,
+        "adaptive_graph": false,
+        "part_blocks": 0,
+        "pooling": "mean"
+      },
+      "method": "metric_baseline",
+      "loss_weights": {
+        "ce_weight": 1.0,
+        "clean_ce_weight": 0.5,
+        "global_weight": 0.0,
+        "part_weight": 0.0,
+        "temporal_weight": 0.0,
+        "triplet_weight": 1.0
+      },
+      "evaluation_split": "validation",
+      "descriptors": [
+        "global",
+        "raw_reliable",
+        "raw_uniform"
+      ]
+    },
+    {
+      "variant": "late_fusion",
+      "preset": "benchmark_v3_late_fusion",
+      "task_ids": [
+        6,
+        7,
+        8
+      ],
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "epochs": 80,
+      "parameters": 1753435,
+      "options": {
+        "blocks": 6,
+        "cosine_scale": 16.0,
+        "use_angles": false,
+        "stream_blocks": 1,
+        "adaptive_graph": false,
+        "part_blocks": 0,
+        "pooling": "mean"
+      },
+      "method": "metric_baseline",
+      "loss_weights": {
+        "ce_weight": 1.0,
+        "clean_ce_weight": 0.5,
+        "global_weight": 0.0,
+        "part_weight": 0.0,
+        "temporal_weight": 0.0,
+        "triplet_weight": 1.0
+      },
+      "evaluation_split": "validation",
+      "descriptors": [
+        "global",
+        "raw_reliable",
+        "raw_uniform"
+      ]
+    },
+    {
+      "variant": "adaptive",
+      "preset": "benchmark_v3_adaptive",
+      "task_ids": [
+        9,
+        10,
+        11
+      ],
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "epochs": 80,
+      "parameters": 1851416,
+      "options": {
+        "blocks": 6,
+        "cosine_scale": 16.0,
+        "use_angles": false,
+        "stream_blocks": 0,
+        "adaptive_graph": true,
+        "part_blocks": 0,
+        "pooling": "mean"
+      },
+      "method": "metric_baseline",
+      "loss_weights": {
+        "ce_weight": 1.0,
+        "clean_ce_weight": 0.5,
+        "global_weight": 0.0,
+        "part_weight": 0.0,
+        "temporal_weight": 0.0,
+        "triplet_weight": 1.0
+      },
+      "evaluation_split": "validation",
+      "descriptors": [
+        "global",
+        "raw_reliable",
+        "raw_uniform"
+      ]
+    },
+    {
+      "variant": "parts",
+      "preset": "benchmark_v3_parts",
+      "task_ids": [
+        12,
+        13,
+        14
+      ],
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "epochs": 80,
+      "parameters": 3488897,
+      "options": {
+        "blocks": 6,
+        "cosine_scale": 16.0,
+        "use_angles": false,
+        "stream_blocks": 0,
+        "adaptive_graph": false,
+        "part_blocks": 1,
+        "pooling": "mean"
+      },
+      "method": "metric_baseline",
+      "loss_weights": {
+        "ce_weight": 1.0,
+        "clean_ce_weight": 0.5,
+        "global_weight": 0.0,
+        "part_weight": 0.0,
+        "temporal_weight": 0.0,
+        "triplet_weight": 1.0
+      },
+      "evaluation_split": "validation",
+      "descriptors": [
+        "global",
+        "raw_reliable",
+        "raw_uniform"
+      ]
+    },
+    {
+      "variant": "pooling",
+      "preset": "benchmark_v3_pooling",
+      "task_ids": [
+        15,
+        16,
+        17
+      ],
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "epochs": 80,
+      "parameters": 1687570,
+      "options": {
+        "blocks": 6,
+        "cosine_scale": 16.0,
+        "use_angles": false,
+        "stream_blocks": 0,
+        "adaptive_graph": false,
+        "part_blocks": 0,
+        "pooling": "mean_max"
+      },
+      "method": "metric_baseline",
+      "loss_weights": {
+        "ce_weight": 1.0,
+        "clean_ce_weight": 0.5,
+        "global_weight": 0.0,
+        "part_weight": 0.0,
+        "temporal_weight": 0.0,
+        "triplet_weight": 1.0
+      },
+      "evaluation_split": "validation",
+      "descriptors": [
+        "global",
+        "raw_reliable",
+        "raw_uniform"
+      ]
+    },
+    {
+      "variant": "full",
+      "preset": "benchmark_v3",
+      "task_ids": [
+        18,
+        19,
+        20
+      ],
+      "seeds": [
+        11,
+        22,
+        33
+      ],
+      "epochs": 80,
+      "parameters": 4175004,
+      "options": {
+        "blocks": 6,
+        "cosine_scale": 16.0,
+        "use_angles": true,
+        "stream_blocks": 1,
+        "adaptive_graph": true,
+        "part_blocks": 1,
+        "pooling": "mean_max"
+      },
+      "method": "metric_baseline",
+      "loss_weights": {
+        "ce_weight": 1.0,
+        "clean_ce_weight": 0.5,
+        "global_weight": 0.0,
+        "part_weight": 0.0,
+        "temporal_weight": 0.0,
+        "triplet_weight": 1.0
+      },
+      "evaluation_split": "validation",
+      "descriptors": [
+        "global",
+        "raw_reliable",
+        "raw_uniform"
+      ]
+    }
+  ],
+  "cuda_available_on_verification_host": false
+}
