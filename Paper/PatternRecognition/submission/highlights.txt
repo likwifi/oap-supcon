@@ -1,0 +1,7 @@
+Highlights
+
+- Part supervision and part matching are separated on one pose-gait encoder
+- Global or part contrastive objectives did not beat a metric-learning baseline
+- Raw part pools improved corrupted-probe Rank-1 under all seven objectives
+- On unseen Gait3D test identities, raw part matching added 2.0 Rank-1 points
+- On GPGait, trained part branches helped while raw part matching hurt

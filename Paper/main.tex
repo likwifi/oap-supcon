@@ -11,6 +11,7 @@
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta,calc,fit,matrix,positioning}
 \usepackage{url}
+\usepackage[hidelinks]{hyperref}
 \emergencystretch=2em
 
 \newcommand{\R}{\mathbb{R}}
@@ -29,7 +30,7 @@
 
 \institute{Institute for Informatics and Automation Problems, National Academy of
 Sciences of the Republic of Armenia (IIAP), Yerevan, Armenia\\
-\email{minas.aslanyan@gmail.com, lasl@sci.am}}
+\email{minas.aslanyan@iiap.sci.am, lasl@sci.am}}
 
 \maketitle
 
@@ -841,9 +842,15 @@ environment, selected epoch, aggregate metrics, and probe outcomes. The five
 official runs used two H100 NVL MIG profiles but identical software, source,
 data, and configuration hashes. However, the runs record
 ``not-a-git-checkout''.
-The release should initialize a canonical repository, tag the exact source
-snapshot, lock dependencies, and provide a manifest connecting every reported
-cell to its run directory.
+The public repository should therefore tag the exact source snapshot, lock
+dependencies, and provide a manifest connecting every reported cell to its run
+directory.
+
+\paragraph{Code availability.}
+The implementation, experiment configurations, SLURM workflows, and aggregation
+utilities are publicly available at
+\url{https://github.com/likwifi/oap-supcon}. Dataset files are not redistributed
+and remain subject to the original provider's access terms.
 
 \section{Ethical Considerations}
 

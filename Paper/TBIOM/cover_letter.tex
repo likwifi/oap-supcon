@@ -1,0 +1,63 @@
+\documentclass[11pt]{letter}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\signature{Minas Aslanyan\\Institute for Informatics and Automation Problems\\National Academy of Sciences of the Republic of Armenia, Yerevan\\\href{mailto:minas.aslanyan@iiap.sci.am}{minas.aslanyan@iiap.sci.am}}
+\address{}
+\date{\today}
+
+\begin{document}
+\begin{letter}{The Editor-in-Chief\\IEEE Transactions on Biometrics, Behavior, and Identity Science}
+\opening{Dear Editors,}
+
+We submit the manuscript ``Part supervision versus part matching for
+pose-based gait recognition under missing joints'' for consideration as a
+regular paper in \emph{IEEE Transactions on Biometrics, Behavior, and Identity
+Science}.
+
+Part-aware gait recognizers usually add two things at once: identity losses on
+body regions during training and fusion of regional similarities at
+retrieval. Gains are then credited to one of them without testing the other.
+Our study separates the two. On one fixed pose-graph encoder, seven training
+objectives, including global and part supervised contrastive losses and
+cross-entropy controls, were trained with five seeds each on CASIA-B
+development identities. No auxiliary objective differed reliably from a
+metric-learning baseline, and an apparent penalty of part supervision in an
+earlier three-seed experiment did not replicate. In contrast, fusing normalized
+raw part pools from frozen checkpoints improved corrupted-probe accuracy under
+every objective. On Gait3D, with the recipe frozen on development identities
+and the test identities evaluated once, the same matcher raised Rank-1 from
+21.88\% to 23.86\% and reached parity with GPGait, which we reproduced with its
+official configuration on identical data.
+
+We then applied the matcher to GPGait itself, and the result reversed: GPGait's
+part-specific branches, trained with their own losses, add 9.1 points on
+CASIA-B and 5.2 on Gait3D, while raw part matching lowers its accuracy. The
+paper therefore concludes that where a part-aware gain comes from depends on
+the encoder, and that global, raw regional and trained regional matching should
+be compared on the same frozen checkpoints. We report the limitations openly,
+including a large accuracy gap to GPGait on CASIA-B, earlier project exposure to
+the CASIA-B test identities, an available-pose subset of Gait3D and the absence
+of labelled real occlusion.
+
+We believe the paper suits \emph{T-BIOM} because it addresses how part-aware
+gait biometrics should be evaluated under missing body evidence, and supports
+its answer with controlled experiments, seed-by-identity bootstrap intervals,
+reproduced baselines on identical data and a transfer test on an established
+encoder. Every table and
+figure can be regenerated from the saved per-probe outcomes with the released
+scripts.
+
+This manuscript is original, has not been published, is not under
+consideration for publication elsewhere, and does not extend a conference
+paper. It uses only publicly released datasets, and no new data involving human
+participants were collected (see the Ethics Statement). Both authors approved the submission
+and declare no competing interests. The study received no specific funding.
+The use of an AI assistant during manuscript preparation is disclosed in the
+Acknowledgment, following IEEE policy.
+
+\closing{Sincerely,}
+\end{letter}
+\end{document}

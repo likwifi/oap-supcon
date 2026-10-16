@@ -1,0 +1,1752 @@
+\begin{thebibliography}{}
+\renewcommand{\doi}[1]{\url{https://doi.org/#1}}
+\bibcommenthead
+
+\bibitem [\protect \citeauthoryear {%
+Bardes%
+, Ponce%
+\BCBL {}\ \BBA {} LeCun%
+}{%
+Bardes%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+bardes2022vicreg}
+\APACinsertmetastar {%
+bardes2022vicreg}%
+\begin{APACrefauthors}%
+Bardes, A.%
+, Ponce, J.%
+\BCBL {} LeCun, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{VICReg: Variance-Invariance-Covariance Regularization
+  for Self-Supervised Learning}} {{VICReg: Variance-Invariance-Covariance
+  Regularization for Self-Supervised Learning}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{International Conference on Learning Representations}.}
+  {{International Conference on Learning Representations}.}
+\newblock
+\begin{APACrefURL} {\url{https://arxiv.org/abs/2105.04906}} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Caron%
+\ \protect \BOthers {.}}{%
+Caron%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+caron2021dino}
+\APACinsertmetastar {%
+caron2021dino}%
+\begin{APACrefauthors}%
+Caron, M.%
+, Touvron, H.%
+, Misra, I.%
+, J{\'e}gou, H.%
+, Mairal, J.%
+, Bojanowski, P.%
+\BCBL {} Joulin, A.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Emerging Properties in Self-Supervised Vision
+  Transformers}} {{Emerging Properties in Self-Supervised Vision
+  Transformers}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}} {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}}\ (\BPGS\ 9650--9660).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/ICCV2021/html/Caron_Emerging_Properties_in_Self-Supervised_Vision_Transformers_ICCV_2021_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Chao%
+, He%
+, Zhang%
+\BCBL {}\ \BBA {} Feng%
+}{%
+Chao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+chao2019gaitset}
+\APACinsertmetastar {%
+chao2019gaitset}%
+\begin{APACrefauthors}%
+Chao, H.%
+, He, Y.%
+, Zhang, J.%
+\BCBL {} Feng, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{GaitSet: Regarding Gait as a Set for Cross-View Gait
+  Recognition}} {{GaitSet: Regarding Gait as a Set for Cross-View Gait
+  Recognition}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the AAAI Conference on Artificial
+  Intelligence}} {{Proceedings of the AAAI Conference on Artificial
+  Intelligence}}\ (\BVOL~33, \BPGS\ 8126--8133).
+\newblock
+\begin{APACrefURL} {\url{https://doi.org/10.1609/aaai.v33i01.33018126}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+T.~Chen%
+, Kornblith%
+, Norouzi%
+\BCBL {}\ \BBA {} Hinton%
+}{%
+T.~Chen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+chen2020simclr}
+\APACinsertmetastar {%
+chen2020simclr}%
+\begin{APACrefauthors}%
+Chen, T.%
+, Kornblith, S.%
+, Norouzi, M.%
+\BCBL {} Hinton, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Simple Framework for Contrastive Learning of Visual
+  Representations} {A simple framework for contrastive learning of visual
+  representations}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the 37th International Conference on Machine
+  Learning}} {{Proceedings of the 37th International Conference on Machine
+  Learning}}\ (\BVOL~119, \BPGS\ 1597--1607).
+\newblock
+\begin{APACrefURL} {\url{https://arxiv.org/abs/2002.05709}} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+X.~Chen%
+\ \BBA {} He%
+}{%
+X.~Chen%
+\ \BBA {} He%
+}{%
+{\protect \APACyear {2021}}%
+}]{%
+chen2021simsiam}
+\APACinsertmetastar {%
+chen2021simsiam}%
+\begin{APACrefauthors}%
+Chen, X.%
+\BCBT {}\ \BBA {} He, K.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Exploring Simple Siamese Representation Learning}}
+  {{Exploring Simple Siamese Representation Learning}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 15750--15758).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/CVPR2021/html/Chen_Exploring_Simple_Siamese_Representation_Learning_CVPR_2021_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Y.~Chen%
+\ \protect \BOthers {.}}{%
+Y.~Chen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+chen2023iopstl}
+\APACinsertmetastar {%
+chen2023iopstl}%
+\begin{APACrefauthors}%
+Chen, Y.%
+, Peng, K.%
+, Roitberg, A.%
+, Schneider, D.%
+, Zhang, J.%
+, Zheng, J.%
+\BDBL {}Stiefelhagen, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Exploring Self-Supervised Skeleton-Based Action
+  Recognition in Occluded Environments} {Exploring self-supervised
+  skeleton-based action recognition in occluded environments}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{arXiv preprint arXiv:2309.12029}}{}{}{,}
+\newblock
+\begin{APACrefURL} {\url{https://arxiv.org/abs/2309.12029}} \end{APACrefURL}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cheng%
+\ \protect \BOthers {.}}{%
+Cheng%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+cheng2020shift}
+\APACinsertmetastar {%
+cheng2020shift}%
+\begin{APACrefauthors}%
+Cheng, K.%
+, Zhang, Y.%
+, He, X.%
+, Chen, W.%
+, Cheng, J.%
+\BCBL {} Lu, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Skeleton-Based Action Recognition With Shift Graph
+  Convolutional Network}} {{Skeleton-Based Action Recognition With Shift Graph
+  Convolutional Network}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 183--192).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content_CVPR_2020/html/Cheng_Skeleton-Based_Action_Recognition_With_Shift_Graph_Convolutional_Network_CVPR_2020_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Cosma%
+, Catruna%
+\BCBL {}\ \BBA {} Radoi%
+}{%
+Cosma%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2026}}%
+}]{%
+cosma2026gaitpt}
+\APACinsertmetastar {%
+cosma2026gaitpt}%
+\begin{APACrefauthors}%
+Cosma, A.%
+, Catruna, A.E.%
+\BCBL {} Radoi, E.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2026}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {On Model and Data Scaling for Skeleton-Based
+  Self-Supervised Gait Recognition} {On model and data scaling for
+  skeleton-based self-supervised gait recognition}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the AAAI Conference on Artificial
+  Intelligence}} {{Proceedings of the AAAI Conference on Artificial
+  Intelligence}}\ (\BVOL~40, \BPGS\ 3434--3442).
+\newblock
+\begin{APACrefURL} {\url{https://doi.org/10.1609/aaai.v40i5.37340}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Duan%
+, Zhao%
+, Chen%
+, Lin%
+\BCBL {}\ \BBA {} Dai%
+}{%
+Duan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+duan2022posec3d}
+\APACinsertmetastar {%
+duan2022posec3d}%
+\begin{APACrefauthors}%
+Duan, H.%
+, Zhao, Y.%
+, Chen, K.%
+, Lin, D.%
+\BCBL {} Dai, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Revisiting Skeleton-Based Action Recognition}}
+  {{Revisiting Skeleton-Based Action Recognition}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 2969--2978).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/CVPR2022/html/Duan_Revisiting_Skeleton-Based_Action_Recognition_CVPR_2022_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fan%
+\ \protect \BOthers {.}}{%
+Fan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+fan2022opengait}
+\APACinsertmetastar {%
+fan2022opengait}%
+\begin{APACrefauthors}%
+Fan, C.%
+, Liang, J.%
+, Shen, C.%
+, Hou, S.%
+, Huang, Y.%
+\BCBL {} Yu, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{OpenGait}: Revisiting Gait Recognition Toward Better
+  Practicality} {{OpenGait}: Revisiting gait recognition toward better
+  practicality}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 9707--9716).
+\newblock
+\begin{APACrefURL} {\url{https://arxiv.org/abs/2211.06597}} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fan%
+, Ma%
+, Jin%
+, Shen%
+\BCBL {}\ \BBA {} Yu%
+}{%
+Fan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+fan2024skeletongait}
+\APACinsertmetastar {%
+fan2024skeletongait}%
+\begin{APACrefauthors}%
+Fan, C.%
+, Ma, J.%
+, Jin, D.%
+, Shen, C.%
+\BCBL {} Yu, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{SkeletonGait}: Gait Recognition Using Skeleton Maps}
+  {{SkeletonGait}: Gait recognition using skeleton maps}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the AAAI Conference on Artificial
+  Intelligence}} {{Proceedings of the AAAI Conference on Artificial
+  Intelligence}}\ (\BVOL~38, \BPGS\ 1662--1669).
+\newblock
+\begin{APACrefURL} {\url{https://doi.org/10.1609/aaai.v38i2.27933}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fan%
+\ \protect \BOthers {.}}{%
+Fan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+fan2020gaitpart}
+\APACinsertmetastar {%
+fan2020gaitpart}%
+\begin{APACrefauthors}%
+Fan, C.%
+, Peng, Y.%
+, Cao, C.%
+, Liu, X.%
+, Hou, S.%
+, Chi, J.%
+\BDBL {}He, Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{GaitPart}: Temporal Part-Based Model for Gait
+  Recognition} {{GaitPart}: Temporal part-based model for gait
+  recognition}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 14225--14233).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content_CVPR_2020/html/Fan_GaitPart_Temporal_Part-Based_Model_for_Gait_Recognition_CVPR_2020_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Fu%
+, Meng%
+, Hou%
+, Hu%
+\BCBL {}\ \BBA {} Huang%
+}{%
+Fu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+fu2023gpgait}
+\APACinsertmetastar {%
+fu2023gpgait}%
+\begin{APACrefauthors}%
+Fu, Y.%
+, Meng, S.%
+, Hou, S.%
+, Hu, X.%
+\BCBL {} Huang, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{GPGait}: Generalized Pose-Based Gait Recognition}
+  {{GPGait}: Generalized pose-based gait recognition}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}} {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}}\ (\BPGS\ 19595--19604).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/ICCV2023/html/Fu_GPGait_Generalized_Pose-based_Gait_Recognition_ICCV_2023_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Grill%
+\ \protect \BOthers {.}}{%
+Grill%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+grill2020byol}
+\APACinsertmetastar {%
+grill2020byol}%
+\begin{APACrefauthors}%
+Grill, J\BHBI B.%
+, Strub, F.%
+, Altch{\'e}, F.%
+, Tallec, C.%
+, Richemond, P.%
+, Buchatskaya, E.%
+\BDBL {}Valko, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Bootstrap Your Own Latent - A New Approach to
+  Self-Supervised Learning}} {{Bootstrap Your Own Latent - A New Approach to
+  Self-Supervised Learning}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Advances in Neural Information Processing Systems}}
+  {{Advances in Neural Information Processing Systems}}\ (\BVOL~33).
+\newblock
+\begin{APACrefURL}
+  {\url{https://proceedings.neurips.cc/paper_files/paper/2020/hash/f3ada80d5c4ee70142b17b8192b2958e-Abstract.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+He%
+, Fan%
+, Wu%
+, Xie%
+\BCBL {}\ \BBA {} Girshick%
+}{%
+He%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+he2020moco}
+\APACinsertmetastar {%
+he2020moco}%
+\begin{APACrefauthors}%
+He, K.%
+, Fan, H.%
+, Wu, Y.%
+, Xie, S.%
+\BCBL {} Girshick, R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Momentum Contrast for Unsupervised Visual Representation
+  Learning} {Momentum contrast for unsupervised visual representation
+  learning}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 9729--9738).
+\newblock
+\begin{APACrefURL} {\url{https://arxiv.org/abs/1911.05722}} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Hermans%
+, Beyer%
+\BCBL {}\ \BBA {} Leibe%
+}{%
+Hermans%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+hermans2017triplet}
+\APACinsertmetastar {%
+hermans2017triplet}%
+\begin{APACrefauthors}%
+Hermans, A.%
+, Beyer, L.%
+\BCBL {} Leibe, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {In Defense of the Triplet Loss for Person
+  Re-Identification} {In defense of the triplet loss for person
+  re-identification}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{arXiv preprint arXiv:1703.07737}}{}{}{,}
+\newblock
+\begin{APACrefURL} {\url{https://arxiv.org/abs/1703.07737}} \end{APACrefURL}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+P.~Huang%
+, Hou%
+, Huang%
+\BCBL {}\ \BBA {} Huang%
+}{%
+P.~Huang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2025}}%
+}]{%
+huang2025template}
+\APACinsertmetastar {%
+huang2025template}%
+\begin{APACrefauthors}%
+Huang, P.%
+, Hou, S.%
+, Huang, J.%
+\BCBL {} Huang, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2025}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Learning A Unified Template for Gait Recognition}}
+  {{Learning A Unified Template for Gait Recognition}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}} {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}}\ (\BPGS\ 12459--12469).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/ICCV2025/html/Huang_Learning_A_Unified_Template_for_Gait_Recognition_ICCV_2025_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+P.~Huang%
+\ \protect \BOthers {.}}{%
+P.~Huang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+huang2024occluded}
+\APACinsertmetastar {%
+huang2024occluded}%
+\begin{APACrefauthors}%
+Huang, P.%
+, Peng, Y.%
+, Hou, S.%
+, Cao, C.%
+, Liu, X.%
+, He, Z.%
+\BCBL {} Huang, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Occluded Gait Recognition with Mixture of Experts: An
+  Action Detection Perspective} {Occluded gait recognition with mixture of
+  experts: An action detection perspective}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the European Conference on Computer Vision}}
+  {{Proceedings of the European Conference on Computer Vision}}\ (\BPGS\
+  380--397).
+\newblock
+\begin{APACrefURL} {\url{https://doi.org/10.1007/978-3-031-72658-3_22}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+X.~Huang%
+\ \protect \BOthers {.}}{%
+X.~Huang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+huang2021cstl}
+\APACinsertmetastar {%
+huang2021cstl}%
+\begin{APACrefauthors}%
+Huang, X.%
+, Zhu, D.%
+, Wang, H.%
+, Wang, X.%
+, Yang, B.%
+, He, B.%
+\BDBL {}Feng, B.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Context-Sensitive Temporal Feature Learning for Gait
+  Recognition}} {{Context-Sensitive Temporal Feature Learning for Gait
+  Recognition}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}} {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}}\ (\BPGS\ 12909--12918).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/ICCV2021/html/Huang_Context-Sensitive_Temporal_Feature_Learning_for_Gait_Recognition_ICCV_2021_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Z.~Huang%
+\ \protect \BOthers {.}}{%
+Z.~Huang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+huang2021local}
+\APACinsertmetastar {%
+huang2021local}%
+\begin{APACrefauthors}%
+Huang, Z.%
+, Xue, D.%
+, Shen, X.%
+, Tian, X.%
+, Li, H.%
+, Huang, J.%
+\BCBL {} Hua, X\BHBI S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {3D Local Convolutional Neural Networks for Gait
+  Recognition} {3d local convolutional neural networks for gait
+  recognition}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}} {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}}\ (\BPGS\ 14920--14929).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/ICCV2021/html/Huang_3D_Local_Convolutional_Neural_Networks_for_Gait_Recognition_ICCV_2021_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Khosla%
+\ \protect \BOthers {.}}{%
+Khosla%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+khosla2020supervised}
+\APACinsertmetastar {%
+khosla2020supervised}%
+\begin{APACrefauthors}%
+Khosla, P.%
+, Teterwak, P.%
+, Wang, C.%
+, Sarna, A.%
+, Tian, Y.%
+, Isola, P.%
+\BDBL {}Krishnan, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Supervised Contrastive Learning} {Supervised contrastive
+  learning}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Advances in Neural Information Processing Systems}}
+  {{Advances in Neural Information Processing Systems}}\ (\BVOL~33, \BPGS\
+  18661--18673).
+\newblock
+\begin{APACrefURL} {\url{https://arxiv.org/abs/2004.11362}} \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M.~Li%
+\ \protect \BOthers {.}}{%
+M.~Li%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+li2019actional}
+\APACinsertmetastar {%
+li2019actional}%
+\begin{APACrefauthors}%
+Li, M.%
+, Chen, S.%
+, Chen, X.%
+, Zhang, Y.%
+, Wang, Y.%
+\BCBL {} Tian, Q.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Actional-Structural Graph Convolutional Networks for
+  Skeleton-Based Action Recognition}} {{Actional-Structural Graph Convolutional
+  Networks for Skeleton-Based Action Recognition}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 3595--3603).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content_CVPR_2019/html/Li_Actional-Structural_Graph_Convolutional_Networks_for_Skeleton-Based_Action_Recognition_CVPR_2019_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+T.~Li%
+\ \protect \BOthers {.}}{%
+T.~Li%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2024}}%
+}]{%
+li2024survey}
+\APACinsertmetastar {%
+li2024survey}%
+\begin{APACrefauthors}%
+Li, T.%
+, Ma, W.%
+, Zheng, Y.%
+, Fan, X.%
+, Yang, G.%
+, Wang, L.%
+\BCBL {} Li, Z.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Survey on Gait Recognition against Occlusion:
+  Taxonomy, Dataset and Methodology} {A survey on gait recognition against
+  occlusion: Taxonomy, dataset and methodology}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{PeerJ Computer Science}}{10}{}{e2602,}
+\newblock
+\begin{APACrefDOI} \doi{10.7717/peerj-cs.2602} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+X.~Li%
+, Makihara%
+, Xu%
+, Yagi%
+\BCBL {}\ \BBA {} Ren%
+}{%
+X.~Li%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+li2020disentangled}
+\APACinsertmetastar {%
+li2020disentangled}%
+\begin{APACrefauthors}%
+Li, X.%
+, Makihara, Y.%
+, Xu, C.%
+, Yagi, Y.%
+\BCBL {} Ren, M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Gait Recognition via Semi-supervised Disentangled
+  Representation Learning to Identity and Covariate Features}} {{Gait
+  Recognition via Semi-supervised Disentangled Representation Learning to
+  Identity and Covariate Features}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 13309--13319).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content_CVPR_2020/html/Li_Gait_Recognition_via_Semi-supervised_Disentangled_Representation_Learning_to_Identity_and_CVPR_2020_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Liao%
+, Yu%
+, An%
+\BCBL {}\ \BBA {} Huang%
+}{%
+Liao%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+liao2020posegait}
+\APACinsertmetastar {%
+liao2020posegait}%
+\begin{APACrefauthors}%
+Liao, R.%
+, Yu, S.%
+, An, W.%
+\BCBL {} Huang, Y.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Model-Based Gait Recognition Method with Body Pose and
+  Human Prior Knowledge} {A model-based gait recognition method with body pose
+  and human prior knowledge}.{\BBCQ}
+\newblock
+\APACjournalVolNumPages{{Pattern Recognition}}{98}{}{107069,}
+\newblock
+\begin{APACrefDOI} \doi{10.1016/j.patcog.2019.107069} \end{APACrefDOI}
+\newblock
+
+\newblock
+
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+B.~Lin%
+, Zhang%
+\BCBL {}\ \BBA {} Yu%
+}{%
+B.~Lin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+lin2021gaitgl}
+\APACinsertmetastar {%
+lin2021gaitgl}%
+\begin{APACrefauthors}%
+Lin, B.%
+, Zhang, S.%
+\BCBL {} Yu, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Gait Recognition via Effective Global-Local Feature
+  Representation and Local Temporal Aggregation} {Gait recognition via
+  effective global-local feature representation and local temporal
+  aggregation}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}} {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}}\ (\BPGS\ 14648--14656).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/ICCV2021/html/Lin_Gait_Recognition_via_Effective_Global-Local_Feature_Representation_and_Local_Temporal_ICCV_2021_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+L.~Lin%
+, Zhang%
+\BCBL {}\ \BBA {} Liu%
+}{%
+L.~Lin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+lin2023actclr}
+\APACinsertmetastar {%
+lin2023actclr}%
+\begin{APACrefauthors}%
+Lin, L.%
+, Zhang, J.%
+\BCBL {} Liu, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Actionlet-Dependent Contrastive Learning for
+  Unsupervised Skeleton-Based Action Recognition}} {{Actionlet-Dependent
+  Contrastive Learning for Unsupervised Skeleton-Based Action
+  Recognition}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 2363--2372).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/CVPR2023/html/Lin_Actionlet-Dependent_Contrastive_Learning_for_Unsupervised_Skeleton-Based_Action_Recognition_CVPR_2023_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+T\BHBI Y.~Lin%
+\ \protect \BOthers {.}}{%
+T\BHBI Y.~Lin%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2014}}%
+}]{%
+lin2014coco}
+\APACinsertmetastar {%
+lin2014coco}%
+\begin{APACrefauthors}%
+Lin, T\BHBI Y.%
+, Maire, M.%
+, Belongie, S.%
+, Hays, J.%
+, Perona, P.%
+, Ramanan, D.%
+\BDBL {}Zitnick, C.L.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2014}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Microsoft {COCO}: Common Objects in Context} {Microsoft
+  {COCO}: Common objects in context}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Computer Vision -- ECCV 2014}} {{Computer Vision -- ECCV
+  2014}}\ (\BPGS\ 740--755).
+\newblock
+\begin{APACrefURL} {\url{https://doi.org/10.1007/978-3-319-10602-1_48}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Liu%
+, Zhang%
+, Chen%
+, Wang%
+\BCBL {}\ \BBA {} Ouyang%
+}{%
+Liu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+liu2020msg3d}
+\APACinsertmetastar {%
+liu2020msg3d}%
+\begin{APACrefauthors}%
+Liu, Z.%
+, Zhang, H.%
+, Chen, Z.%
+, Wang, Z.%
+\BCBL {} Ouyang, W.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Disentangling and Unifying Graph Convolutions for
+  Skeleton-Based Action Recognition}} {{Disentangling and Unifying Graph
+  Convolutions for Skeleton-Based Action Recognition}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 143--152).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content_CVPR_2020/html/Liu_Disentangling_and_Unifying_Graph_Convolutions_for_Skeleton-Based_Action_Recognition_CVPR_2020_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Musgrave%
+, Belongie%
+\BCBL {}\ \BBA {} Lim%
+}{%
+Musgrave%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+musgrave2020reality}
+\APACinsertmetastar {%
+musgrave2020reality}%
+\begin{APACrefauthors}%
+Musgrave, K.%
+, Belongie, S.%
+\BCBL {} Lim, S\BHBI N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{A Metric Learning Reality Check}} {{A Metric Learning
+  Reality Check}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Computer Vision -- ECCV 2020}} {{Computer Vision -- ECCV
+  2020}}\ (\BPGS\ 681--699).
+\newblock
+\begin{APACrefURL}
+  {\url{https://www.ecva.net/papers/eccv_2020/papers_ECCV/html/5170_ECCV_2020_paper.php}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Rao%
+\ \BBA {} Miao%
+}{%
+Rao%
+\ \BBA {} Miao%
+}{%
+{\protect \APACyear {2024}}%
+}]{%
+rao2024skeleton}
+\APACinsertmetastar {%
+rao2024skeleton}%
+\begin{APACrefauthors}%
+Rao, H.%
+\BCBT {}\ \BBA {} Miao, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2024}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Skeleton Prototype Contrastive Learning with Multi-Level
+  Graph Relation Modeling for Unsupervised Person Re-Identification} {Skeleton
+  prototype contrastive learning with multi-level graph relation modeling for
+  unsupervised person re-identification}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Quality, Reliability, Security and Robustness in
+  Heterogeneous Systems}} {{Quality, Reliability, Security and Robustness in
+  Heterogeneous Systems}}\ (\BPGS\ 306--321).
+\newblock
+\APACaddressPublisher{}{Springer}.
+\newblock
+\begin{APACrefURL} {\url{https://doi.org/10.1007/978-3-031-65126-7_19}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sener%
+\ \BBA {} Koltun%
+}{%
+Sener%
+\ \BBA {} Koltun%
+}{%
+{\protect \APACyear {2018}}%
+}]{%
+sener2018multiobjective}
+\APACinsertmetastar {%
+sener2018multiobjective}%
+\begin{APACrefauthors}%
+Sener, O.%
+\BCBT {}\ \BBA {} Koltun, V.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Multi-Task Learning as Multi-Objective Optimization}}
+  {{Multi-Task Learning as Multi-Objective Optimization}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Advances in Neural Information Processing Systems}}
+  {{Advances in Neural Information Processing Systems}}\ (\BVOL~31).
+\newblock
+\begin{APACrefURL}
+  {\url{https://proceedings.neurips.cc/paper_files/paper/2018/hash/432aca3a1e345e339f35a30c8f65edce-Abstract.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shen%
+\ \protect \BOthers {.}}{%
+Shen%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+shen2023lidargait}
+\APACinsertmetastar {%
+shen2023lidargait}%
+\begin{APACrefauthors}%
+Shen, C.%
+, Fan, C.%
+, Wu, W.%
+, Wang, R.%
+, Huang, G.Q.%
+\BCBL {} Yu, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{LidarGait: Benchmarking 3D Gait Recognition With Point
+  Clouds}} {{LidarGait: Benchmarking 3D Gait Recognition With Point
+  Clouds}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 1054--1063).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/CVPR2023/html/Shen_LidarGait_Benchmarking_3D_Gait_Recognition_With_Point_Clouds_CVPR_2023_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Shi%
+, Zhang%
+, Cheng%
+\BCBL {}\ \BBA {} Lu%
+}{%
+Shi%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+shi2019adaptive}
+\APACinsertmetastar {%
+shi2019adaptive}%
+\begin{APACrefauthors}%
+Shi, L.%
+, Zhang, Y.%
+, Cheng, J.%
+\BCBL {} Lu, H.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Two-Stream Adaptive Graph Convolutional Networks for
+  Skeleton-Based Action Recognition}} {{Two-Stream Adaptive Graph Convolutional
+  Networks for Skeleton-Based Action Recognition}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 12026--12035).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content_CVPR_2019/html/Shi_Two-Stream_Adaptive_Graph_Convolutional_Networks_for_Skeleton-Based_Action_Recognition_CVPR_2019_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Sun%
+, Xiao%
+, Liu%
+\BCBL {}\ \BBA {} Wang%
+}{%
+Sun%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+sun2019hrnet}
+\APACinsertmetastar {%
+sun2019hrnet}%
+\begin{APACrefauthors}%
+Sun, K.%
+, Xiao, B.%
+, Liu, D.%
+\BCBL {} Wang, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Deep High-Resolution Representation Learning for Human
+  Pose Estimation} {Deep high-resolution representation learning for human pose
+  estimation}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 5693--5703).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content_CVPR_2019/html/Sun_Deep_High-Resolution_Representation_Learning_for_Human_Pose_Estimation_CVPR_2019_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Teepe%
+, Gilg%
+, Herzog%
+, H{\"o}rmann%
+\BCBL {}\ \BBA {} Rigoll%
+}{%
+Teepe%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+teepe2022gaitgraph2}
+\APACinsertmetastar {%
+teepe2022gaitgraph2}%
+\begin{APACrefauthors}%
+Teepe, T.%
+, Gilg, J.%
+, Herzog, F.%
+, H{\"o}rmann, S.%
+\BCBL {} Rigoll, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Towards a Deeper Understanding of Skeleton-Based Gait
+  Recognition} {Towards a deeper understanding of skeleton-based gait
+  recognition}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition Workshops}} {{Proceedings of the IEEE/CVF Conference on
+  Computer Vision and Pattern Recognition Workshops}}\ (\BPGS\ 1569--1577).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/CVPR2022W/Biometrics/html/Teepe_Towards_a_Deeper_Understanding_of_Skeleton-Based_Gait_Recognition_CVPRW_2022_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Teepe%
+\ \protect \BOthers {.}}{%
+Teepe%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+teepe2021gaitgraph}
+\APACinsertmetastar {%
+teepe2021gaitgraph}%
+\begin{APACrefauthors}%
+Teepe, T.%
+, Khan, A.%
+, Gilg, J.%
+, Herzog, F.%
+, H{\"o}rmann, S.%
+\BCBL {} Rigoll, G.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{GaitGraph}: Graph Convolutional Network for
+  Skeleton-Based Gait Recognition} {{GaitGraph}: Graph convolutional network
+  for skeleton-based gait recognition}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{2021 IEEE International Conference on Image Processing}}
+  {{2021 IEEE International Conference on Image Processing}}\ (\BPGS\
+  2314--2318).
+\newblock
+\begin{APACrefURL} {\url{https://doi.org/10.1109/ICIP42928.2021.9506717}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Thoker%
+, Doughty%
+\BCBL {}\ \BBA {} Snoek%
+}{%
+Thoker%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+thoker2021skeleton}
+\APACinsertmetastar {%
+thoker2021skeleton}%
+\begin{APACrefauthors}%
+Thoker, F.M.%
+, Doughty, H.%
+\BCBL {} Snoek, C.G.M.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Skeleton-Contrastive 3D Action Representation Learning}
+  {Skeleton-contrastive 3d action representation learning}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the 29th ACM International Conference on
+  Multimedia}} {{Proceedings of the 29th ACM International Conference on
+  Multimedia}}\ (\BPGS\ 1655--1663).
+\newblock
+\begin{APACrefURL} {\url{https://doi.org/10.1145/3474085.3475307}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M.~Wang%
+\ \protect \BOthers {.}}{%
+M.~Wang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2023}}%
+}]{%
+wang2023dygait}
+\APACinsertmetastar {%
+wang2023dygait}%
+\begin{APACrefauthors}%
+Wang, M.%
+, Guo, X.%
+, Lin, B.%
+, Yang, T.%
+, Zhu, Z.%
+, Li, L.%
+\BDBL {}Yu, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2023}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{DyGait: Exploiting Dynamic Representations for
+  High-performance Gait Recognition}} {{DyGait: Exploiting Dynamic
+  Representations for High-performance Gait Recognition}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}} {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}}\ (\BPGS\ 13424--13433).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/ICCV2023/html/Wang_DyGait_Exploiting_Dynamic_Representations_for_High-performance_Gait_Recognition_ICCV_2023_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+M.~Wang%
+\ \protect \BOthers {.}}{%
+M.~Wang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+wang2022gaitstrip}
+\APACinsertmetastar {%
+wang2022gaitstrip}%
+\begin{APACrefauthors}%
+Wang, M.%
+, Lin, B.%
+, Guo, X.%
+, Li, L.%
+, Zhu, Z.%
+, Sun, J.%
+\BDBL {}Yu, X.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{GaitStrip: Gait Recognition via Effective Strip-based
+  Feature Representations and Multi-Level Framework}} {{GaitStrip: Gait
+  Recognition via Effective Strip-based Feature Representations and Multi-Level
+  Framework}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the Asian Conference on Computer Vision}}
+  {{Proceedings of the Asian Conference on Computer Vision}}\ (\BPGS\
+  536--551).
+\newblock
+\begin{APACrefURL} {\url{https://openaccess.thecvf.com/ACCV2022}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+T.~Wang%
+\ \BBA {} Isola%
+}{%
+T.~Wang%
+\ \BBA {} Isola%
+}{%
+{\protect \APACyear {2020}}%
+}]{%
+wang2020alignment}
+\APACinsertmetastar {%
+wang2020alignment}%
+\begin{APACrefauthors}%
+Wang, T.%
+\BCBT {}\ \BBA {} Isola, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Understanding Contrastive Representation Learning
+  through Alignment and Uniformity on the Hypersphere}} {{Understanding
+  Contrastive Representation Learning through Alignment and Uniformity on the
+  Hypersphere}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the 37th International Conference on Machine
+  Learning}} {{Proceedings of the 37th International Conference on Machine
+  Learning}}\ (\BVOL~119, \BPGS\ 9929--9939).
+\newblock
+\begin{APACrefURL} {\url{https://proceedings.mlr.press/v119/wang20k.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+X.~Wang%
+, Han%
+, Huang%
+, Dong%
+\BCBL {}\ \BBA {} Scott%
+}{%
+X.~Wang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+wang2019multisimilarity}
+\APACinsertmetastar {%
+wang2019multisimilarity}%
+\begin{APACrefauthors}%
+Wang, X.%
+, Han, X.%
+, Huang, W.%
+, Dong, D.%
+\BCBL {} Scott, M.R.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Multi-Similarity Loss With General Pair Weighting for
+  Deep Metric Learning}} {{Multi-Similarity Loss With General Pair Weighting
+  for Deep Metric Learning}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 5022--5030).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content_CVPR_2019/html/Wang_Multi-Similarity_Loss_With_General_Pair_Weighting_for_Deep_Metric_Learning_CVPR_2019_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Wu%
+, Manmatha%
+, Smola%
+\BCBL {}\ \BBA {} Krahenbuhl%
+}{%
+Wu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2017}}%
+}]{%
+wu2017sampling}
+\APACinsertmetastar {%
+wu2017sampling}%
+\begin{APACrefauthors}%
+Wu, C\BHBI Y.%
+, Manmatha, R.%
+, Smola, A.J.%
+\BCBL {} Krahenbuhl, P.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2017}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Sampling Matters in Deep Embedding Learning}}
+  {{Sampling Matters in Deep Embedding Learning}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}} {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}}\ (\BPGS\ 2840--2848).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content_iccv_2017/html/Wu_Sampling_Matters_in_ICCV_2017_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Yan%
+, Xiong%
+\BCBL {}\ \BBA {} Lin%
+}{%
+Yan%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2018}}%
+}]{%
+yan2018stgcn}
+\APACinsertmetastar {%
+yan2018stgcn}%
+\begin{APACrefauthors}%
+Yan, S.%
+, Xiong, Y.%
+\BCBL {} Lin, D.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2018}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Spatial Temporal Graph Convolutional Networks for
+  Skeleton-Based Action Recognition} {Spatial temporal graph convolutional
+  networks for skeleton-based action recognition}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the AAAI Conference on Artificial
+  Intelligence}} {{Proceedings of the AAAI Conference on Artificial
+  Intelligence}}\ (\BVOL~32).
+\newblock
+\begin{APACrefURL} {\url{https://doi.org/10.1609/aaai.v32i1.12328}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+S.~Yu%
+, Tan%
+\BCBL {}\ \BBA {} Tan%
+}{%
+S.~Yu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2006}}%
+}]{%
+yu2006casia}
+\APACinsertmetastar {%
+yu2006casia}%
+\begin{APACrefauthors}%
+Yu, S.%
+, Tan, D.%
+\BCBL {} Tan, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2006}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {A Framework for Evaluating the Effect of View Angle,
+  Clothing and Carrying Condition on Gait Recognition} {A framework for
+  evaluating the effect of view angle, clothing and carrying condition on gait
+  recognition}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{18th International Conference on Pattern Recognition}} {{18th
+  International Conference on Pattern Recognition}}\ (\BPGS\ 441--444).
+\newblock
+\begin{APACrefURL} {\url{https://doi.org/10.1109/ICPR.2006.67}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+T.~Yu%
+\ \protect \BOthers {.}}{%
+T.~Yu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2020}}%
+}]{%
+yu2020gradient}
+\APACinsertmetastar {%
+yu2020gradient}%
+\begin{APACrefauthors}%
+Yu, T.%
+, Kumar, S.%
+, Gupta, A.%
+, Levine, S.%
+, Hausman, K.%
+\BCBL {} Finn, C.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2020}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Gradient Surgery for Multi-Task Learning}} {{Gradient
+  Surgery for Multi-Task Learning}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Advances in Neural Information Processing Systems}}
+  {{Advances in Neural Information Processing Systems}}\ (\BVOL~33).
+\newblock
+\begin{APACrefURL}
+  {\url{https://proceedings.neurips.cc/paper/2020/hash/3fe78a8acf5fda99de95303940a2420c-Abstract.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zbontar%
+, Jing%
+, Misra%
+, LeCun%
+\BCBL {}\ \BBA {} Deny%
+}{%
+Zbontar%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+zbontar2021barlow}
+\APACinsertmetastar {%
+zbontar2021barlow}%
+\begin{APACrefauthors}%
+Zbontar, J.%
+, Jing, L.%
+, Misra, I.%
+, LeCun, Y.%
+\BCBL {} Deny, S.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Barlow Twins: Self-Supervised Learning via Redundancy
+  Reduction}} {{Barlow Twins: Self-Supervised Learning via Redundancy
+  Reduction}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the 38th International Conference on Machine
+  Learning}} {{Proceedings of the 38th International Conference on Machine
+  Learning}}\ (\BVOL~139, \BPGS\ 12310--12320).
+\newblock
+\begin{APACrefURL} {\url{https://proceedings.mlr.press/v139/zbontar21a.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhang%
+\ \protect \BOthers {.}}{%
+Zhang%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2019}}%
+}]{%
+zhang2019disentangled}
+\APACinsertmetastar {%
+zhang2019disentangled}%
+\begin{APACrefauthors}%
+Zhang, Z.%
+, Tran, L.%
+, Yin, X.%
+, Atoum, Y.%
+, Liu, X.%
+, Wan, J.%
+\BCBL {} Wang, N.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2019}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {{Gait Recognition via Disentangled Representation
+  Learning}} {{Gait Recognition via Disentangled Representation
+  Learning}}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 4710--4719).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content_CVPR_2019/html/Zhang_Gait_Recognition_via_Disentangled_Representation_Learning_CVPR_2019_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zheng%
+\ \protect \BOthers {.}}{%
+Zheng%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2022}}%
+}]{%
+zheng2022gait3d}
+\APACinsertmetastar {%
+zheng2022gait3d}%
+\begin{APACrefauthors}%
+Zheng, J.%
+, Liu, X.%
+, Liu, W.%
+, He, L.%
+, Yan, C.%
+\BCBL {} Mei, T.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2022}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Gait Recognition in the Wild with Dense 3D
+  Representations and a Benchmark} {Gait recognition in the wild with dense 3d
+  representations and a benchmark}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition}} {{Proceedings of the IEEE/CVF Conference on Computer
+  Vision and Pattern Recognition}}\ (\BPGS\ 20228--20237).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/CVPR2022/html/Zheng_Gait_Recognition_in_the_Wild_With_Dense_3D_Representations_and_CVPR_2022_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\bibitem [\protect \citeauthoryear {%
+Zhu%
+\ \protect \BOthers {.}}{%
+Zhu%
+\ \protect \BOthers {.}}{%
+{\protect \APACyear {2021}}%
+}]{%
+zhu2021grew}
+\APACinsertmetastar {%
+zhu2021grew}%
+\begin{APACrefauthors}%
+Zhu, Z.%
+, Guo, X.%
+, Yang, T.%
+, Huang, J.%
+, Deng, J.%
+, Huang, G.%
+\BDBL {}Zhou, J.%
+\end{APACrefauthors}%
+\unskip\
+\newblock
+\APACrefYearMonthDay{2021}{}{}.
+\newblock
+{\BBOQ}\APACrefatitle {Gait Recognition in the Wild: A Benchmark} {Gait
+  recognition in the wild: A benchmark}.{\BBCQ}
+\newblock
+ \APACrefbtitle {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}} {{Proceedings of the IEEE/CVF International Conference on
+  Computer Vision}}\ (\BPGS\ 14789--14799).
+\newblock
+\begin{APACrefURL}
+  {\url{https://openaccess.thecvf.com/content/ICCV2021/html/Zhu_Gait_Recognition_in_the_Wild_A_Benchmark_ICCV_2021_paper.html}}
+  \end{APACrefURL}
+\PrintBackRefs{\CurrentBib}
+
+\end{thebibliography}

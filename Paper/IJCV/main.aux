@@ -1,0 +1,156 @@
+\relax 
+\bibstyle{sn-apacite}
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{liao2020posegait}
+\citation{yan2018stgcn,teepe2021gaitgraph,teepe2022gaitgraph2}
+\citation{li2024survey,huang2024occluded}
+\citation{khosla2020supervised}
+\Newlabel{2}{2}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\citation{chen2020simclr,he2020moco,khosla2020supervised}
+\citation{thoker2021skeleton,rao2024skeleton}
+\citation{lin2023actclr}
+\citation{cosma2026gaitpt}
+\citation{wang2020alignment}
+\citation{grill2020byol,chen2021simsiam}
+\citation{zbontar2021barlow,bardes2022vicreg}
+\citation{liao2020posegait}
+\citation{teepe2021gaitgraph,teepe2022gaitgraph2}
+\citation{fu2023gpgait}
+\citation{fan2024skeletongait}
+\citation{fan2022opengait,meng2023fastposegait}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Related Work}{2}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Contrastive learning and local identity objectives}{2}{subsection.2.1}\protected@file@percent }
+\citation{shi2019adaptive,li2019actional,liu2020msg3d,cheng2020shift,duan2022posec3d}
+\citation{li2024survey,huang2024occluded}
+\citation{chen2023iopstl}
+\citation{zhu2021grew,zheng2022gait3d}
+\citation{shen2023lidargait}
+\citation{chao2019gaitset,zhang2019disentangled,li2020disentangled}
+\citation{fan2020gaitpart,lin2021gaitgl,huang2021local}
+\citation{wang2022gaitstrip,huang2021cstl,wang2023dygait,huang2025template}
+\citation{fu2023gpgait}
+\citation{wu2017sampling,wang2019multisimilarity}
+\citation{musgrave2020reality}
+\citation{sener2018multiobjective,yu2020gradient}
+\citation{sun2019hrnet}
+\citation{yu2006casia}
+\citation{lin2014coco}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Pose-gait representations and missing evidence}{3}{subsection.2.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Part-aware representations and matching}{3}{subsection.2.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Controlled metric-learning evaluation}{3}{subsection.2.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {3}Controlled Study}{3}{section.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Data and identity-disjoint evaluation}{3}{subsection.3.1}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces Separation of part-aware training from part-aware matching. Solid arrows denote the shared forward path. The upper branch contains the six training objectives; the lower branch contains frozen-checkpoint descriptor controls and performs no parameter updates.}}{4}{figure.1}\protected@file@percent }
+\newlabel{fig:framework}{{1}{4}{Separation of part-aware training from part-aware matching. Solid arrows denote the shared forward path. The upper branch contains the six training objectives; the lower branch contains frozen-checkpoint descriptor controls and performs no parameter updates}{figure.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Multistream graph backbone}{4}{subsection.3.2}\protected@file@percent }
+\citation{hermans2017triplet}
+\newlabel{eq:reliability}{{1}{5}{Multistream graph backbone}{equation.3.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Shared training recipe}{5}{subsection.3.3}\protected@file@percent }
+\newlabel{eq:base}{{2}{5}{Shared training recipe}{equation.3.2}{}}
+\newlabel{eq:factorial}{{3}{5}{Shared training recipe}{equation.3.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Retrieval descriptors}{5}{subsection.3.4}\protected@file@percent }
+\newlabel{eq:matching}{{5}{5}{Retrieval descriptors}{equation.3.5}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Controlled training objectives. All unlisted terms and all backbone, augmentation, and optimization settings are identical.}}{6}{table.1}\protected@file@percent }
+\newlabel{tab:objectives}{{1}{6}{Controlled training objectives. All unlisted terms and all backbone, augmentation, and optimization settings are identical}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.5}Occlusion protocols and outcomes}{6}{subsection.3.5}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Conceptual corruption families. Red marks unavailable joints or body regions; orange marks a contiguous interval in which the complete pose is unavailable. Random joint-frame masks vary independently, whereas dynamic-joint masks are temporally smoothed.}}{7}{figure.2}\protected@file@percent }
+\newlabel{fig:corruptions}{{2}{7}{Conceptual corruption families. Red marks unavailable joints or body regions; orange marks a contiguous interval in which the complete pose is unavailable. Random joint-frame masks vary independently, whereas dynamic-joint masks are temporally smoothed}{figure.2}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Evaluation matrix. Dynamic-joint corruption is deliberately held out from training. Positive-severity results average five deterministic corruption realizations, and gallery and probe corruptions are independently seeded in the occluded-gallery protocol.}}{7}{figure.3}\protected@file@percent }
+\newlabel{fig:evaluation-matrix}{{3}{7}{Evaluation matrix. Dynamic-joint corruption is deliberately held out from training. Positive-severity results average five deterministic corruption realizations, and gallery and probe corruptions are independently seeded in the occluded-gallery protocol}{figure.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Results}{7}{section.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Part SupCon reduces robustness under the fixed recipe}{7}{subsection.4.1}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces CASIA-B validation Rank-1 (\%). Clean is mean $\pm $ seed standard deviation. ``All $>0$'' averages four corruption families at severities 0.1, 0.3, 0.5, and 0.7. Occluded gallery averages the same positive-severity grid. Single-view averages NM, BG, and CL. Every cell uses three training seeds.}}{8}{table.2}\protected@file@percent }
+\newlabel{tab:factorial-results}{{2}{8}{CASIA-B validation Rank-1 (\%). Clean is mean $\pm $ seed standard deviation. ``All $>0$'' averages four corruption families at severities 0.1, 0.3, 0.5, and 0.7. Occluded gallery averages the same positive-severity grid. Single-view averages NM, BG, and CL. Every cell uses three training seeds}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.2}Reliability gating is not the primary cause}{8}{subsection.4.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}Part-triplet heads exhibit near-collapse}{8}{subsection.4.3}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Paired Rank-1 difference from the metric baseline in percentage points (crossed 95\% bootstrap interval over seed and validation identity). Negative values favor the baseline.}}{9}{table.3}\protected@file@percent }
+\newlabel{tab:paired-results}{{3}{9}{Paired Rank-1 difference from the metric baseline in percentage points (crossed 95\% bootstrap interval over seed and validation identity). Negative values favor the baseline}{table.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}Raw part matching resolves the random-head confound}{9}{subsection.4.4}\protected@file@percent }
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Training diagnostics averaged over three seeds. Part variance is the mean coordinate-wise variance over the final 20 epochs. Cosines are measured every five epochs; parentheses give nonzero finite cosine measurements out of 96 scheduled.}}{10}{table.4}\protected@file@percent }
+\newlabel{tab:mechanisms}{{4}{10}{Training diagnostics averaged over three seeds. Part variance is the mean coordinate-wise variance over the final 20 epochs. Cosines are measured every five epochs; parentheses give nonzero finite cosine measurements out of 96 scheduled}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Checkpoint-only descriptor controls on CASIA-B validation Rank-1 (\%). All conditions use the same three selected metric-baseline backbones and the fixed 0.5 fusion weight. ``Fresh random heads'' is the mean across ten projection seeds; brackets give the range after averaging the three backbone seeds. No control retrains the backbone or local head.}}{10}{table.5}\protected@file@percent }
+\newlabel{tab:descriptor-controls}{{5}{10}{Checkpoint-only descriptor controls on CASIA-B validation Rank-1 (\%). All conditions use the same three selected metric-baseline backbones and the fixed 0.5 fusion weight. ``Fresh random heads'' is the mean across ten projection seeds; brackets give the range after averaging the three backbone seeds. No control retrains the backbone or local head}{table.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.5}Official CASIA-B test evaluation}{10}{subsection.4.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.6}Efficiency}{10}{subsection.4.6}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces CASIA-B development severity curves with a clean pooled multi-view gallery. Lines are means over three training seeds; shaded bands show one sample standard deviation across seeds, not confidence intervals. Positive severities average five deterministic mask realizations. The raw-part matcher uses the same metric-baseline checkpoints at fusion weight 0.5. Severity is nominal and is not calibrated to equal missing-joint fractions across families.}}{11}{figure.4}\protected@file@percent }
+\newlabel{fig:severity-curves}{{4}{11}{CASIA-B development severity curves with a clean pooled multi-view gallery. Lines are means over three training seeds; shaded bands show one sample standard deviation across seeds, not confidence intervals. Positive severities average five deterministic mask realizations. The raw-part matcher uses the same metric-baseline checkpoints at fusion weight 0.5. Severity is nominal and is not calibrated to equal missing-joint fractions across families}{figure.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Discussion}{11}{section.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}Interpreting training and matching separately}{11}{subsection.5.1}\protected@file@percent }
+\citation{meng2023fastposegait}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Five-seed CASIA-B official-test Rank-1 (\%), reported as mean $\pm $ sample standard deviation. The upper panel follows the standard single-view-gallery protocol and excludes identical views. The lower panel uses the separately labeled pooled multi-view gallery; ``synthetic'' averages four corruption families at severities 0.1, 0.3, 0.5, and 0.7.}}{12}{table.6}\protected@file@percent }
+\newlabel{tab:official-test}{{6}{12}{Five-seed CASIA-B official-test Rank-1 (\%), reported as mean $\pm $ sample standard deviation. The upper panel follows the standard single-view-gallery protocol and excludes identical views. The lower panel uses the separately labeled pooled multi-view gallery; ``synthetic'' averages four corruption families at severities 0.1, 0.3, 0.5, and 0.7}{table.6}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}Scope of the official-test result}{12}{subsection.5.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {6}Limitations and Validity Threats}{12}{section.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Prior test exposure and single-dataset evidence.}{12}{section*.3}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{One encoder and fixed objective settings.}{12}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Synthetic missingness.}{13}{section*.5}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Incomplete mechanism controls.}{13}{section*.6}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Sampling and model development.}{13}{section*.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {paragraph}{Provenance and retrieval cost.}{13}{section*.8}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {7}Ethical Considerations}{13}{section.7}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {8}Conclusion}{13}{section.8}\protected@file@percent }
+\bibcite{bardes2022vicreg}{{1}{{\APACyear {2022}}}{{Bardes\ \BOthers {.}}}{{Bardes, Ponce,{}\ \BBA  {} LeCun}}}
+\bibcite{chao2019gaitset}{{2}{{\APACyear {2019}}}{{Chao\ \BOthers {.}}}{{Chao, He, Zhang,{}\ \BBA  {} Feng}}}
+\bibcite{chen2020simclr}{{3}{{\APACyear {2020}}}{{T.~Chen\ \BOthers {.}}}{{T.~Chen, Kornblith, Norouzi,{}\ \BBA  {} Hinton}}}
+\bibcite{chen2021simsiam}{{4}{{\APACyear {2021}}}{{X.~Chen\ \BBA  {} He}}{{X.~Chen\ \BBA  {} He}}}
+\bibcite{chen2023iopstl}{{5}{{\APACyear {2023}}}{{Y.~Chen\ \BOthers {.}}}{{Y.~Chen\ \BOthers {.}}}}
+\bibcite{cheng2020shift}{{6}{{\APACyear {2020}}}{{Cheng\ \BOthers {.}}}{{Cheng\ \BOthers {.}}}}
+\bibcite{cosma2026gaitpt}{{7}{{\APACyear {2026}}}{{Cosma\ \BOthers {.}}}{{Cosma, Catruna,{}\ \BBA  {} Radoi}}}
+\bibcite{duan2022posec3d}{{8}{{\APACyear {2022}}}{{Duan\ \BOthers {.}}}{{Duan, Zhao, Chen, Lin,{}\ \BBA  {} Dai}}}
+\bibcite{fan2022opengait}{{9}{{\APACyear {2023}}}{{Fan\ \BOthers {.}}}{{Fan\ \BOthers {.}}}}
+\bibcite{fan2024skeletongait}{{10}{{\APACyear {2024}}}{{Fan\ \BOthers {.}}}{{Fan, Ma, Jin, Shen,{}\ \BBA  {} Yu}}}
+\bibcite{fan2020gaitpart}{{11}{{\APACyear {2020}}}{{Fan\ \BOthers {.}}}{{Fan\ \BOthers {.}}}}
+\bibcite{fu2023gpgait}{{12}{{\APACyear {2023}}}{{Fu\ \BOthers {.}}}{{Fu, Meng, Hou, Hu,{}\ \BBA  {} Huang}}}
+\bibcite{grill2020byol}{{13}{{\APACyear {2020}}}{{Grill\ \BOthers {.}}}{{Grill\ \BOthers {.}}}}
+\bibcite{he2020moco}{{14}{{\APACyear {2020}}}{{He\ \BOthers {.}}}{{He, Fan, Wu, Xie,{}\ \BBA  {} Girshick}}}
+\bibcite{hermans2017triplet}{{15}{{\APACyear {2017}}}{{Hermans\ \BOthers {.}}}{{Hermans, Beyer,{}\ \BBA  {} Leibe}}}
+\bibcite{huang2025template}{{16}{{\APACyear {2025}}}{{P.~Huang\ \BOthers {.}}}{{P.~Huang, Hou, Huang,{}\ \BBA  {} Huang}}}
+\bibcite{huang2024occluded}{{17}{{\APACyear {2024}}}{{P.~Huang\ \BOthers {.}}}{{P.~Huang\ \BOthers {.}}}}
+\bibcite{huang2021cstl}{{18}{{\APACyear {2021}}}{{X.~Huang\ \BOthers {.}}}{{X.~Huang\ \BOthers {.}}}}
+\bibcite{huang2021local}{{19}{{\APACyear {2021}}}{{Z.~Huang\ \BOthers {.}}}{{Z.~Huang\ \BOthers {.}}}}
+\bibcite{khosla2020supervised}{{20}{{\APACyear {2020}}}{{Khosla\ \BOthers {.}}}{{Khosla\ \BOthers {.}}}}
+\bibcite{li2019actional}{{21}{{\APACyear {2019}}}{{M.~Li\ \BOthers {.}}}{{M.~Li\ \BOthers {.}}}}
+\bibcite{li2024survey}{{22}{{\APACyear {2024}}}{{T.~Li\ \BOthers {.}}}{{T.~Li\ \BOthers {.}}}}
+\bibcite{li2020disentangled}{{23}{{\APACyear {2020}}}{{X.~Li\ \BOthers {.}}}{{X.~Li, Makihara, Xu, Yagi,{}\ \BBA  {} Ren}}}
+\bibcite{liao2020posegait}{{24}{{\APACyear {2020}}}{{Liao\ \BOthers {.}}}{{Liao, Yu, An,{}\ \BBA  {} Huang}}}
+\bibcite{lin2021gaitgl}{{25}{{\APACyear {2021}}}{{B.~Lin\ \BOthers {.}}}{{B.~Lin, Zhang,{}\ \BBA  {} Yu}}}
+\bibcite{lin2023actclr}{{26}{{\APACyear {2023}}}{{L.~Lin\ \BOthers {.}}}{{L.~Lin, Zhang,{}\ \BBA  {} Liu}}}
+\bibcite{lin2014coco}{{27}{{\APACyear {2014}}}{{T\BHBI  Y.~Lin\ \BOthers {.}}}{{T\BHBI  Y.~Lin\ \BOthers {.}}}}
+\bibcite{liu2020msg3d}{{28}{{\APACyear {2020}}}{{Liu\ \BOthers {.}}}{{Liu, Zhang, Chen, Wang,{}\ \BBA  {} Ouyang}}}
+\bibcite{meng2023fastposegait}{{29}{2023}{{Meng et al.}}{{Meng, Fu, Hou, Cao, Liu, and Huang}}}
+\bibcite{musgrave2020reality}{{30}{{\APACyear {2020}}}{{Musgrave\ \BOthers {.}}}{{Musgrave, Belongie,{}\ \BBA  {} Lim}}}
+\bibcite{rao2024skeleton}{{31}{{\APACyear {2024}}}{{Rao\ \BBA  {} Miao}}{{Rao\ \BBA  {} Miao}}}
+\bibcite{sener2018multiobjective}{{32}{{\APACyear {2018}}}{{Sener\ \BBA  {} Koltun}}{{Sener\ \BBA  {} Koltun}}}
+\bibcite{shen2023lidargait}{{33}{{\APACyear {2023}}}{{Shen\ \BOthers {.}}}{{Shen\ \BOthers {.}}}}
+\bibcite{shi2019adaptive}{{34}{{\APACyear {2019}}}{{Shi\ \BOthers {.}}}{{Shi, Zhang, Cheng,{}\ \BBA  {} Lu}}}
+\bibcite{sun2019hrnet}{{35}{{\APACyear {2019}}}{{Sun\ \BOthers {.}}}{{Sun, Xiao, Liu,{}\ \BBA  {} Wang}}}
+\bibcite{teepe2022gaitgraph2}{{36}{{\APACyear {2022}}}{{Teepe\ \BOthers {.}}}{{Teepe, Gilg, Herzog, H{\"o}rmann,{}\ \BBA  {} Rigoll}}}
+\bibcite{teepe2021gaitgraph}{{37}{{\APACyear {2021}}}{{Teepe\ \BOthers {.}}}{{Teepe\ \BOthers {.}}}}
+\bibcite{thoker2021skeleton}{{38}{{\APACyear {2021}}}{{Thoker\ \BOthers {.}}}{{Thoker, Doughty,{}\ \BBA  {} Snoek}}}
+\bibcite{wang2023dygait}{{39}{{\APACyear {2023}}}{{M.~Wang\ \BOthers {.}}}{{M.~Wang\ \BOthers {.}}}}
+\bibcite{wang2022gaitstrip}{{40}{{\APACyear {2022}}}{{M.~Wang\ \BOthers {.}}}{{M.~Wang\ \BOthers {.}}}}
+\bibcite{wang2020alignment}{{41}{{\APACyear {2020}}}{{T.~Wang\ \BBA  {} Isola}}{{T.~Wang\ \BBA  {} Isola}}}
+\bibcite{wang2019multisimilarity}{{42}{{\APACyear {2019}}}{{X.~Wang\ \BOthers {.}}}{{X.~Wang, Han, Huang, Dong,{}\ \BBA  {} Scott}}}
+\bibcite{wu2017sampling}{{43}{{\APACyear {2017}}}{{Wu\ \BOthers {.}}}{{Wu, Manmatha, Smola,{}\ \BBA  {} Krahenbuhl}}}
+\bibcite{yan2018stgcn}{{44}{{\APACyear {2018}}}{{Yan\ \BOthers {.}}}{{Yan, Xiong,{}\ \BBA  {} Lin}}}
+\bibcite{yu2006casia}{{45}{{\APACyear {2006}}}{{S.~Yu\ \BOthers {.}}}{{S.~Yu, Tan,{}\ \BBA  {} Tan}}}
+\bibcite{yu2020gradient}{{46}{{\APACyear {2020}}}{{T.~Yu\ \BOthers {.}}}{{T.~Yu\ \BOthers {.}}}}
+\bibcite{zbontar2021barlow}{{47}{{\APACyear {2021}}}{{Zbontar\ \BOthers {.}}}{{Zbontar, Jing, Misra, LeCun,{}\ \BBA  {} Deny}}}
+\bibcite{zhang2019disentangled}{{48}{{\APACyear {2019}}}{{Zhang\ \BOthers {.}}}{{Zhang\ \BOthers {.}}}}
+\bibcite{zheng2022gait3d}{{49}{{\APACyear {2022}}}{{Zheng\ \BOthers {.}}}{{Zheng\ \BOthers {.}}}}
+\bibcite{zhu2021grew}{{50}{{\APACyear {2021}}}{{Zhu\ \BOthers {.}}}{{Zhu\ \BOthers {.}}}}
+\gdef \@abspage@last{19}

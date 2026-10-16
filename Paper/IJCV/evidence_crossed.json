@@ -1,0 +1,1260 @@
+{
+  "bootstrap": {
+    "type": "crossed",
+    "samples": 100000,
+    "seed": 20261002,
+    "training_seeds": [
+      11,
+      22,
+      33
+    ],
+    "identity_count": 12
+  },
+  "against_baseline": {
+    "metric_global_supcon/global": {
+      "clean": {
+        "difference": -0.018939394503831863,
+        "ci95": [
+          -0.05303030461072922,
+          0.010521885835462146
+        ],
+        "seed_differences": [
+          -0.020202020804087322,
+          -0.02651515230536461,
+          -0.010101010402043661
+        ]
+      },
+      "robust": {
+        "difference": -0.006697180609787918,
+        "ci95": [
+          -0.04861111283001567,
+          0.037884048280021586
+        ],
+        "seed_differences": [
+          -0.02774621540447697,
+          -0.02332701797907551,
+          0.03098169155418873
+        ]
+      },
+      "severity_05": {
+        "difference": -0.0010101007274998766,
+        "ci95": [
+          -0.06130103041003975,
+          0.06757154941765799
+        ],
+        "seed_differences": [
+          -0.04387626124177283,
+          -0.021212120540440083,
+          0.06205807959971329
+        ]
+      },
+      "occluded": {
+        "difference": -0.005082069068319268,
+        "ci95": [
+          -0.028961487179751406,
+          0.017566290515242146
+        ],
+        "seed_differences": [
+          -0.01523042501260837,
+          -0.011931817318933705,
+          0.011916035126584271
+        ]
+      }
+    },
+    "metric_part_supcon/global": {
+      "clean": {
+        "difference": -0.02735690317220158,
+        "ci95": [
+          -0.06691919391353925,
+          0.011784512135717604
+        ],
+        "seed_differences": [
+          -0.020202020804087322,
+          -0.012626263002554575,
+          -0.049242425709962845
+        ]
+      },
+      "robust": {
+        "difference": -0.061226851798387036,
+        "ci95": [
+          -0.1029041739154814,
+          -0.019965274816948094
+        ],
+        "seed_differences": [
+          -0.062263255938887596,
+          -0.08609533278892438,
+          -0.03532196666734914
+        ]
+      },
+      "severity_05": {
+        "difference": -0.08676346567355925,
+        "ci95": [
+          -0.15549241791466353,
+          -0.023778934463108494
+        ],
+        "seed_differences": [
+          -0.07449494791217148,
+          -0.1386994891023884,
+          -0.04709596000611782
+        ]
+      },
+      "occluded": {
+        "difference": -0.03669507691584942,
+        "ci95": [
+          -0.05996422761171642,
+          -0.012668347863493383
+        ],
+        "seed_differences": [
+          -0.037215908290818334,
+          -0.05000000431512793,
+          -0.02286931814160198
+        ]
+      }
+    },
+    "metric_part_triplet/global": {
+      "clean": {
+        "difference": -0.0025252526005109153,
+        "ci95": [
+          -0.052188553743892245,
+          0.0416666679084301
+        ],
+        "seed_differences": [
+          -0.0416666679084301,
+          0.02525252600510915,
+          0.008838384101788202
+        ]
+      },
+      "robust": {
+        "difference": -0.032559975886316456,
+        "ci95": [
+          -0.07587871479077471,
+          0.010627104058868199
+        ],
+        "seed_differences": [
+          -0.05130997750287255,
+          -0.025299872892598312,
+          -0.0210700772634785
+        ]
+      },
+      "severity_05": {
+        "difference": -0.05151514965109527,
+        "ci95": [
+          -0.1142255848674621,
+          0.012815653979002186
+        ],
+        "seed_differences": [
+          -0.0672979752222697,
+          -0.030744949510941904,
+          -0.056502524220074214
+        ]
+      },
+      "occluded": {
+        "difference": -0.012173821427697677,
+        "ci95": [
+          -0.042939813323169394,
+          0.01501499557828835
+        ],
+        "seed_differences": [
+          -0.030018938627714913,
+          -0.010779673163294015,
+          0.0042771475079158945
+        ]
+      }
+    },
+    "oap_v2/global": {
+      "clean": {
+        "difference": -0.014730640169647004,
+        "ci95": [
+          -0.058501685245169535,
+          0.03030303120613098
+        ],
+        "seed_differences": [
+          -0.023989899704853695,
+          0.0012626263002554576,
+          -0.021464647104342777
+        ]
+      },
+      "robust": {
+        "difference": -0.03207596853220215,
+        "ci95": [
+          -0.08973603342181175,
+          0.028882836730594476
+        ],
+        "seed_differences": [
+          -0.05727588625935217,
+          -0.06382575801884134,
+          0.02487373868158708
+        ]
+      },
+      "severity_05": {
+        "difference": -0.0518518513870529,
+        "ci95": [
+          -0.1368692104193744,
+          0.041666661431857696
+        ],
+        "seed_differences": [
+          -0.10037878528237343,
+          -0.09816918952856213,
+          0.042992420649776854
+        ]
+      },
+      "occluded": {
+        "difference": -0.02367950466254519,
+        "ci95": [
+          -0.06158460032893345,
+          0.012389522373753912
+        ],
+        "seed_differences": [
+          -0.03456439473666251,
+          -0.04548611608333886,
+          0.00901199683236579
+        ]
+      }
+    },
+    "oap_v2_ungated/global": {
+      "clean": {
+        "difference": -0.0063131315012772875,
+        "ci95": [
+          -0.0534511800441477,
+          0.05303030461072922
+        ],
+        "seed_differences": [
+          -0.02525252600510915,
+          0.03661616270740827,
+          -0.03030303120613098
+        ]
+      },
+      "robust": {
+        "difference": -0.021869737861884966,
+        "ci95": [
+          -0.05351956724383248,
+          0.01105863636281959
+        ],
+        "seed_differences": [
+          -0.02162247143375377,
+          -0.010479794349521399,
+          -0.03350694780237973
+        ]
+      },
+      "severity_05": {
+        "difference": -0.03653198433393198,
+        "ci95": [
+          -0.08907828094670549,
+          0.006818183700185425
+        ],
+        "seed_differences": [
+          -0.01502525144799923,
+          -0.02506312921953698,
+          -0.06950757233425975
+        ]
+      },
+      "occluded": {
+        "difference": -0.009359217080701556,
+        "ci95": [
+          -0.02998737331234022,
+          0.010511368305823353
+        ],
+        "seed_differences": [
+          -0.010321968700736761,
+          0.00116792736419787,
+          -0.01892360990556578
+        ]
+      }
+    },
+    "metric_global_supcon/reliable_parts": {
+      "clean": {
+        "difference": -0.0025252526005109153,
+        "ci95": [
+          -0.03787878900766373,
+          0.029882155772712495
+        ],
+        "seed_differences": [
+          -0.0037878789007663727,
+          -0.022727273404598236,
+          0.018939394503831863
+        ]
+      },
+      "robust": {
+        "difference": -0.0010153627178321283,
+        "ci95": [
+          -0.032733583809264624,
+          0.030760996013284705
+        ],
+        "seed_differences": [
+          -0.007607328860710065,
+          -0.011237371790533265,
+          0.015798612497746944
+        ]
+      },
+      "severity_05": {
+        "difference": -0.0011574066399286191,
+        "ci95": [
+          -0.04366582307395422,
+          0.04103588219052945
+        ],
+        "seed_differences": [
+          -0.0172979790950194,
+          -0.012752522986071805,
+          0.02657828216130535
+        ]
+      },
+      "occluded": {
+        "difference": -0.001957070824475752,
+        "ci95": [
+          -0.021301555848589893,
+          0.017629552819607666
+        ],
+        "seed_differences": [
+          -0.010337752411336018,
+          -0.008506944597077867,
+          0.012973484534986627
+        ]
+      }
+    },
+    "metric_part_supcon/reliable_parts": {
+      "clean": {
+        "difference": -0.07617845262090366,
+        "ci95": [
+          -0.1191077439321412,
+          -0.03030303120613098
+        ],
+        "seed_differences": [
+          -0.06060606117049853,
+          -0.08585858717560768,
+          -0.08207070951660474
+        ]
+      },
+      "robust": {
+        "difference": -0.11649305709741181,
+        "ci95": [
+          -0.16023780085767309,
+          -0.07318497602827848
+        ],
+        "seed_differences": [
+          -0.0984848487811784,
+          -0.15146780821184316,
+          -0.09952651429921389
+        ]
+      },
+      "severity_05": {
+        "difference": -0.15319865048190373,
+        "ci95": [
+          -0.2218855170533061,
+          -0.08958333450783458
+        ],
+        "seed_differences": [
+          -0.11805555534859498,
+          -0.20940655768693736,
+          -0.1321338384101788
+        ]
+      },
+      "occluded": {
+        "difference": -0.08959385671187192,
+        "ci95": [
+          -0.1151041686690102,
+          -0.06033775460188432
+        ],
+        "seed_differences": [
+          -0.08117108268197626,
+          -0.1114741178850333,
+          -0.07613636956860621
+        ]
+      }
+    },
+    "metric_part_triplet/reliable_parts": {
+      "clean": {
+        "difference": -0.01725589277015792,
+        "ci95": [
+          -0.06818182021379471,
+          0.029040404905875523
+        ],
+        "seed_differences": [
+          -0.05681818351149559,
+          0.0,
+          0.0050505052010218305
+        ]
+      },
+      "robust": {
+        "difference": -0.05651304841093305,
+        "ci95": [
+          -0.09849537018195001,
+          -0.011594985055853643
+        ],
+        "seed_differences": [
+          -0.06796086005245645,
+          -0.042613636857519545,
+          -0.058964648322823145
+        ]
+      },
+      "severity_05": {
+        "difference": -0.0885732328105304,
+        "ci95": [
+          -0.15795454352628438,
+          -0.015698652895581394
+        ],
+        "seed_differences": [
+          -0.08718434736753504,
+          -0.05549242068082094,
+          -0.12304293038323522
+        ]
+      },
+      "occluded": {
+        "difference": -0.03848379826619445,
+        "ci95": [
+          -0.06475694734383271,
+          -0.01317866034753226
+        ],
+        "seed_differences": [
+          -0.05190972413402051,
+          -0.03982007852755487,
+          -0.023721592137007974
+        ]
+      }
+    },
+    "oap_v2/reliable_parts": {
+      "clean": {
+        "difference": -0.05176767831047376,
+        "ci95": [
+          -0.10606060922145844,
+          0.0012626263002554576
+        ],
+        "seed_differences": [
+          -0.07575757801532745,
+          -0.06818182021379471,
+          -0.011363636702299118
+        ]
+      },
+      "robust": {
+        "difference": -0.08828388362437384,
+        "ci95": [
+          -0.14351366471188762,
+          -0.022921799162254026
+        ],
+        "seed_differences": [
+          -0.11677715376329918,
+          -0.1255366193751494,
+          -0.0225378777346729
+        ]
+      },
+      "severity_05": {
+        "difference": -0.13127103848900232,
+        "ci95": [
+          -0.20446127460131217,
+          -0.04513888610979645
+        ],
+        "seed_differences": [
+          -0.17973484533528486,
+          -0.17165403068065643,
+          -0.04242423945106566
+        ]
+      },
+      "occluded": {
+        "difference": -0.07393203100137827,
+        "ci95": [
+          -0.11191090642435787,
+          -0.02971906582727873
+        ],
+        "seed_differences": [
+          -0.08481691963970661,
+          -0.10413510569681723,
+          -0.03284406766761094
+        ]
+      }
+    },
+    "oap_v2_ungated/reliable_parts": {
+      "clean": {
+        "difference": -0.04840067484312587,
+        "ci95": [
+          -0.08754209015104505,
+          -0.010521885835462146
+        ],
+        "seed_differences": [
+          -0.05303030461072922,
+          -0.0328282838066419,
+          -0.05934343611200651
+        ]
+      },
+      "robust": {
+        "difference": -0.06959701349316877,
+        "ci95": [
+          -0.11010101432240037,
+          -0.030813341155751715
+        ],
+        "seed_differences": [
+          -0.0547348503023386,
+          -0.05104166556460162,
+          -0.10301452461256606
+        ]
+      },
+      "severity_05": {
+        "difference": -0.0985058902766064,
+        "ci95": [
+          -0.1606697254458494,
+          -0.04532828018382133
+        ],
+        "seed_differences": [
+          -0.06041666429276423,
+          -0.08301767629260819,
+          -0.15208333024444678
+        ]
+      },
+      "occluded": {
+        "difference": -0.05726010383336365,
+        "ci95": [
+          -0.080824001518906,
+          -0.03590593595139985
+        ],
+        "seed_differences": [
+          -0.052320075021270895,
+          -0.04891098962373993,
+          -0.07054924685508013
+        ]
+      }
+    }
+  },
+  "descriptor_effects": {
+    "raw_reliable": {
+      "clean": {
+        "difference": 0.02946128033929401,
+        "ci95": [
+          0.010521885835462146,
+          0.05303030461072922
+        ],
+        "seed_differences": [
+          0.03535353640715281,
+          0.03535353640715281,
+          0.017676768203576405
+        ]
+      },
+      "robust": {
+        "difference": 0.0432344296714291,
+        "ci95": [
+          0.02889296758027437,
+          0.05712857987673487
+        ],
+        "seed_differences": [
+          0.03661616220294187,
+          0.04434975143522024,
+          0.04873737537612518
+        ]
+      },
+      "severity_05": {
+        "difference": 0.06060605975411212,
+        "ci95": [
+          0.03653198640935847,
+          0.08592171563488794
+        ],
+        "seed_differences": [
+          0.04457070728919158,
+          0.05625000083819032,
+          0.08099747113495444
+        ]
+      },
+      "occluded": {
+        "difference": 0.0382786199140052,
+        "ci95": [
+          0.02788286287363412,
+          0.05098392985075605
+        ],
+        "seed_differences": [
+          0.03633207346623143,
+          0.04376578354276717,
+          0.034738002733017005
+        ]
+      }
+    },
+    "raw_uniform": {
+      "clean": {
+        "difference": 0.029040404905875523,
+        "ci95": [
+          0.009259259535206689,
+          0.0534511800441477
+        ],
+        "seed_differences": [
+          0.03535353640715281,
+          0.034090910106897354,
+          0.017676768203576405
+        ]
+      },
+      "robust": {
+        "difference": 0.042029674074405596,
+        "ci95": [
+          0.02826704801506518,
+          0.05587647764801255
+        ],
+        "seed_differences": [
+          0.035227273241616786,
+          0.043323868264754616,
+          0.04753788071684539
+        ]
+      },
+      "severity_05": {
+        "difference": 0.05742845020761795,
+        "ci95": [
+          0.03413299458010847,
+          0.08226010203749562
+        ],
+        "seed_differences": [
+          0.0406565653004994,
+          0.054356058205788337,
+          0.07727272711656612
+        ]
+      },
+      "occluded": {
+        "difference": 0.037847223392923804,
+        "ci95": [
+          0.027477905540339027,
+          0.050110612036435936
+        ],
+        "seed_differences": [
+          0.035621847569321595,
+          0.042739897345503174,
+          0.03517992526394664
+        ]
+      }
+    },
+    "frozen_head_reliable": {
+      "clean": {
+        "difference": 0.01515151560306549,
+        "ci95": [
+          -0.0037878789007663727,
+          0.037457913574245244
+        ],
+        "seed_differences": [
+          0.01515151560306549,
+          0.02651515230536461,
+          0.0037878789007663727
+        ]
+      },
+      "robust": {
+        "difference": 0.02405829193917776,
+        "ci95": [
+          0.008307030454064564,
+          0.03993055452996891
+        ],
+        "seed_differences": [
+          0.016808714310172945,
+          0.01736111170127212,
+          0.03800504980608821
+        ]
+      },
+      "severity_05": {
+        "difference": 0.03722643021804591,
+        "ci95": [
+          0.012436867755604908,
+          0.06931817975758653
+        ],
+        "seed_differences": [
+          0.020012626890093088,
+          0.025063130791143824,
+          0.06660353297290082
+        ]
+      },
+      "occluded": {
+        "difference": 0.026457282145404153,
+        "ci95": [
+          0.01677701297060897,
+          0.036810817748644496
+        ],
+        "seed_differences": [
+          0.021827651498218376,
+          0.02935606086005767,
+          0.02818813407793641
+        ]
+      }
+    },
+    "raw_reliable_minus_uniform": {
+      "clean": {
+        "difference": 0.00042087543341848586,
+        "ci95": [
+          -0.004208754334184859,
+          0.004208754334184859
+        ],
+        "seed_differences": [
+          0.0,
+          0.0012626263002554576,
+          0.0
+        ]
+      },
+      "robust": {
+        "difference": 0.0012047556689746368,
+        "ci95": [
+          -0.0001893934495759216,
+          0.002430555385409308
+        ],
+        "seed_differences": [
+          0.0013888889783023235,
+          0.0010258839841602214,
+          0.001199494044461365
+        ]
+      },
+      "severity_05": {
+        "difference": 0.0031776088079722184,
+        "ci95": [
+          0.00048400665255030615,
+          0.005639729995689575
+        ],
+        "seed_differences": [
+          0.003914140771181944,
+          0.001893939091435944,
+          0.0037247465612987676
+        ]
+      },
+      "occluded": {
+        "difference": 0.0004313965699920017,
+        "ci95": [
+          -0.0009680151371058957,
+          0.0017624159010867716
+        ],
+        "seed_differences": [
+          0.0007102254263979072,
+          0.0010258848924422637,
+          -0.00044192060886416584
+        ]
+      }
+    }
+  },
+  "checkpoint_diagnostics": {
+    "metric_baseline": {
+      "11": {
+        "selected_epoch": 90,
+        "selected_epoch_part_variance": 0.0014454255558172557
+      },
+      "22": {
+        "selected_epoch": 85,
+        "selected_epoch_part_variance": 0.0013922517825981147
+      },
+      "33": {
+        "selected_epoch": 45,
+        "selected_epoch_part_variance": 0.0014856658592591729
+      }
+    },
+    "metric_global_supcon": {
+      "11": {
+        "selected_epoch": 40,
+        "selected_epoch_part_variance": 0.0013880955180557409
+      },
+      "22": {
+        "selected_epoch": 85,
+        "selected_epoch_part_variance": 0.0014014835493586393
+      },
+      "33": {
+        "selected_epoch": 80,
+        "selected_epoch_part_variance": 0.001509280890920463
+      }
+    },
+    "metric_part_supcon": {
+      "11": {
+        "selected_epoch": 115,
+        "selected_epoch_part_variance": 0.0032228085489170452
+      },
+      "22": {
+        "selected_epoch": 35,
+        "selected_epoch_part_variance": 0.002887755047248782
+      },
+      "33": {
+        "selected_epoch": 45,
+        "selected_epoch_part_variance": 0.0029704968906271285
+      }
+    },
+    "metric_part_triplet": {
+      "11": {
+        "selected_epoch": 60,
+        "selected_epoch_part_variance": 1.8912137995426269e-06
+      },
+      "22": {
+        "selected_epoch": 60,
+        "selected_epoch_part_variance": 2.057494115442236e-06
+      },
+      "33": {
+        "selected_epoch": 40,
+        "selected_epoch_part_variance": 2.1290309398795696e-06
+      }
+    },
+    "oap_v2": {
+      "11": {
+        "selected_epoch": 40,
+        "selected_epoch_part_variance": 0.002941810357261379
+      },
+      "22": {
+        "selected_epoch": 35,
+        "selected_epoch_part_variance": 0.002893477656333795
+      },
+      "33": {
+        "selected_epoch": 65,
+        "selected_epoch_part_variance": 0.0029469867904652965
+      }
+    },
+    "oap_v2_ungated": {
+      "11": {
+        "selected_epoch": 95,
+        "selected_epoch_part_variance": 0.003013984244404677
+      },
+      "22": {
+        "selected_epoch": 105,
+        "selected_epoch_part_variance": 0.003045497720024355
+      },
+      "33": {
+        "selected_epoch": 40,
+        "selected_epoch_part_variance": 0.0028905956184421227
+      }
+    }
+  },
+  "curves": {
+    "random_joint": {
+      "metric_baseline": {
+        "mean_percent": [
+          81.52356743812561,
+          80.60606122016907,
+          74.25084233283997,
+          65.19360264142354,
+          38.459596037864685
+        ],
+        "sd_percent": [
+          2.426519677061334,
+          1.0858596480170066,
+          0.3963383214217257,
+          5.259340136612424,
+          8.624725908750307
+        ]
+      },
+      "metric_global_supcon": {
+        "mean_percent": [
+          79.62963183720908,
+          77.70202080408733,
+          72.89562265078227,
+          64.15824890136719,
+          42.02861944834391
+        ],
+        "sd_percent": [
+          3.2297902567134917,
+          3.4645696458809057,
+          4.3716293830126425,
+          2.5321026921395062,
+          7.956041271046735
+        ]
+      },
+      "metric_part_supcon": {
+        "mean_percent": [
+          78.78787914911905,
+          76.27946178118388,
+          68.62794597943625,
+          50.24410704771678,
+          25.286195476849876
+        ],
+        "sd_percent": [
+          1.1363655328763635,
+          1.8287318994703816,
+          4.796938636414428,
+          8.900120911475414,
+          10.768427894527465
+        ]
+      },
+      "raw_reliable": {
+        "mean_percent": [
+          84.46969588597617,
+          83.55218847592673,
+          78.42592557271321,
+          71.04377110799153,
+          43.16498319307963
+        ],
+        "sd_percent": [
+          1.74954460177425,
+          0.7648364960093755,
+          1.5135375046820891,
+          2.619616833420145,
+          9.237121450105032
+        ]
+      }
+    },
+    "dynamic_joint": {
+      "metric_baseline": {
+        "mean_percent": [
+          81.52356743812561,
+          81.60774389902751,
+          76.79292956988016,
+          63.55218847592672,
+          27.12962955236435
+        ],
+        "sd_percent": [
+          2.426519677061334,
+          1.747784894148149,
+          0.9219754112845545,
+          4.401285840209149,
+          2.842040335731949
+        ]
+      },
+      "metric_global_supcon": {
+        "mean_percent": [
+          79.62963183720908,
+          78.78787875175476,
+          75.03366986910503,
+          63.880470991134644,
+          29.991582234700527
+        ],
+        "sd_percent": [
+          3.2297902567134917,
+          3.0025021005543517,
+          3.582774471869627,
+          1.0230650662873921,
+          3.825598023703508
+        ]
+      },
+      "metric_part_supcon": {
+        "mean_percent": [
+          78.78787914911905,
+          78.17340016365051,
+          72.247474193573,
+          51.010101238886506,
+          18.779461284478504
+        ],
+        "sd_percent": [
+          1.1363655328763635,
+          0.9422726118520136,
+          2.950116395208977,
+          4.267901197221178,
+          4.750182854638624
+        ]
+      },
+      "raw_reliable": {
+        "mean_percent": [
+          84.46969588597617,
+          84.24242456754048,
+          80.42929331461588,
+          69.30134654045105,
+          30.547138353188828
+        ],
+        "sd_percent": [
+          1.74954460177425,
+          1.1076622268056462,
+          0.9887249131609741,
+          2.019307832736595,
+          3.974311892014193
+        ]
+      }
+    },
+    "body_part": {
+      "metric_baseline": {
+        "mean_percent": [
+          81.52356743812561,
+          75.26935935020447,
+          68.20707082748413,
+          57.60101000467937,
+          28.829966485500336
+        ],
+        "sd_percent": [
+          2.426519677061334,
+          0.986574493187434,
+          0.9009874826635882,
+          3.6293425773116907,
+          6.830251632087614
+        ]
+      },
+      "metric_global_supcon": {
+        "mean_percent": [
+          79.62963183720908,
+          73.61952861150107,
+          67.3316498597463,
+          58.282829125722245,
+          25.79966386159261
+        ],
+        "sd_percent": [
+          3.2297902567134917,
+          2.6737083044065337,
+          1.7246445227860077,
+          2.4384050121554006,
+          0.7714765455952401
+        ]
+      },
+      "metric_part_supcon": {
+        "mean_percent": [
+          78.78787914911905,
+          71.06902321179707,
+          64.1919191678365,
+          53.82996598879496,
+          21.380471686522164
+        ],
+        "sd_percent": [
+          1.1363655328763635,
+          0.8828762518585949,
+          0.41570864675850555,
+          2.277259406636344,
+          4.072500157835658
+        ]
+      },
+      "raw_reliable": {
+        "mean_percent": [
+          84.46969588597617,
+          80.3787879149119,
+          73.3080812295278,
+          65.20202080408733,
+          28.829966485500336
+        ],
+        "sd_percent": [
+          1.74954460177425,
+          0.5572742984577975,
+          0.48770758732809066,
+          1.6941800842961443,
+          6.830251632087614
+        ]
+      }
+    },
+    "temporal": {
+      "metric_baseline": {
+        "mean_percent": [
+          81.52356743812561,
+          80.8501680692037,
+          78.08922568957011,
+          70.63973069190979,
+          55.37878712018332
+        ],
+        "sd_percent": [
+          2.426519677061334,
+          1.8085702521877227,
+          1.1989858713307997,
+          1.5227780343919741,
+          1.3412403015821817
+        ]
+      },
+      "metric_global_supcon": {
+        "mean_percent": [
+          79.62963183720908,
+          79.04040416081747,
+          76.649831533432,
+          70.26094198226929,
+          56.27946138381957
+        ],
+        "sd_percent": [
+          3.2297902567134917,
+          2.8577772907660814,
+          2.862831826841774,
+          3.221091430216453,
+          3.4191155908147906
+        ]
+      },
+      "metric_part_supcon": {
+        "mean_percent": [
+          78.78787914911905,
+          77.9208755493164,
+          75.23569067319235,
+          67.19696998596191,
+          53.02188475926717
+        ],
+        "sd_percent": [
+          1.1363655328763635,
+          1.2540954999203582,
+          1.591977311901419,
+          2.375348435673843,
+          2.397040458789407
+        ]
+      },
+      "raw_reliable": {
+        "mean_percent": [
+          84.46969588597617,
+          84.04882272084554,
+          81.82659983634949,
+          75.6818175315857,
+          61.66666706403095
+        ],
+        "sd_percent": [
+          1.74954460177425,
+          1.100828479997649,
+          1.18990918293156,
+          1.1358022986491285,
+          0.7588379585087078
+        ]
+      }
+    }
+  },
+  "manifest": [
+    {
+      "directory": "results_descriptor_controls/casia_b_pose_multistream_metric_baseline_seed11_20260925T085111139474Z_descriptor_controls",
+      "source_sha256": "eddf23a243ebbc2e40db3a7ad80b82101568012d6e9ded37e0ae86c2cfd382dc",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "7b2cbe2c953312edf4ac0ecc61c1498dddf2f81fd6e913ff3a583d3869da507e",
+        "probe_outcomes.npz": "dbee253d8b363d68b149eb3d435966fbaf5631eac49c2f13f23ac07f183eefb6"
+      }
+    },
+    {
+      "directory": "results_descriptor_controls/casia_b_pose_multistream_metric_baseline_seed22_20260929T102911862397Z_descriptor_controls",
+      "source_sha256": "eddf23a243ebbc2e40db3a7ad80b82101568012d6e9ded37e0ae86c2cfd382dc",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "dec5ff4e61cbe33d935ac9817789a73e53ee4a42e854dff3f3554f8807b35043",
+        "probe_outcomes.npz": "26f2b171e72bc56085f1f26d43ab617954288024afb469f4b0b6784a14cde638"
+      }
+    },
+    {
+      "directory": "results_descriptor_controls/casia_b_pose_multistream_metric_baseline_seed33_20260929T102911865753Z_descriptor_controls",
+      "source_sha256": "eddf23a243ebbc2e40db3a7ad80b82101568012d6e9ded37e0ae86c2cfd382dc",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "9393ef210356eac98d40ac43b1cb2d7bfbcc0eae57def87e0fb0664d7d4aff50",
+        "probe_outcomes.npz": "e953a84c947a056a4b0ab2c5387d1e8d4c78f4b8e4f855ef5141bed9b0fadf90"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_baseline_seed11_20260925T085111139474Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "48c6fe4c89790cdeba200774e998cb619e3a79d5a0a589da3a78c45f1965bec6",
+        "probe_outcomes.npz": "2b22ee72a3352944ba23b110f7836624e49cabb3f858f4666b501543a20b1ea6"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_baseline_seed22_20260929T102911862397Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "fe0dc42d370fe649331ff77d60bfc324afc54ab4a482176bca05c88f5a7365f7",
+        "probe_outcomes.npz": "3b7b5370371065251eb9404301c1d575dcf2662a704814e443848c7f9e62bca0"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_baseline_seed33_20260929T102911865753Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "c1f5edc2e8eeaa5b7e71e2044591e0d84ae7d7ce890c6e8d1049253fbbf176eb",
+        "probe_outcomes.npz": "9c2fc855421f287985a30afd47357942b4b4cff008f8e2544b81bdc5e2bb9e99"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_global_supcon_seed11_20260929T102911857615Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "283c53eb912701395c414f7361a5b22a945159b5b0e4d1b97e177ff3a6d999c9",
+        "probe_outcomes.npz": "affe3519e05d2ea0df04c16f306440558442b59004b16475e48a75e46f108de1"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_global_supcon_seed22_20260929T115643247386Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "30f7be6f853605171ec13b78ffd19a12dc215f3cb8ba3cafb9383ea62fd9422c",
+        "probe_outcomes.npz": "ee078de49f537ce9494afaf6ed95a9eeaf09894eadf768c932d89fd05a3cb797"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_global_supcon_seed33_20260929T124345485736Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "bbc694b822d66ca9a522da88324a0efe4f29fa01cff23b0da23a2997d2e96b57",
+        "probe_outcomes.npz": "b41f3d0ce184e988aed82a7198e55f78552be00258ab28016b8d99bab69ac225"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_part_supcon_seed11_20260929T124415291605Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "3a7afa76812b1793504f38c2f1d58fe95ae98f45223e1d679ca485ca35673c0c",
+        "probe_outcomes.npz": "c114bf412b145127f1e4635789ea0e1505ea80b3d3efea00e358f7697cfbc2eb"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_part_supcon_seed22_20260929T132402791565Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "7e240bbda80f0249f1ba6746e74edc82ebb1f3110ed9fe8ae5f9bb57ae87f56d",
+        "probe_outcomes.npz": "44883cc653c6928419e5034b25657928d6cfcf61f78ae6143a9b5630d8696314"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_part_supcon_seed33_20260929T145442705340Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "4f1eb0f807feecbd10a74090f8f907005ff9f9d3f0ff4b874406caf84b9967e7",
+        "probe_outcomes.npz": "61fcc5cd95352f0d0e5fefbb76ba12abb0e453571b60fcb42353e8836cd1246e"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_part_triplet_seed11_20260929T171859416288Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "10904938f1760d33c8e052cba7476b112dec479a14477f1584f4bbd46ddd5f03",
+        "probe_outcomes.npz": "0330769c92a582bf3ce1da23c31ee9744d95ab5e640ea0084a30f4bbee9b4196"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_part_triplet_seed22_20260929T172521693188Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "15ea948351c1bed2326403cc74578290696cbf7cc29320ed7518e5642df99cd9",
+        "probe_outcomes.npz": "c6743f2624a8daeb3e63f05eccd22dbff1fb58e31d99c56abb965278a6a1c293"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_metric_part_triplet_seed33_20260929T175621950589Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "10afe750fa1a80dec0a792312bc17d55638c6c0365c0cc52be8db565665305ae",
+        "probe_outcomes.npz": "22e7d03131e25445f15c3b336c55c831cb74e14c7d3daf1e8347c4768bd40eeb"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_oap_v2_seed11_20260929T145835488064Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "470b08c07763091aebc4b73e418c7d79bc60f5311c9287ca993a989f8583dfb7",
+        "probe_outcomes.npz": "1dec5a7e4679ae8e0b3094957eb2cc9648d3a84e24815115deeeb7d44275f2a9"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_oap_v2_seed22_20260929T150441735189Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "e9c9d4b52f2ac7c169888e13330c39fca0b57c27e9df0e2055d7a8a858c011d1",
+        "probe_outcomes.npz": "15be1fe5f829247d00b3cb090e82cf166410b170ae70bced23ec118f730a2404"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_oap_v2_seed33_20260929T162527597609Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "95a2c7452d4cd266e02e840ab019cff500a11debfb0d722b296c0d3d47799dea",
+        "probe_outcomes.npz": "daad0061b4b1ac17f667dbeb2278624210306d5e541cf6aafe513d11766d86cf"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_oap_v2_ungated_seed11_20260929T192820279379Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "84cddfbdd8479372bfa88b98269bd3a21cfde09bf1b87a8f85a5dbf9916802d8",
+        "probe_outcomes.npz": "752fc2867cf4814ebfab4ac06c3dde4fc61fd3215099406c86ad613c6116577c"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_oap_v2_ungated_seed22_20260929T194020398775Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "5e67e6db6b6639577be477bf22e6f6231b36b40fb910c77a00253dbdee2dbb6b",
+        "probe_outcomes.npz": "ba9f0405d7a95407960390d91b382f460464764454896aab081efdcae013adf5"
+      }
+    },
+    {
+      "directory": "results_v2_factorial/casia_b_pose_multistream_oap_v2_ungated_seed33_20260929T194712720638Z",
+      "source_sha256": "ad96b9027e9bb5ed49201b36d71cb449d1a76e036b6b691af3f81b2010c1ec04",
+      "dataset_sha256": "123e838cb524c38d2668bfeca99952f5596effb711ff51f1170b1a537ae6d3fc",
+      "artifacts_sha256": {
+        "metrics.json": "ca1680d6c48b734f127f0eab81e148742d5618ea9dcb08a37dd3d43ca132d317",
+        "probe_outcomes.npz": "922effeaf4bec560e38b1719d0ecfcf57f0971cf4b37f11953a9c989938df23b"
+      }
+    }
+  ]
+}
