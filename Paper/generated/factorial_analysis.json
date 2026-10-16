@@ -136,84 +136,92 @@
           "clean": {
             "difference": -0.018939394503831863,
             "ci95": [
-              -0.045875422242614955,
-              0.004629629767603344
+              -0.052609429177310735,
+              0.010942761268880632
             ],
-            "probability_positive": 0.0592,
+            "probability_positive": 0.09665,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "robust": {
             "difference": -0.006697180609787918,
             "ci95": [
-              -0.0420726802762753,
-              0.03353509103310175
+              -0.048433552541731234,
+              0.036847772449254974
             ],
-            "probability_positive": 0.35475,
+            "probability_positive": 0.3632,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "severity_05": {
             "difference": -0.0010101007274998766,
             "ci95": [
-              -0.054271883475545714,
-              0.06033249230175796
+              -0.061070070375879165,
+              0.0684564387697415
             ],
-            "probability_positive": 0.47375,
+            "probability_positive": 0.4681,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "occluded": {
             "difference": -0.005082069068319268,
             "ci95": [
-              -0.025841745810854872,
-              0.016419402327543745
+              -0.029225194547002,
+              0.01785050916724785
             ],
-            "probability_positive": 0.3182,
+            "probability_positive": 0.3053,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           }
         },
         "reliable_parts": {
           "clean": {
             "difference": -0.0025252526005109153,
             "ci95": [
-              -0.031144782072967954,
-              0.02356902427143521
+              -0.037457913574245244,
+              0.03030303120613098
             ],
-            "probability_positive": 0.43905,
+            "probability_positive": 0.44235,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "robust": {
             "difference": -0.0010153627178321283,
             "ci95": [
-              -0.026026021896137133,
-              0.02608388826354509
+              -0.032487640737478306,
+              0.03094499708774188
             ],
-            "probability_positive": 0.45505,
+            "probability_positive": 0.4703,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "severity_05": {
             "difference": -0.0011574066399286191,
             "ci95": [
-              -0.03457491282153771,
-              0.03499579134125572
+              -0.04366635091104803,
+              0.04084595954239679
             ],
-            "probability_positive": 0.46265,
+            "probability_positive": 0.47675,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "occluded": {
             "difference": -0.001957070824475752,
             "ci95": [
-              -0.01888165434890349,
-              0.015935394920944562
+              -0.021133995552857717,
+              0.018045558958737985
             ],
-            "probability_positive": 0.4058,
+            "probability_positive": 0.40235,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           }
         }
       },
@@ -222,84 +230,92 @@
           "clean": {
             "difference": -0.02735690317220158,
             "ci95": [
-              -0.06018518697884348,
-              0.0050505052010218305
+              -0.06691919391353925,
+              0.01220538756913609
             ],
-            "probability_positive": 0.0488,
+            "probability_positive": 0.07745,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "robust": {
             "difference": -0.061226851798387036,
             "ci95": [
-              -0.09543889884112611,
-              -0.02678871863689791
+              -0.10274108587764202,
+              -0.020264354286094577
             ],
-            "probability_positive": 0.00015,
+            "probability_positive": 0.00365,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "severity_05": {
             "difference": -0.08676346567355925,
             "ci95": [
-              -0.1449915767058782,
-              -0.03490951283019986
+              -0.15677608769943213,
+              -0.02424242383050215
             ],
-            "probability_positive": 0.00035,
+            "probability_positive": 0.00465,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "occluded": {
             "difference": -0.03669507691584942,
             "ci95": [
-              -0.05702862310055126,
-              -0.016540272368648513
+              -0.059485480247531086,
+              -0.012494605194984222
             ],
-            "probability_positive": 0.0001,
+            "probability_positive": 0.00305,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           }
         },
         "reliable_parts": {
           "clean": {
             "difference": -0.07617845262090366,
             "ci95": [
-              -0.10858586059055395,
-              -0.03998316534691387
+              -0.11910774517390463,
+              -0.031144782052271898
             ],
-            "probability_positive": 5e-05,
+            "probability_positive": 0.0021,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "robust": {
             "difference": -0.11649305709741181,
             "ci95": [
-              -0.15583965094087437,
-              -0.08032880918795454
+              -0.15966448789177876,
+              -0.07354771660692579
             ],
             "probability_positive": 0.0,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "severity_05": {
             "difference": -0.15319865048190373,
             "ci95": [
-              -0.21195338219113183,
-              -0.1014709596780855
+              -0.22224483771133235,
+              -0.08933028249690934
             ],
             "probability_positive": 0.0,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "occluded": {
             "difference": -0.08959385671187192,
             "ci95": [
-              -0.1132156241526698,
-              -0.06528238037200133
+              -0.11497869479644578,
+              -0.05994161025349375
             ],
             "probability_positive": 0.0,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           }
         }
       },
@@ -308,84 +324,92 @@
           "clean": {
             "difference": -0.0025252526005109153,
             "ci95": [
-              -0.04419192050894102,
-              0.03535353640715281
+              -0.05303030461072922,
+              0.04208754334184858
             ],
-            "probability_positive": 0.4691,
+            "probability_positive": 0.47135,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "robust": {
             "difference": -0.032559975886316456,
             "ci95": [
-              -0.06574626693424458,
-              0.0021367321262610777
+              -0.07533867435090037,
+              0.009917402160741964
             ],
-            "probability_positive": 0.03315,
+            "probability_positive": 0.0603,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "severity_05": {
             "difference": -0.05151514965109527,
             "ci95": [
-              -0.09713856573281292,
-              -0.0032407381604166907
+              -0.11412088953269024,
+              0.01184974892530572
             ],
-            "probability_positive": 0.01895,
+            "probability_positive": 0.055,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "occluded": {
             "difference": -0.012173821427697677,
             "ci95": [
-              -0.036890124920884976,
-              0.009864398678756605
+              -0.04319786329229424,
+              0.014642127551956463
             ],
-            "probability_positive": 0.1555,
+            "probability_positive": 0.19365,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           }
         },
         "reliable_parts": {
           "clean": {
             "difference": -0.01725589277015792,
             "ci95": [
-              -0.05935395799784196,
-              0.018939394503831863
+              -0.06819234209963015,
+              0.028198654039038554
             ],
-            "probability_positive": 0.21365,
+            "probability_positive": 0.24655,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "robust": {
             "difference": -0.05651304841093305,
             "ci95": [
-              -0.08922032982453756,
-              -0.021711779901266316
+              -0.09849063631716287,
+              -0.011888810156961051
             ],
-            "probability_positive": 0.0009,
+            "probability_positive": 0.00885,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "severity_05": {
             "difference": -0.0885732328105304,
             "ci95": [
-              -0.14476010063921826,
-              -0.03244896991074917
+              -0.15696654814528302,
+              -0.013972533023398829
             ],
-            "probability_positive": 0.001,
+            "probability_positive": 0.0114,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "occluded": {
             "difference": -0.03848379826619445,
             "ci95": [
-              -0.05965383250764312,
-              -0.019170744415815646
+              -0.06517269384995517,
+              -0.013120660659236224
             ],
-            "probability_positive": 5e-05,
+            "probability_positive": 0.0016,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           }
         }
       },
@@ -394,84 +418,92 @@
           "clean": {
             "difference": -0.014730640169647004,
             "ci95": [
-              -0.0475589239762889,
-              0.019781145370668836
+              -0.058080809811751045,
+              0.030723906639549468
             ],
-            "probability_positive": 0.18755,
+            "probability_positive": 0.24145,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "robust": {
             "difference": -0.03207596853220215,
             "ci95": [
-              -0.08076073318564644,
-              0.02396951577199307
+              -0.08964172953274101,
+              0.02890414666746635
             ],
-            "probability_positive": 0.13115,
+            "probability_positive": 0.14895,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "severity_05": {
             "difference": -0.0518518513870529,
             "ci95": [
-              -0.12565287990599042,
-              0.03729113950976157
+              -0.13642728950168628,
+              0.04236110616475344
             ],
-            "probability_positive": 0.12645,
+            "probability_positive": 0.13595,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "occluded": {
             "difference": -0.02367950466254519,
             "ci95": [
-              -0.05476641719190714,
-              0.010201102781704512
+              -0.06147451942864184,
+              0.012294955808384746
             ],
-            "probability_positive": 0.08555,
+            "probability_positive": 0.08745,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           }
         },
         "reliable_parts": {
           "clean": {
             "difference": -0.05176767831047376,
             "ci95": [
-              -0.09343434621890385,
-              -0.0063131315012772875
+              -0.1069023600882954,
+              0.0008417508668369717
             ],
-            "probability_positive": 0.0124,
+            "probability_positive": 0.02645,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "robust": {
             "difference": -0.08828388362437384,
             "ci95": [
-              -0.13784736010517615,
-              -0.026683369585710666
+              -0.14399227243589444,
+              -0.023500235705351907
             ],
-            "probability_positive": 0.00125,
+            "probability_positive": 0.00525,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "severity_05": {
             "difference": -0.13127103848900232,
             "ci95": [
-              -0.19810605467193657,
-              -0.04690550972138437
+              -0.20532512068748476,
+              -0.04583333159098402
             ],
-            "probability_positive": 0.00045,
+            "probability_positive": 0.00275,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "occluded": {
             "difference": -0.07393203100137827,
             "ci95": [
-              -0.10829664070883559,
-              -0.03422151468694218
+              -0.11208964955682556,
+              -0.02875539178268009
             ],
-            "probability_positive": 5e-05,
+            "probability_positive": 0.0012,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           }
         }
       },
@@ -480,84 +512,92 @@
           "clean": {
             "difference": -0.0063131315012772875,
             "ci95": [
-              -0.046296297676033445,
-              0.04420244239477556
+              -0.0534511800441477,
+              0.0534511800441477
             ],
-            "probability_positive": 0.36275,
+            "probability_positive": 0.36405,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "robust": {
             "difference": -0.021869737861884966,
             "ci95": [
-              -0.046759394570512494,
-              0.004072105284366331
+              -0.05354206916332866,
+              0.011095328552053413
             ],
-            "probability_positive": 0.04775,
+            "probability_positive": 0.08485,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "severity_05": {
             "difference": -0.03653198433393198,
             "ci95": [
-              -0.08040824395914872,
-              -0.0009680124014266767
+              -0.08846801017514533,
+              0.007365848396633084
             ],
-            "probability_positive": 0.0213,
+            "probability_positive": 0.04925,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "occluded": {
             "difference": -0.009359217080701556,
             "ci95": [
-              -0.02572101229226165,
-              0.008033723316879713
+              -0.029861503358956216,
+              0.010800848025893263
             ],
-            "probability_positive": 0.1412,
+            "probability_positive": 0.15805,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           }
         },
         "reliable_parts": {
           "clean": {
             "difference": -0.04840067484312587,
             "ci95": [
-              -0.07954545691609383,
-              -0.01809764363699489
+              -0.08671086117004353,
+              -0.010942761268880632
             ],
-            "probability_positive": 0.00075,
+            "probability_positive": 0.0069,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "robust": {
             "difference": -0.06959701349316877,
             "ci95": [
-              -0.10558778302856808,
-              -0.037157773502015844
+              -0.1097537923102411,
+              -0.030669716004437592
             ],
-            "probability_positive": 0.0,
+            "probability_positive": 0.00035,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "severity_05": {
             "difference": -0.0985058902766064,
             "ci95": [
-              -0.15357743874774316,
-              -0.05258838339149305
+              -0.15915403539418346,
+              -0.045958541260835054
             ],
-            "probability_positive": 0.0,
+            "probability_positive": 5e-05,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           },
           "occluded": {
             "difference": -0.05726010383336365,
             "ci95": [
-              -0.0761312372633256,
-              -0.03908867388538259
+              -0.08075573797261516,
+              -0.035889892818199286
             ],
             "probability_positive": 0.0,
             "seed_blocks": 3,
-            "identity_blocks_per_seed": 12
+            "identity_blocks": 12,
+            "design": "crossed seed x identity"
           }
         }
       }
@@ -567,126 +607,138 @@
         "clean": {
           "difference": 0.01515151560306549,
           "ci95": [
-            -0.00042087543341848586,
-            0.031986532939804926
+            -0.0037878789007663727,
+            0.03787878900766373
           ],
-          "probability_positive": 0.97065,
+          "probability_positive": 0.93805,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "robust": {
           "difference": 0.02407407446783812,
           "ci95": [
-            0.011237373725452927,
-            0.03824705173206489
+            0.00811224126704878,
+            0.03988860080959662
           ],
-          "probability_positive": 1.0,
+          "probability_positive": 0.99955,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "severity_05": {
           "difference": 0.03718434240565532,
           "ci95": [
-            0.015593433718378139,
-            0.06571969418130012
+            0.012204859578438724,
+            0.06952914280150754
           ],
-          "probability_positive": 1.0,
+          "probability_positive": 0.9993,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "occluded": {
           "difference": 0.026452020974829793,
           "ci95": [
-            0.019565182922007,
-            0.03327059776832657
+            0.016771490750963697,
+            0.03668468840737153
           ],
           "probability_positive": 1.0,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         }
       },
       "metric_global_supcon": {
         "clean": {
           "difference": 0.03156565750638644,
           "ci95": [
-            0.02062289623750581,
-            0.04250841877526707
+            0.017676768203576405,
+            0.045875422242614955
           ],
-          "probability_positive": 1.0,
+          "probability_positive": 0.9999,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "robust": {
           "difference": 0.029755892290268093,
           "ci95": [
-            0.01826046958045077,
-            0.0407617845266941
+            0.013994106429163366,
+            0.04506563046064302
           ],
-          "probability_positive": 1.0,
+          "probability_positive": 0.99995,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "severity_05": {
           "difference": 0.03703703581624404,
           "ci95": [
-            0.022643095849990563,
-            0.05220959459143665
+            0.016898146540335456,
+            0.05896464429265553
           ],
-          "probability_positive": 1.0,
+          "probability_positive": 0.9999,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "occluded": {
           "difference": 0.029577020775630243,
           "ci95": [
-            0.023368974638611286,
-            0.03626907363456362
+            0.020991030212220117,
+            0.03952020206812045
           ],
           "probability_positive": 1.0,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         }
       },
       "metric_part_supcon": {
         "clean": {
           "difference": -0.03367003467347887,
           "ci95": [
-            -0.05387205547756619,
-            -0.018518519070413377
+            -0.05934343611200651,
+            -0.014309764736228518
           ],
-          "probability_positive": 0.0,
+          "probability_positive": 0.00035,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "robust": {
           "difference": -0.031192129840039544,
           "ci95": [
-            -0.04829558732324383,
-            -0.01632457524287425
+            -0.05016848200159277,
+            -0.014961725179697809
           ],
-          "probability_positive": 0.0,
+          "probability_positive": 0.00015,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "severity_05": {
           "difference": -0.029250842054619103,
           "ci95": [
-            -0.049579126023095936,
-            -0.013636363029651663
+            -0.05513573445919478,
+            -0.010247789141357537
           ],
-          "probability_positive": 0.0,
+          "probability_positive": 0.00135,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "occluded": {
           "difference": -0.026446758355531428,
           "ci95": [
-            -0.03338081189293816,
-            -0.01954966266138298
+            -0.03446969187166865,
+            -0.01790824812487699
           ],
           "probability_positive": 0.0,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         }
       },
       "metric_part_triplet": {
@@ -694,125 +746,137 @@
           "difference": 0.00042087543341848586,
           "ci95": [
             0.0,
-            0.0016835017336739434
+            0.0025252526005109153
           ],
-          "probability_positive": 0.51985,
+          "probability_positive": 0.4561,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "robust": {
           "difference": 0.00012100166190899387,
           "ci95": [
-            3.156572031358169e-05,
-            0.00021043764328699193
+            5.260956345794056e-06,
+            0.0002420032907576999
           ],
-          "probability_positive": 0.99705,
+          "probability_positive": 0.98025,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "severity_05": {
           "difference": 0.0001262626549940841,
           "ci95": [
-            -2.104377645296819e-05,
-            0.0003156567023563743
+            -6.313134268591074e-05,
+            0.0003998317931165683
           ],
-          "probability_positive": 0.94515,
+          "probability_positive": 0.8662,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "occluded": {
           "difference": 0.00014204553003412576,
           "ci95": [
-            -0.0002156980272589833,
-            0.0004787458578648972
+            -0.00030513451616809604,
+            0.00056818221892172
           ],
-          "probability_positive": 0.7932,
+          "probability_positive": 0.7427,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         }
       },
       "oap_v2": {
         "clean": {
           "difference": -0.021885522537761264,
           "ci95": [
-            -0.0505050520102183,
-            0.011784512135717604
+            -0.05639730807807711,
+            0.013468013869391548
           ],
-          "probability_positive": 0.096,
+          "probability_positive": 0.1093,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "robust": {
           "difference": -0.03213383950100655,
           "ci95": [
-            -0.053551663658193624,
-            -0.01035866497993792
+            -0.05983809476925267,
+            -0.008559422095337759
           ],
-          "probability_positive": 5e-05,
+          "probability_positive": 0.0029,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "severity_05": {
           "difference": -0.042234846879081384,
           "ci95": [
-            -0.06818234139128536,
-            -0.018454860028578015
+            -0.07544191667297533,
+            -0.015571863293573436
           ],
-          "probability_positive": 0.0,
+          "probability_positive": 0.00075,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "occluded": {
           "difference": -0.02380050530417874,
           "ci95": [
-            -0.03470643900008226,
-            -0.013552190660306628
+            -0.03853140750822301,
+            -0.012042300881754878
           ],
           "probability_positive": 0.0,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         }
       },
       "oap_v2_ungated": {
         "clean": {
           "difference": -0.026936027738783095,
           "ci95": [
-            -0.05092592744363679,
-            -0.008417508668369718
+            -0.05765993437833256,
+            -0.0037878789007663727
           ],
-          "probability_positive": 0.0009,
+          "probability_positive": 0.0105,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "robust": {
           "difference": -0.02365319963670724,
           "ci95": [
-            -0.03892585045832675,
-            -0.011153199837260925
+            -0.044649886208450576,
+            -0.007659933542709041
           ],
-          "probability_positive": 0.0001,
+          "probability_positive": 0.00285,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "severity_05": {
           "difference": -0.02478956265581979,
           "ci95": [
-            -0.03838383849797537,
-            -0.007764098225258538
+            -0.042445813572137725,
+            -0.003261258092566646
           ],
-          "probability_positive": 0.0031,
+          "probability_positive": 0.01455,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         },
         "occluded": {
           "difference": -0.021448865422927257,
           "ci95": [
-            -0.029692763352391516,
-            -0.014441023907501325
+            -0.034443656404619105,
+            -0.010637630340028813
           ],
           "probability_positive": 0.0,
           "seed_blocks": 3,
-          "identity_blocks_per_seed": 12
+          "identity_blocks": 12,
+          "design": "crossed seed x identity"
         }
       }
     }

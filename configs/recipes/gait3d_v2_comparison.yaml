@@ -1,0 +1,7 @@
+# Matched Gait3D method comparison and its final confirmation. Same data and
+# recipe as gait3d_v2_available; separate roots keep this cohort, run with one
+# frozen source revision, apart from the earlier metric_baseline-only runs.
+extends: gait3d_v2_available
+experiment_id: gait3d_v2_comparison
+results_root: results_gait3d_v2_comparison
+final_results_root: results_gait3d_v2_comparison_final

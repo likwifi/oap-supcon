@@ -1,0 +1,7 @@
+# Five-seed CASIA-B controlled study on the 12 held-out training identities.
+# The official CASIA-B test set was exposed in earlier project versions, so the
+# lab study is reported on validation only; this recipe has no test stage.
+extends: benchmark_v2
+experiment_id: casia_validation_v2
+results_root: results_casia_validation_v2
+allow_final: false

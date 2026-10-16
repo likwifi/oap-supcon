@@ -96,6 +96,9 @@ PART_DESCRIPTOR = "global_parts"
 RELIABLE_DESCRIPTOR = "reliable_parts"
 RAW_RELIABLE_DESCRIPTOR = "raw_reliable"
 RAW_UNIFORM_DESCRIPTOR = "raw_uniform"
+# Per-probe average precision is stored beside each correctness array under
+# this prefix in probe_outcomes.npz, so existing Rank-1 keys are unchanged.
+AP_PREFIX = "ap__"
 
 
 def _structured_descriptor(
@@ -245,8 +248,13 @@ def retrieval_metrics(
     probe_embeddings,
     probe_labels,
     exclusion_mask: np.ndarray | None = None,
-    *, descriptor=GLOBAL_DESCRIPTOR, part_weight=0.5,
+    *, descriptor=GLOBAL_DESCRIPTOR, part_weight=0.5, return_ap=False,
 ):
+    """Return (metrics, per-probe Rank-1 correctness[, per-probe AP]).
+
+    Per-probe average precision lets mAP be bootstrapped with the same paired
+    seed/identity design as Rank-1; a probe without a valid match scores 0.
+    """
     similarities = descriptor_similarity(probe_embeddings, gallery_embeddings, descriptor, part_weight)
     if exclusion_mask is None:
         exclusion_mask = np.zeros_like(similarities, dtype=bool)
@@ -264,11 +272,13 @@ def retrieval_metrics(
     metrics = {"rank1": float(correct.mean())}
     for k in (5, 10):
         metrics[f"rank{k}"] = float(matches[:, : min(k, matches.shape[1])].any(axis=1).mean())
-    aps = []
+    aps, inps = [], []
     for row in matches:
         positions = np.flatnonzero(row)
         aps.append(float(np.mean(np.arange(1, len(positions) + 1) / (positions + 1))) if len(positions) else 0.0)
+        inps.append(float(len(positions) / (positions[-1] + 1)) if len(positions) else 0.0)
     metrics["map"] = float(np.mean(aps))
+    metrics["minp"] = float(np.mean(inps))
     genuine_mask = (probe_labels[:, None] == gallery_labels[None, :]) & ~exclusion_mask
     impostor_mask = (probe_labels[:, None] != gallery_labels[None, :]) & ~exclusion_mask
     genuine = similarities[genuine_mask]
@@ -290,6 +300,8 @@ def retrieval_metrics(
             metrics[f"tar_far_{far:.0e}"] = float(1.0 - accepted / genuine_sorted.size)
     else:
         metrics.update({"eer": float("nan"), "tar_far_1e-02": float("nan"), "tar_far_1e-03": float("nan")})
+    if return_ap:
+        return metrics, correct, np.asarray(aps, dtype=np.float32)
     return metrics, correct
 
 
@@ -413,13 +425,13 @@ def _evaluate(model, data, cfg, device, seed, realizations):
         for value in np.unique(values):
             selected = values == value
             for descriptor in descriptors:
-                metrics, correct = retrieval_metrics(
+                metrics, correct, ap = retrieval_metrics(
                     gallery_x[descriptor],
                     gallery_y,
                     clean_probe_x[descriptor][selected],
                     clean_probe_y[selected],
                     view_exclusions(probe_views[selected]),
-                    descriptor=descriptor, part_weight=part_weight,
+                    descriptor=descriptor, part_weight=part_weight, return_ap=True,
                 )
                 rows.append({
                     "protocol": "clean_gallery",
@@ -432,6 +444,9 @@ def _evaluate(model, data, cfg, device, seed, realizations):
                 aligned = np.full(len(probe_indices), np.nan, dtype=np.float32)
                 aligned[selected] = correct
                 correctness[f"{descriptor}_official_{field_name}_{value}"] = aligned
+                aligned_ap = np.full(len(probe_indices), np.nan, dtype=np.float32)
+                aligned_ap[selected] = ap
+                correctness[f"{AP_PREFIX}{descriptor}_official_{field_name}_{value}"] = aligned_ap
     # Whether the benchmark has an official single-view-gallery protocol is a
     # property of the dataset, so the flag lives beside `exclude_identical_view`
     # in its config rather than in the shared evaluation block.
@@ -453,6 +468,7 @@ def _evaluate(model, data, cfg, device, seed, realizations):
                     raise ValueError(f"unknown gallery protocol: {gallery_protocol}")
                 realization_metrics: dict[str, list] = {name: [] for name in descriptors}
                 realization_correct: dict[str, list] = {name: [] for name in descriptors}
+                realization_ap: dict[str, list] = {name: [] for name in descriptors}
                 count = 1 if severity == 0 else realizations
                 for realization in range(count):
                     corruption_seed = int(cfg["evaluation"].get("corruption_seed", 1729)) + family_index * 10_000 + realization
@@ -471,16 +487,17 @@ def _evaluate(model, data, cfg, device, seed, realizations):
                     else:
                         current_gallery_x, current_gallery_y = gallery_x, gallery_y
                     for descriptor in descriptors:
-                        metrics, correct = retrieval_metrics(
+                        metrics, correct, ap = retrieval_metrics(
                             current_gallery_x[descriptor],
                             current_gallery_y,
                             probe_x[descriptor],
                             probe_y,
                             view_exclusions(probe_views),
-                            descriptor=descriptor, part_weight=part_weight,
+                            descriptor=descriptor, part_weight=part_weight, return_ap=True,
                         )
                         realization_metrics[descriptor].append(metrics)
                         realization_correct[descriptor].append(correct)
+                        realization_ap[descriptor].append(ap)
                 protocol_name = f"{gallery_protocol}_gallery"
                 for descriptor in descriptors:
                     averaged = {
@@ -497,6 +514,9 @@ def _evaluate(model, data, cfg, device, seed, realizations):
                     })
                     correctness[f"{descriptor}_{protocol_name}_{family}_{severity:g}"] = np.mean(
                         realization_correct[descriptor], axis=0
+                    )
+                    correctness[f"{AP_PREFIX}{descriptor}_{protocol_name}_{family}_{severity:g}"] = np.mean(
+                        realization_ap[descriptor], axis=0
                     )
     return rows, correctness, probe_indices
 
@@ -557,6 +577,10 @@ def run_experiment(project_root: Path, cfg: dict, seed: int, epochs: int | None,
         torch.backends.cudnn.benchmark = False
     dataset_path = resolve_dataset_path(project_root, cfg["dataset"])
     data = PoseData.load(dataset_path)
+    if cfg["dataset"]["name"] == "gait3d":
+        from .gait3d import dataset_coverage
+        cfg["dataset"]["source_coverage"] = dataset_coverage(
+            dataset_path, cfg["dataset"].get("protocol", "gait3d_official"))
     data, held_out = development_split(data, cfg)
     cfg.setdefault("validation", {})["held_out_identities"] = held_out
     stage = cfg["evaluation"].get("split", "test")
@@ -608,6 +632,7 @@ def run_experiment(project_root: Path, cfg: dict, seed: int, epochs: int | None,
                "experiment_id": cfg.get("experiment_id", "corrected_v2"),
                "config_fingerprint": cfg["config_fingerprint"], "source_sha256": cfg["source_sha256"],
                "evaluation_split": stage, "seed": seed, "epochs": epochs, "selected_epoch": selected_epoch,
+               "source_coverage": cfg["dataset"].get("source_coverage"),
                "device": str(device), "parameters": sum(p.numel() for p in model.parameters() if p.requires_grad),
                "train_hours": gpu_hours, "dataset_sha256": cfg["dataset_sha256"],
                "environment": {"python": platform.python_version(), "torch": str(torch.__version__),

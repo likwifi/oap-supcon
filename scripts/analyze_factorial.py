@@ -3,7 +3,7 @@
 
 The script deliberately avoids pandas so it can run in the project environment
 without compiled dataframe dependencies.  It validates the 6 x 3 design,
-summarises the aggregate metrics, and performs a paired hierarchical bootstrap
+summarises the aggregate metrics, and performs a paired crossed seed x identity bootstrap
 over training seed and validation identity using the saved probe outcomes.
 """
 from __future__ import annotations
@@ -14,8 +14,13 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
+import sys
+
 import numpy as np
 import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from bootstrap_stats import crossed_draws  # noqa: E402
 
 
 METHODS = [
@@ -221,18 +226,16 @@ def between_descriptor_blocks(runs, method, endpoint):
 
 
 def hierarchical_bootstrap(blocks, samples, rng):
+    """Crossed seed x identity interval; the same identities occur in every seed."""
     seed_count, identity_count = blocks.shape
-    seed_draws = rng.integers(0, seed_count, size=(samples, seed_count))
-    identity_draws = rng.integers(
-        0, identity_count, size=(samples, seed_count, identity_count)
-    )
-    draws = np.take_along_axis(blocks[seed_draws], identity_draws, axis=2).mean(axis=(1, 2))
+    draws = crossed_draws(blocks, samples, rng)
     return {
         "difference": float(blocks.mean()),
         "ci95": [float(value) for value in np.quantile(draws, [0.025, 0.975])],
         "probability_positive": float(np.mean(draws > 0)),
         "seed_blocks": int(seed_count),
-        "identity_blocks_per_seed": int(identity_count),
+        "identity_blocks": int(identity_count),
+        "design": "crossed seed x identity",
     }
 
 
@@ -349,7 +352,7 @@ def write_paired_table(path, paired):
     lines = [
         r"\begin{table*}[t]",
         r"\centering",
-        r"\caption{Paired Rank-1 difference from the metric baseline in percentage points (hierarchical 95\% bootstrap interval over seed and validation identity). Negative values favor the baseline. Corrupted endpoints average the stated corruption cells within each probe before resampling.}",
+        r"\caption{Paired Rank-1 difference from the metric baseline in percentage points (crossed seed $\times$ validation-identity 95\% bootstrap interval). Negative values favor the baseline. Corrupted endpoints average the stated corruption cells within each probe before resampling.}",
         r"\label{tab:paired-results}",
         r"\resizebox{\textwidth}{!}{%",
         r"\begin{tabular}{llrrrr}",

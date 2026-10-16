@@ -35,6 +35,7 @@ def parser() -> argparse.ArgumentParser:
     audit = sub.add_parser("audit", help="validate standardized data and create an audit report")
     audit.add_argument("--dataset", required=True, choices=["smoke", "casia_b_pose", "oumvlp_pose", "sustech1k", "gait3d", "grew_pose", "ccpg"])
     audit.add_argument("--output")
+    audit.add_argument("--preset", help="dataset recipe, e.g. gait3d_v2_available")
     aggregate = sub.add_parser("aggregate", help="regenerate CSV and LaTeX summaries from completed runs")
     aggregate.add_argument("--results-root", type=Path, default=Path("results_v2"))
     aggregate.add_argument("--output", type=Path)
@@ -75,12 +76,16 @@ def main():
         if args.final:
             if args.epochs is None:
                 raise SystemExit("--final requires --epochs fixed from validation")
+            if cfg.get("allow_final") is False:
+                raise SystemExit(f"recipe {args.preset} is validation-only and has no test stage")
             cfg.setdefault("validation", {})["enabled"] = False
             cfg["evaluation"]["split"] = "test"
+            if "final_results_root" in cfg:
+                cfg["results_root"] = cfg["final_results_root"]
         run_dir, metrics = run_experiment(root, cfg, args.seed, args.epochs, args.device, args.corruption_realizations)
         print(json.dumps({"run_dir": str(run_dir), "status": metrics["status"]}, indent=2))
     elif args.command == "audit":
-        cfg = load_configuration(root, args.dataset, "ce")
+        cfg = load_configuration(root, args.dataset, "ce", args.preset)
         path = resolve_dataset_path(root, cfg["dataset"])
         output = Path(args.output) if args.output else root / "audits" / args.dataset
         frame = audit_dataset(path, output)

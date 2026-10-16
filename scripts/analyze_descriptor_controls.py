@@ -8,8 +8,13 @@ import json
 from collections import defaultdict
 from pathlib import Path
 
+import sys
+
 import numpy as np
 import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from bootstrap_stats import crossed_draws  # noqa: E402
 
 
 FAMILIES = ["random_joint", "dynamic_joint", "body_part", "temporal"]
@@ -174,10 +179,8 @@ def paired_blocks(
 
 
 def bootstrap(blocks, samples, rng):
-    seed_count, identity_count = blocks.shape
-    seed_draws = rng.integers(0, seed_count, size=(samples, seed_count))
-    identity_draws = rng.integers(0, identity_count, size=(samples, seed_count, identity_count))
-    draws = np.take_along_axis(blocks[seed_draws], identity_draws, axis=2).mean(axis=(1, 2))
+    # Crossed design: one identity draw is shared by every sampled seed.
+    draws = crossed_draws(blocks, samples, rng)
     return {
         "difference": float(blocks.mean()),
         "ci95": [float(value) for value in np.quantile(draws, [.025, .975])],

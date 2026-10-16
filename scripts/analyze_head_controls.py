@@ -7,8 +7,13 @@ import csv
 import json
 from pathlib import Path
 
+import sys
+
 import numpy as np
 import yaml
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from bootstrap_stats import crossed_draws  # noqa: E402
 
 
 MODES = ("distill", "triplet_variance")
@@ -143,10 +148,8 @@ def blocks(p1_runs, p0_runs, seeds, mode, endpoint):
 
 
 def bootstrap(values, samples, rng):
-    seed_count, identity_count = values.shape
-    seed_draws = rng.integers(0, seed_count, size=(samples, seed_count))
-    identity_draws = rng.integers(0, identity_count, size=(samples, seed_count, identity_count))
-    draws = np.take_along_axis(values[seed_draws], identity_draws, axis=2).mean(axis=(1, 2))
+    # Crossed design: one identity draw is shared by every sampled seed.
+    draws = crossed_draws(values, samples, rng)
     return {
         "difference": float(values.mean()),
         "ci95": [float(value) for value in np.quantile(draws, [.025, .975])],
